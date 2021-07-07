@@ -1,6 +1,6 @@
 # Guidelines for content design
 
-This section outlines a design process that will help you decide what content to include in your website. The design process begins by considering who might be visiting your site (target audience) and then ensuring the pages feature the information those visitors need. 
+This document outlines a design process that will help you decide what content to include in your website. The design process begins by considering who might be visiting your site (target audience) and then ensuring the pages feature the information those visitors need. 
 
 ## Target audience: Who is the site for?
 
