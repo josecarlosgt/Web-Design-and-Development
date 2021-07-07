@@ -19,13 +19,13 @@ When creating a webpage from scratch, the first step is to create some basic tag
 - [\<body\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body): contains the document itself. It indicates that anything between it and the closing \</body\> tag should be shown inside the browser's window.
 
 ```html
-    <html>
-        <head>
-            <title></title>
-        </head>
-        <body>
-        </body>
-    </html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    </body>
+</html>
 ```
 
 To start creating your webpage, write down the code above in a text file using a source-code editor (e.g., VS Code). Save the text file with the name "index.html".  As a convention, the home page or main page of any website is located in a file called index.html. By default, web servers will render the content in this file when a user visits a website.
