@@ -37,4 +37,4 @@ Now that you understand the business (or at least have a clear idea of what the 
 
 When writing the business case for constructing a website (or any information system in general), it is essential to include a list of references to the sources of information consulted. You also need to take care of the reputability of your sources and use only reliable and trustworthy information.
 
-- Paradise lagoons (2006). D Magazine by Prensa Libre. Accessed on July 7, 2021. https://www.theoceancleanup.com/updates/whales-likely-impacted-by-great-pacific-garbage-patch/
+- Paradise lagoons (2006). D Magazine by Prensa Libre. Accessed on July 7, 2021. https://archive.is/20071031120148/http://www.prensalibre.com/pl/domingo/archivo/revistad/2006/octubre06/081006/fondo.shtml
