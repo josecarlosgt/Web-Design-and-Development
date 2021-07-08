@@ -17,7 +17,7 @@ Laguna Brava Ecotourism wants to take advantage of Web technologies to promote t
 Laguna Brava Ecotourism arranges essential hospitality and transport services for its customers. *In this version of Laguna Brava Ecotourism's website, you will focus on promoting the company's guided visits.* Laguna Brava Ecotourism provides two options for guided visits: the "lake challenge" and the "sit back and relax."
 
 - In the lake challenge option, visitors cross the lake in a kayak guided by a local guide for a full experience of everything the lake has to offer. The journey takes about 5 hours, and it is physically demanding recommended for only those in an excellent physical condition. The price for this option is 50 USD and a minimum of 2 people.
-- In the sit back and relax option, visitors board a rowing boat that takes them around the most beautiful parts of the lake. The journey takes about 3 hours and does not require physical effort. The price for this option is 40 USD and a minimum of 2 people.
+- In the sit back and relax option, visitors board a rowing boat that takes them around the most beautiful parts of the lake. The journey takes about 3 hours and does not require physical effort. The price for this option is 40 USD and a minimum of 4 people.
 
 ![x](img/panoramic-laguna-brava-2.jpg)
 
