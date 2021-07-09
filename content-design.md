@@ -78,12 +78,19 @@ You may look at why people have to visit your site and determine what they need 
 
 ## Wireframes
 
-A wireframe is a sketch of the relevant information that needs to go on each site's page. It shows the hierarchy of the information and how much space it might require. By creating a wireframe, you can ensure that all relevant information is included.
+Once you have decided on the content of the application, you have to create a wireframe outlining all the information that will appear on the site. A wireframe is a sketch of the relevant information that needs to go on each site's page. It shows the hierarchy of the information and how much space it might require. By creating a wireframe, you can ensure that all relevant information is included.
 
 The wireframes make design easier because you know what information needs to appear on which page before considering how the page should look. It can be very helpful to show the wireframes of a site to a client before showing them a design because:
 It enables the client to ensure the site has all the functions and information it needs to offer.
 If you just present a site design to a client, it is common for them to focus on how the site looks, which means they may not raise issues about its function after the site has been built.
 
-[EXAMPLE]
+> The images below show a wireframe that outlines the content that we have just designed for the Laguna Brava Ecotourism website.
+
+![Wireframe part 1](img/wireframe-part-1.png)
+![Wireframe part 2](img/wireframe-part-2.png)
 
 You should not include the color scheme, font choices, backgrounds or images for the website in the wireframe. It should focus on what information needs to be on each page and indicate the most important parts of each page.
+
+There are many tools available for creating wireframes. The followin link points to the online tool that I used for creating the wireframe above. It is free and easy to use.
+
+- [Mockingbird](https://gomockingbird.com/home)
