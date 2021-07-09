@@ -30,8 +30,8 @@ To navigate to different parts on a single-page website, users click navigation 
 Singe-page websites are suitable for sites or web applications that are not heavy on content and intended to showcase one main idea. Since at this time, the focus is on promoting Laguna Brava Ecotourims's two options for guided visits, a single-page website suits this purpose. 
 
 Now that you understand the business (or at least have a clear idea of what the company wants), the next step is to decide what content to include.
-- The [content design document]() contains guidelines to help you determine the information to include in the website
-- Then, continue with the [structuring content document]() for guidelines on structuring the information using HTML tags
+- The [content design document](content-design.md) contains guidelines to help you determine the information to include in the website
+- Then, continue with the [structuring content document](content-structure.md) for guidelines on structuring the information using HTML tags
 
 ## References
 
