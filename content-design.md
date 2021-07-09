@@ -72,7 +72,7 @@ You may look at why people have to visit your site and determine what they need 
 
 **What information do you think visitors of Laguna Brava Ecoturism's website require to achieve their goals?**
 
-> Likely, potential travellers to Laguna Brava won't know anything about Laguna Brava or may have safety concerns about visiting the region, given its remote location and underdevelopment status. Thus, the Laguna Brava Ecotourism website should provide all relevant information addressing these concerns for those interested in visiting the region and hiring the company's guided visits.
+> Likely, potential travellers to Laguna Brava would know little about Laguna Brava or may have safety concerns about visiting the region, given its remote location and underdevelopment status. Thus, the Laguna Brava Ecotourism website should provide all relevant information addressing these concerns for those interested in visiting the region and hiring the community's guided visits.
 >
 > Also, the website should include information specific to each type of guided visit, such as price, duration, minimal number of people, and the highlights.
 
@@ -87,8 +87,3 @@ If you just present a site design to a client, it is common for them to focus on
 [EXAMPLE]
 
 You should not include the color scheme, font choices, backgrounds or images for the website in the wireframe. It should focus on what information needs to be on each page and indicate the most important parts of each page.
-
-
-```python
-
-```
