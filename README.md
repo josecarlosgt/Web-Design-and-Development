@@ -1,2 +1,1 @@
-# Web-Design-and-Development
-All course files for the Web Design and Development course.
+# Tutorial #4: Styling the content of your website
