@@ -1,6 +1,6 @@
-# JavaScript Basics: Exercises
+# JavaScript Basics: Control Flow Statements
 
 The following list contains links to exercises in JavaScript. Each link also provides a reference to suggested solutions.
-- [Expressions](https://jsfiddle.net/joseortiz/83k5cdp4/)
-- [Calculator](https://jsfiddle.net/joseortiz/4j7o8a2u/)
-- [Generating Random Values](https://jsfiddle.net/joseortiz/Lf0ycs4u/)
+- [Conditional Statements](https://jsfiddle.net/joseortiz/z49wev13/)
+- [Iteration Statements Part I](https://jsfiddle.net/joseortiz/zy4djg2v/)
+- [Iteration Statements Part II](https://jsfiddle.net/joseortiz/dsw1eov9/)
