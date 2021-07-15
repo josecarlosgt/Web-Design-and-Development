@@ -1,6 +1,6 @@
 # Functions in JavaScript: Exercises
 
 The following list contains links to exercises in JavaScript. Each link also provides a reference to suggested solutions.
-- [Expressions](https://jsfiddle.net/joseortiz/83k5cdp4/)
-- [Calculator](https://jsfiddle.net/joseortiz/4j7o8a2u/)
-- [Generating Random Values](https://jsfiddle.net/joseortiz/Lf0ycs4u/)
+- [Scope](https://jsfiddle.net/joseortiz/xd5pumoq/)
+- [Function declaration statements](https://jsfiddle.net/joseortiz/rhyxctzo/)
+- [Calculator version 2 with high-order functions](https://jsfiddle.net/joseortiz/fn3jqao8/)
