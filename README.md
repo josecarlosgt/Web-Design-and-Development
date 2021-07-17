@@ -1,6 +1,8 @@
-# Tutorial #1 - Exercise: Creating a HTML document
+# Tutorial #1 - Exercise: Creating an HTML document
 
-In this exercise, you will create an HTML document from scratch with the basic HTML structure.
+In this exercise, you will create an HTML document from scratch with the basic structure.
+
+> [Link to slides with background concepts](./slides.pdf)
 
 ## Task 1: Creating the basic structure
 
@@ -35,7 +37,7 @@ Fill in the \<title\> element with the title that you want to give to your webpa
 <title>My home page</title>
 ```
 
-## Task 3: Specifying the Character encoding
+## Task 3: Specifying the character encoding set (charset)
 
 Declare the character encoding set or charset. You should always set the charset metatag as the first item in the <head> section. Not doing so can lead to a long pause before the browser starts to present information to your visitors. The following line shows the syntax for setting the character set to UTF-8, which is the standard charset used in the current version of HTML (HTML5).
 
