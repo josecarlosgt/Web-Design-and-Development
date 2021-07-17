@@ -31,7 +31,7 @@ You will notice that the URL in the browser starts with "file:". This prefix in 
 
 ## Task 2: Specifying the title
 
-Fill in the \<title\> element with the title that you want to give to your webpage.
+Fill in the \<title\> element with the title that you want to give to your webpage. Athough this text will not be part of the web page inside's content, I will will appear on the browser's window.
 
 ```html
 <title>My home page</title>
