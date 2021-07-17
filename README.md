@@ -2,7 +2,7 @@
 
 In this exercise, you will create an HTML document from scratch with the basic structure.
 
-> [Link to slides with background concepts](./slides.pdf)
+> [Link to slides with additional explanations](./slides.pdf)
 
 ## Task 1: Creating the basic structure
 
