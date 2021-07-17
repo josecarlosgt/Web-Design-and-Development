@@ -62,15 +62,4 @@ You can also use the HTML code. However, using the HTML entity names is consider
 Hello, this is my home page. &#60;what a simple page&#62;
 ```
 
-Your HTML document should look like this:
-```html
-<html>
-<head>
-	<meta charset="utf-8"> 
-	<title>My home page</title>
-</head>
-<body>
-    	Hello, this is my home page &lt;what a simple page!&gt;
-  	</body>
-</html>
-```
+The [index.html](./index.html) file contains the final HTML document.
