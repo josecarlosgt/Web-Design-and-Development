@@ -35,7 +35,7 @@ Fill in the \<title\> element with the title that you want to give to your webpa
 <title>My home page</title>
 ```
 
-## Task 3: Specifying the character encoding
+## Task 3: Specifying the Character encoding
 
 Declare the character encoding set or charset. You should always set the charset metatag as the first item in the <head> section. Not doing so can lead to a long pause before the browser starts to present information to your visitors. The following line shows the syntax for setting the character set to UTF-8, which is the standard charset used in the current version of HTML (HTML5).
 
@@ -65,12 +65,12 @@ Hello, this is my home page. &#60;what a simple page&#62;
 Your HTML document should look like this:
 ```html
 <html>
-	<head>
-		<meta charset="utf-8"> 
-		<title>My home page</title>
-	</head>
-	<body>
-    		Hello, this is my home page &lt;what a simple page!&gt;
+<head>
+	<meta charset="utf-8"> 
+	<title>My home page</title>
+</head>
+<body>
+    	Hello, this is my home page &lt;what a simple page!&gt;
   	</body>
 </html>
 ```
