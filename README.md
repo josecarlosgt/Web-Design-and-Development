@@ -44,7 +44,15 @@ Declare the character encoding set or charset. You should always set the charset
 ```html
 <meta charset="utf-8">
 ```
-## Task 4: Creating some content
+## Task 4: Specifying the language
+
+Use the [lang](https://www.w3schools.com/tags/ref_language_codes.asp) attribute inside the \<html\> tag to declare the language of the Web page. The purpose of this attribute is to assist search engines and browsers:
+
+```html
+<html lang="en">
+```
+
+## Task 5: Creating some content
 
 Add the following text inside the body tag:
 
