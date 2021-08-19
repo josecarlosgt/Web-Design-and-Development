@@ -1,2 +1,2 @@
 # Web-Design-and-Development
-All course files for the Web Design and Development course.
+Files for lab activities in the Web Design and Development course.
