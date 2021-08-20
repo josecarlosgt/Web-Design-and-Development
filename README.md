@@ -1,4 +1,4 @@
-# Tutorial #7: Functions in JavaScript - Examples & Exercises
+# Tutorial #7: Functions in JavaScript
 
 The following list contains links to examples exercises in JavaScript. Each link also provides a reference to suggested solutions.
 - [Variables scope: global versus local](https://jsfiddle.net/joseortiz/xd5pumoq/)
