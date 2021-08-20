@@ -1,4 +1,4 @@
-# JavaScript Data Structures: Examples & Exercises
+# Tutorial #8: JavaScript Data Structures - Examples & Exercises
 
 The following list contains links to examples exercises in JavaScript. Each link also provides a reference to suggested solutions.
 - [Creating an object literal](https://jsfiddle.net/joseortiz/q96b4wje/)
