@@ -2,7 +2,7 @@
 
 This document describes the steps for structuring information in a HTML document. 
 
-> [Link to slides with additional explanations](./slides.pdf)
+> [Link to Tutorial slides](./slides.pdf)
 
 Each task below provides links that explain the purpose of each HTML tag. These links point to two popular learning resources on web development:
 
