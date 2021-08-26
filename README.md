@@ -1,6 +1,6 @@
 # Tutorial #3: Adding version control
 
-Complete the following guidelines to add your web development under version control in Git and share your repository in GitHub.
+Complete the following guidelines to add your web development project under version control in Git and share your repository in GitHub.
 
 Begin with the Working with GitHub guideline and then proceed with the Working with Git Using the Command Line guideline.
 
