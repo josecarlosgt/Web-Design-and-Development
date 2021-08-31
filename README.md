@@ -2,8 +2,8 @@
 
 This document describes the steps for structuring information in a HTML document. 
 
-> [Link to tutorial slides](https://docs.google.com/presentation/d/1XBFzaDAOPIeGbVsMje_N27BR-bKkoZ8HO_a-sBpCCTI/edit?usp=sharing)
-> [Link to business case](https://docs.google.com/document/d/1mm4LbBwQdFnHor9dPLgdEQX8Hf-NU41yeoELF1Lu_zU/edit?usp=sharing)
+- [Link to tutorial slides](https://docs.google.com/presentation/d/1XBFzaDAOPIeGbVsMje_N27BR-bKkoZ8HO_a-sBpCCTI/edit?usp=sharing)
+- [Link to business case](https://docs.google.com/document/d/1mm4LbBwQdFnHor9dPLgdEQX8Hf-NU41yeoELF1Lu_zU/edit?usp=sharing)
 
 Each task below provides links that explain the purpose of each HTML tag. These links point to two popular learning resources on web development:
 
