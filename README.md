@@ -10,27 +10,38 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 - [Mozilla MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). This website contains detailed and up-to-date documentation on HTML.
 - [W3Schools](https://www.w3schools.com/) This website contains examples and brief explanations of HTML.
 
-You should not attempt to memorize each available tag that exists in HTML. You should know how the basic HTML tags work and where to look for new HTML elements and functionality when needed.
+> You should not attempt to memorize each available tag that exists in HTML. You should know how the basic HTML tags work and where to look for new HTML elements and functionality when needed.
 
-We will use the following content obtained from the content design process:
+ On-page SEO techiniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
+- Laguna Brava
+- Ecotourism
+- Nature
+- Adventure
+
+We will use the following text obtained from the content design process. Note the text contains the keywords highlighted in bold.
 
 > *Lake description*  
-> Laguna Brava Ecotourism is an organization run by local community members based in Laguna Brava. Laguna Brava is a karstic lake of incomparable beauty located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. Laguna Brava is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
+> **Laguna Brava** **Ecotourism** is an organization run by local community members based in **Laguna Brava**. **Laguna Brava** is a karstic lake of incomparable beauty located in western Guatemala. **Laguna Brava** is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme **adventure** and intimate contact with **nature**. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. **Laguna Brava** is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of **Laguna Brava** Laguna are so calm that they instantly awaken a deep feeling of peace.
 >
 > *Company description*  
-> We provide guided visits to Laguna Brava and welcome travellers from all regions of the world. We believe that visitors and responsible tourism practices are essential to support the development of our local community.
+> We provide guided visits to **Laguna Brava** and welcome travellers from all regions of the world. We believe that visitors and responsible tourism practices are essential to support the development of our local community.
 >
 > *Guided visits description*  
-> We offer two options for guided visits that allow you to enjoy Laguna Brava beauty. In both options, we provide life vests and local guides who know the lake very well to take care of your safety.
+> We offer two options for guided visits that allow you to enjoy **Laguna Brava** beauty. In both options, we provide life vests and local guides who know the lake very well to take care of your safety.
 >
-> The Lake Challenge
-> - Description: Cross the four kilometres in a kayak guided by a local guide. This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.
+> *Guided visits options*
+>
+> *Option 1*  
+> The Lake Challenge  
+> Cross the four kilometres in a kayak guided by a local guide. This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.
 > - Duration: 5 hours approx.
 > - Price: $50 USD
 > - Minimum: 2 pax
 >
-> Sit Back & Relax
-> - Description: Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
+> *Option 2*  
+> Sit Back & Relax  
+> Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
+> - Duration: 5 hours approx.
 > - Price: 3 hours approx.
 > - Minimum: 4 pax
 
@@ -64,34 +75,39 @@ Structure the content above using [paragraph elements](https://developer.mozilla
 You can follow the structure below:
 
 ```html
+<!-- lake description -->
 <h1>Welcome to Laguna Brava Ecotourism</h1>
 <p>
-    <!-- lake description -->
+    ...
 </p>
 ```
 
 ```html
+<!-- company description -->
 <h2>Who are we?</h2>
 <p>
-    <!-- company description -->
+    ...
 </p>
 ```
 
 ```html
+<!-- guided visits description -->
 <h2>What do we offer?</h2>
 <p>
-    <!-- guided visits description -->
+    ...
 </p>
 ```
 
 ```html
+<!-- Option 1 -->
+<h3>The Lake Challenge</h3>
 <p>
-    <h3>The Lake Challenge</h3>
-    <!-- option 1 description -->
+    ...
 </p>
+<!-- Option 2 -->
+<h3>Sit Back & Relax</h3>
 <p>
-    <h3>Sit Back & Relax</h3>
-    <!-- option 2 description -->
+    ...
 </p>
 ```
 
@@ -112,23 +128,26 @@ Each guided visit option contains details organized as a list (e.g., price and m
 
 ```html
 <h3>The Lake Challenge</h3>
-<ul>
-    <!-- option 1 features -->
-    <li><b>Duration: </b>5 hours approx.</li>
-    <li><b>Price: </b>$50 USD</li>
-    <li><b>Minimum: </b>2 pax</li>
-</ul>            
+<p>
+...
+    <ul>
+        <li>Duration: 5 hours approx.</li>
+        <li>Price: $50 USD</li>
+        <li>Minimum: 2 pax</li>
+    </ul>
+</p>            
 ```
 
 ```html
 <h3>Sit Back & Relax</h3>
-<ul>
-    <!-- option 2 features -->
-    ...
-    <li><b>Duration: </b>3 hours approx.</li>
-    <li><b>Price: </b>$40 USD</li>
-    <li><b>Minimum: </b>4 pax</li>
-</ul>
+<p>
+...
+    <ul>
+        <li>Duration: 3 hours approx.</li>
+        <li>Price: $40 USD</li>
+        <li>Minimum: 4 pax</li>
+    </ul>
+</p>
 ```
 
 ## Task 6: Adding images
@@ -138,22 +157,20 @@ Place the image before the level 1 heading created in task 2.
 
 ```html
 <img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500">
-<h1>Welcome to Laguna Brava Ecotourism</h1>
+<h1>...</h1>
 ```
 
  Then, look at the pictures in the img/ folder and add an image in each option of the guided visit. Place each image right below the sub-heading in each option (before the description text).
 
  ```html
+ <h3>The Lake Challenge</h3>
  <p>
-    <h3>The Lake Challenge</h3>
-    <img src="img/kayak.jpg" width="450" height="350">
-    <!-- option 1 description -->
+   <img src="img/kayak.jpg" width="450" height="350">
     ...            
 </p>
+<h3>Sit Back & Relax</h3>
 <p>
-    <h3>Sit Back & Relax</h3>
     <img src="img/boat.jpg" width="450" height="350">
-   <!-- option 2 description -->
     ...            
 </p>
 ```
@@ -221,7 +238,10 @@ What content would you consider to structure as articles? The guided visit optio
 
 ```html
 <article>
+    <h3>...</h3>
+    <img ...>   
     ...
+    <ul>...</ul>
 </article>
 ```
 
@@ -255,20 +275,13 @@ And,
 ```
 
 ## Task 10: Adding on-page SEO
- On-page SEO techiniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
-- Laguna Brava
-- Ecotourism
-- Nature
-- Adventure
 
 Check your content against the following recommendations to improve SEO:
-1. Use \<title\> with descriptive text
-2. The name of the file is part of the URL. Since we are working on a single-page website, this recommendation does not apply.
-3. Include keywords in your headings elements
-4. Repeat keywords in the web page text
-5. Use keywords in the text that creates links between pages. Again, since we are working on a single-page website, this recommendation does not apply.
-6. Use the alt attribute of image elements
-7. Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description:
+1. Use \<title\> with descriptive text (i.e., text contains at least one keyword)
+2. Include keywords in your headings elements
+3. Repeat keywords in the web page text
+4. Use the alt attribute of image elements
+5. Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description:
 
 ```html
 <meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
