@@ -8,6 +8,8 @@ We will use Bootstrap for two reasons:
 
 In this tutorial, you will find several links to [Bootstrap official documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/) in each task. This tutorial's main purpose is to familiarize yourself with the Bootstrap documentation and apply Bootstrap main CSS classes to style your website.
 
+Before proceeding, download the version of the [website](https://github.com/josecarlosgt/Web-Design-and-Development/tree/tutorial-2-designing-and-structuring-content) created in the previous tutorial containing the structure and images. In this tutorial, we will apply Bootstrap styling rules to the index.html file.
+
 ## Task 1: Installing bootstrap
 Reference: [Bootstrap Docs > Introduction](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
