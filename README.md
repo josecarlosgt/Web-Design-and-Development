@@ -25,8 +25,9 @@ Put it all together and your webpage should look like this:
 <!doctype html>
 <html lang="en">
     <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
+       
+    <!-- Responsive metatag -->    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
