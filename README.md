@@ -370,4 +370,39 @@ Final result:
 Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
 
-The [index.html](./index.html) file contains the final HTML document. The [index-full-height-header.html](./index-full-height-header.html) file contains another version that uses plain CSS rules to implement a full-height image header.
+## Task 8: Making the header image full-height (EXTRA)
+
+We could attempt to increase the appealing of our website by making the header image to fill the full height of the screen. These images are called *hero* or banner images, and they are commonly used together with the main headline to communicate the primary message of the webpage quickly.
+
+Adding a full-height image requires additional CSS rules that we can add internally to the webpage:
+
+```html
+<style>
+    /*
+        Full page image: https://www.w3schools.com/howto/howto_css_full_page.asp
+        Text on Images: https://css-tricks.com/design-considerations-text-images/
+        Text shadow property: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+        CSS min-height Property: https://www.w3schools.com/cssref/pr_dim_min-height.asp 
+    */
+    header {
+        background: #FFFFFF url('img/panoramic-laguna-brava-2.jpg') no-repeat center;
+        background-size: cover;		
+        height: 100vh;	
+        min-height: 300px;
+    }
+    header div {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px #000000;
+    }
+</style>
+```
+
+Notes:
+- The [index.html](./index.html) file contains the final HTML document.
+- The [index-fh-header.html](./index-fh-header.html) file contains another version that uses additional CSS rules to implement a full-height image header.
+- Note that the additional CSS rules added in the *index-fh-header.html* version were moved to an external CSS file. 
