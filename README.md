@@ -53,12 +53,14 @@ When you start using Bootstrap out of the box, it applies a reboot of the defaul
 
 Bootstrap also provides several features for styling text content that allow you to create customized headings, paragraphs, lists, and more.
 
-The feature [display headings](https://getbootstrap.com/docs/5.0/content/typography/#display-headings) allows you to display your headings in a larger, slightly more prominent style:
+The feature [display headings](https://getbootstrap.com/docs/5.0/content/typography/#display-headings) allows you to display your headings in a larger, slightly more prominent style.
+
+Add "display-2" to h1, "display-5" to h2, and "display-6" to h3 elements:
 
 ```html
-<h1 class="display-2">Welcome to Laguna Brava Ecotourism</h1>
-<h2 class="display-5">Who are we?</h2>
-<h3 class="display-6">The Lake Challenge</h3>
+<h1 class="display-2">...</h1>
+<h2 class="display-5">...</h2>
+<h3 class="display-6">...</h3>
 ```
 > Note the display headings classes use a numbering independent of the HTML heading elements. The display headings classes can be used with any HTML element.
 
@@ -73,23 +75,24 @@ The feature [lead](https://getbootstrap.com/docs/5.0/content/typography/#lead) a
 Use the [unstyled lists](https://getbootstrap.com/docs/5.0/content/typography/#lists) feature to remove the decoration and margin of list items:
 ```html
 <ul class="list-unstyled">
-    <li><b>Duration: </b>5 hours approx.</li>
-    <li><b>Price: </b>$50 USD</li>
-    <li><b>Minimum: </b>2 pax</li>
+    <li>Duration: 5 hours approx.</li>
+    <li>Price: $50 USD</li>
+    <li>Minimum: 2 pax</li>
 </ul>
 ```
 
 ### Images: [Bootstrap Docs > Content > Images](https://getbootstrap.com/docs/5.0/content/images/)
 
-Images in Bootstrap are made responsive with *.img-fluid* class. 
+Images in Bootstrap are made responsive with the *.img-fluid* class. Add this class to the three images in the website:
+
+```html    
+<img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image">
+...
+```
 
 Notes:
 - Adding responsive behavior usually involves adjusting the [max-width](https://www.w3schools.com/cssref/pr_dim_max-width.asp) CSS property of HTML elements. This property defines the maximum width of an element's content and it prevents the element from becoming larger than the value specified by max-width.
 - img-fluid maintains a 100% max-width regardless of the size of the screen, so images never become larger than their parent elements (containers). As a result, images are resized to fit the screen. 
-
-```html    
-<img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image">
-```
 
 ## Task 3: Leveraging class utilities
 Bootstrap provides several utility classes for styling content. Many of these classes follow conventions on how to refer to the sides of HTML elements.
@@ -106,9 +109,9 @@ Bootstrap provides common text utilities to control weight, alignment, and more.
 Using [font weight](https://getbootstrap.com/docs/5.0/utilities/text/#font-weight-and-italics) classes, control the style of the labels on the guided visits options:
 
 ```html
-<span class="fw-bold">Duration: </span>5 hours approx.</li>
-<span class="fw-bold">Price: </span>$50 USD</li>
-<span class="fw-bold">Minimum: </span>2 pax</li>
+<span class="fw-bold">Duration: </span>...</li>
+<span class="fw-bold">Price: </span>...</li>
+<span class="fw-bold">Minimum: </span>...</li>
 ```
 
 Using [text decoration](https://getbootstrap.com/docs/5.0/utilities/text/#text-decoration) classes, adjust the style of the safety statement on the introductory text to the guided visits:
@@ -120,8 +123,8 @@ Using [text decoration](https://getbootstrap.com/docs/5.0/utilities/text/#text-d
 Using [text alignment](https://getbootstrap.com/docs/5.0/utilities/text/#text-alignment) classes, center the main heading and the headings in guided visits sections:
 
 ```html
-<h1 class="display-2 text-center">Welcome to Laguna Brava Ecotourism</h1>
-<h3 class="display-6 text-center">The Lake Challenge</h3>
+<h1 class="display-2 text-center">...</h1>
+<h3 class="display-6 text-center">...</h3>
 ```
 Notes:
 - Text alignment classes also include *text-start* for aligning text to the left and *text-end* for aligning text to the right. 
@@ -160,13 +163,15 @@ Bootstrap enables more comprehensive customization for working with colors. For 
 
 Spacing utilities provide a wide range of shorthand classes to specify margin and padding. These shorthand classes follow the notation {property}{sides}-{size} to set specific values of margin and padding.
 
-Add a gap between the sections following the lead paragraph by adding a vertical margin. Since we want to add a margin to the entire section (title and paragraph), we wrap all the elements in the section in a *div* element that acts as a container. Then, we apply the spacing shorthand class:
+Add a gap between the sections following the lead paragraph by adding a vertical margin. Since we want to add a margin to the entire section (title and paragraph), we wrap all the elements in the section in a *div* element that acts as a container. Then, we apply the spacing shorthand class.
+
+Add the *div* container to the "Who are we?" and "What do we offer?" sections:
 
 ```html
 <div class="my-4">
-    <h2 class="display-5">Who are we?</h2>
+    <h2 class="display-5">...</h2>
     <p>
-        We provide guided visits to Laguna Brava and welcome travellers from all regions of the world looking for adventure and nature. We believe that visitors and responsible tourism practices are essential to support the development of our local community.
+        ...
     </p>
 </div>
 ```
@@ -183,7 +188,7 @@ Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/
 Features:
 - Containers are the most basic layout element in Bootstrap and are required to use the grid system, which you will use in the next task to arrange your content in rows and columns.
 - Containers allow you to wrap your page content and then apply padding around the content.
-- They can also center your content on the page in a central column
+- They can also center your content on the page in a central column.
 
 Use the default container which sets a fixed width for screen sizes.
 
@@ -214,7 +219,7 @@ Experiment with different container classes to appreciate the difference. What h
 ## Task 5: Adjusting the grid layout
 Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
 
-Bootstrap's grid layout system allows you to arrange content in columns and rows following a fully responsive design. The grid layout uses a twelve-column system which means the width of a single column can vary from one to twelve.
+[Bootstrap's grid layout system](https://getbootstrap.com/docs/5.0/layout/grid/) allows you to arrange content in columns and rows following a fully responsive design. The grid layout uses a twelve-column system which means the width of a single column can vary from one to twelve.
 
 This system allows you, for example, to arrange your content three columns of size four each:
 
@@ -234,9 +239,59 @@ This system allows you, for example, to arrange your content three columns of si
 </div>
 ```
 
+Furthermore, you can add breakpoints to create a grid system that starts out stacked and becomes horizontal at the small breakpoint (sm):
+
+```html
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            Column
+        </div>
+        <div class="col-sm">
+            Column
+        </div>
+        <div class="col-sm">
+            Column
+        </div>
+    </div>
+</div>
+```
+
+You can also adjust the size of the columns when they become horizontal:
+```html
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            Column
+        </div>
+        <div class="col-sm-2">
+            Column
+        </div>
+        <div class="col-sm-2">
+            Column
+        </div>
+    </div>
+</div>
+```
+
 > When arranging your content in columns using Bootstrap grid system, you need to use a combination of *col* classes wrapped inside a *row* class container.
 
-You can also use breakpoints to customize the responsive behavior of the grid. Use the grid system and *lg* breakpoint to display the content of your website as two columns for large screens (lg breakpoint) and as one column otherwise:
+Use the *col-lg* class to display the content of the website as two columns for large screens (*lg* breakpoint) and as one column for smaller screens:
+
+```html
+<div class="row">
+    <article class="col-lg">
+        ...
+    </article>
+    <article class="col-lg">
+        ...
+    </article>
+</div>
+```
+
+Another approach to defining responsive behavior is explicitly specifying the number of columns to display in each breakpoint. Use the responsive *.row-cols-* classes to quickly set the number of columns that best render your content. 
+
+Using *.row-cols-* and the *lg* breakpoint, we can achieve the same behaviour that displays the content of the website as two columns for large screens and as one column for smaller screens:
 
 ```html
 <div class="row row-cols-1 row-cols-lg-2">
@@ -255,13 +310,30 @@ Adjust the spacing between each \<article\> to add gaps both horiontally and ver
 <article class="col px-5 mb-4">
 ```
 
-Final result:
+Also, adjust the spacing between the image and the text within each guided visit by enclosing the text and features list inside a *div* container with top margin:
 ```html
-<div class="row row-cols-1 row-cols-lg-2">
-    <article class="col px-5 mb-4">
+<div class="mt-2">
+    ...
+    <ul class="list-unstyled">
         ...
+    </ul>
+</div>
+```
+
+Result:
+```html
+<div class="row">
+    <article class="col-lg px-5 mb-4">
+        <h3 ...>...</h3>
+        <img ...>
+        <div class="mt-2">
+            ...
+            <ul class="list-unstyled">
+                ...
+            </ul>
+        </div>        
     </article>
-    <article class="col px-5 mb-4">
+    <article class="col-lg px-5 mb-4">
         ...
     </article>
 </div>
