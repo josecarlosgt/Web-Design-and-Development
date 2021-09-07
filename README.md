@@ -403,6 +403,6 @@ Adding a full-height image requires additional CSS rules that we can add interna
 ```
 
 Notes:
-- The [index.html](./index.html) file contains the final HTML document.
-- The [index-fh-header.html](./index-fh-header.html) file contains another version that uses additional CSS rules to implement a full-height image header.
+- The [index.html](./index.html) file contains the final HTML document. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/).
+- The [index-fh-header.html](./index-fh-header.html) file contains another version that uses additional CSS rules to implement a full-height image header. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/index-fh-header.html).
 - Note that the additional CSS rules added in the *index-fh-header.html* version were moved to an external CSS file. 
