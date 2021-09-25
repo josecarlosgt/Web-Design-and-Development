@@ -1,3 +1,4 @@
 *.gslides
 *.code-workspace
 __pycache__*
+*SOLUTION*

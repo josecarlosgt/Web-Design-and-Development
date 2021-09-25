@@ -301,6 +301,15 @@ for person in people:
     print(f"{person} => {people[person]}")
 ```
 
+We can also write while statements. Display ten numbers from 1 to 10:
+
+```python
+number = 1
+while number <= 10:
+    print(number)
+    number += 1
+```
+
 ## 8. Functions as objects
 
 Python follows the functional programming paradigm, in which functions can be treated like any other object. Thus, we can treat functions as the input and output of other functions!
