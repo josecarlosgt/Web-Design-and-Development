@@ -14,4 +14,21 @@ from random import randint
 random = randint(1, 20)
 print(random)
 
-# YOUR SOLUTION HERE 
+# YOUR SOLUTION HERE
+
+# Recommended steps:
+
+# Create a boolean variable named guessing with value True
+
+# Create a while statement that runs while guessing is True
+  
+    # Ask a number to the user using the function input() and assign the value to a variable called number
+
+    # Convert the number variable into an integer using the function int()
+    
+    # Write a conditional statement that checks if the user number is greater or less than the random number
+        # If the user number is greater, display the message "Number is too high!"
+        # If the user number is less, display the message "Number is too low!"
+        # If both numbers are equal:
+             # Display the message "You won!"
+             # Assign False to the guessing variable
