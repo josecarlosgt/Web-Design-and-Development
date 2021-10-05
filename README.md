@@ -1,6 +1,6 @@
 # Tutorial #10: 
 
-- [Handling events](https://jsfiddle.net/joseortiz/Lzj2etaf/)
+- [Handling events](https://jsfiddle.net/joseortiz/Lzj2etaf/) in JavaScript
 
 ## Task 1: Carousel
 https://getbootstrap.com/docs/5.0/components/carousel/
