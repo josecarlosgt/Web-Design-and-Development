@@ -1,8 +1,8 @@
 # Tutorial #9: Working with the DOM
 The following list contains links to examples and exercises in JavaScript. Each link also provides a reference to suggested solutions.
 
-- [Hello, World! with Dynamic HTML](https://jsfiddle.net/joseortiz/485qzfxr/)
-- [Updating a list of items dynamically](https://jsfiddle.net/joseortiz/57z6fnxt/)
+- [Hello, World! with dynamic HTML and more](https://jsfiddle.net/joseortiz/485qzfxr/)
+- [One more example on updating a list of items dynamically](https://jsfiddle.net/joseortiz/57z6fnxt/)
 
 Optional:
 
