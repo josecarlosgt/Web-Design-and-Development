@@ -1,5 +1,7 @@
 # Tutorial #10: 
 
+- [Handling events](https://jsfiddle.net/joseortiz/Lzj2etaf/)
+
 ## Task 1: Carousel
 https://getbootstrap.com/docs/5.0/components/carousel/
 
