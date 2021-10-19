@@ -1,6 +1,6 @@
 # Tutorial: Content Panels with Bootstrap 
 
-In this lab, you will see several examples that give you practical insight into using Bootstrap components to include information in your website using content panels.
+In this tutorial, you will see several examples that give you practical insight into using Bootstrap components to include information in your website using content panels.
 
 Bootstrap components covered in this lab:
 - Slider
@@ -8,6 +8,8 @@ Bootstrap components covered in this lab:
 - Collapsible content
 - Accordion
 - Modal window
+
+In this tutorial, we will use [New Age](https://startbootstrap.com/previews/new-age) template from the [Start Bootstrap](https://startbootstrap.com/) website. Download the template from [here](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-9-content-panels/new-age-template.zip).
 
 ## Part I: Creative Content Creation
 
@@ -24,8 +26,6 @@ Then, for each movie, create the following content:
 Then, proceed by completing the tasks in the following part.
 
 ## Part II: Webpage Creation with Content Panels
-
-In this lab, we will use [New Age](https://startbootstrap.com/previews/new-age) template from the [Start Bootstrap](https://startbootstrap.com/) website. Download the template from [here]().
 
 Before creating the content panels, let's create the page title and headings.
 
