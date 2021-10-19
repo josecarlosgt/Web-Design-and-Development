@@ -1,175 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
-        <title>Laguna Brava Ecotourism</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Illusive Reality</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    </head>
-    <body>        
-        <header>
-            <!-- Carousel 
-                https://getbootstrap.com/docs/5.0/components/carousel/
-            -->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/cenote-azul.jpeg" class="d-block img-fluid" alt="Image of cenote">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/panoramic-laguna.jpeg" class="d-block img-fluid" alt="Image of lake">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/cenote-verde.jpeg" class="d-block img-fluid" alt="Image of lake">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <h1 class="display-2 text-center">Welcome to Laguna Brava Ecotourism</h1>
-        </header>
-       
-        <main class="container">
-            <p class="lead">
-                Laguna Brava Ecotourism is an organization run by <em>local community members</em> based in Laguna Brava. Laguna Brava is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The lake beauty lies in the colours variety of its waters, which depends on the sun's position.
-            </p>
-
-            <!-- Dropdown
-                https://getbootstrap.com/docs/5.0/components/dropdowns/ 
-
-                Display property
-                https://getbootstrap.com/docs/4.0/utilities/display/
-            -->
-            <div class="dropdown my-4 d-lg-none">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Check out guided visits
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#lakeChallenge">The Lake Challenge</a></li>
-                    <li><a class="dropdown-item" href="#sitBackRelax">Sit Back & Relax</a></li>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="#page-top">Start</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#synopsis">Synopsis</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#reviews">Reviews</a></li>
                 </ul>
+                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal">
+                    <span class="d-flex align-items-center">
+                        <i class="bi-chat-text-fill me-2"></i>
+                        <span class="small">Send Feedback</span>
+                    </span>
+                </button>
             </div>
-
-            <!-- Accordion
-                https://getbootstrap.com/docs/5.0/components/accordion/
-            -->
-            <div class="accordion mb-5" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            <span class="display-5">Who are we?</span>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            We provide guided visits to Laguna Brava and welcome travellers from all regions of the world looking for adventure and nature. We believe that visitors and responsible tourism practices are essential to support the development of our local community.
-                        </div>
+        </div>
+    </nav>
+    <!-- Mashead header-->
+    <header class="masthead">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <!-- Mashead text and app badges-->
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-1 lh-1 mb-3">Is Freedom an Illusion?</h1>
+                        <p class="lead fw-normal text-muted mb-5">
+                            The matrix may be more than fiction. It may be a metaphor for a system that benefits from conformism.
+                        </p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <span class="display-5">What do we offer?</span>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            We offer two options for guided visits that allow you to enjoy Laguna Brava natural beauty. In both options, <strong class="text-decoration-underline fw-normal">we provide life vests and local guides who know the lake very well to take care of your safety.</strong>
+                <div class="col-lg-6">
+                    <!-- Slider -->
+                    <div id="carousel-films" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/matrix-1.jpeg" class="d-block w-100" alt="The Matrix film image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/matrix-2.png" class="d-block w-100"
+                                    alt="Matrix reloaded film image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/matrix-3.jpeg" class="d-block w-100"
+                                    alt="Matrix revolutions film image">
+                            </div>
                         </div>
+                        <!-- Slider controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-films"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-films"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button </div>
                     </div>
-                </div>               
+                </div>
             </div>
-
-            <div class="row">
-                <article class="col-lg px-5 mb-4">
-                    <h3 class="display-6 text-center" id="lakeChallenge">The Lake Challenge</h3>
-                    <img src="images/kayak.jpg" class="img-fluid rounded-pill" alt="The Lake Challenge kayak image">
-                    <div class=mt-2>
-                        Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
-
-                        <!-- Collapse 
-                            https://getbootstrap.com/docs/5.0/components/collapse/
-                        -->
-                        <p class="mt-2">
-                            <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                More info
-                            </button>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                <ul class="list-unstyled">
-                                    <li><span class="fw-bold">Duration: </span>5 hours approx.</li>
-                                    <li><span class="fw-bold">Price: </span>$50 USD</li>
-                                    <li><span class="fw-bold">Minimum: </span>2 pax</li>
-                                </ul>
+    </header>
+    <!-- Synopsis -->
+    <section id="synopsis" class="pt-5 pb-0 my-0">
+        <div class="container">
+            <div class="text-center">
+                <h2>Synopsis</h2>
+            </div>
+            <div class="row my-4 g-0 justify-content-center">
+                <article class="col-lg card border-0">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">The Matrix</h4>
+                        <p class="card-text">
+                            <p class="mb-2">
+                                Neo believes that Morpheus, an elusive figure considered to be the most dangerous man alive, can answer his question — What is the Matrix?
+                            </p>
+                            <div class="mb-2">
+                                <button class="btn btn-primary btn-sm py-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-synopsis-1" aria-expanded="false"
+                                    aria-controls="collapse-synopsis-1">
+                                    Read more
+                                </button>
                             </div>
-                        </div>            
-                    </div>                        
+                            <p class="collapse" id="collapse-synopsis-1">
+                                Neo is contacted by Trinity, a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.
+                            </p>
+                        </p>
+                    </div>
                 </article>
-
-                <article class="col-lg px-5 mb-4">
-                    <h3 class="display-6 text-center" id="sitBackRelax">Sit Back & Relax</h3>
-                    <img src="images/boat.jpg" class="img-fluid rounded-pill" alt="Sit Back & Relax boat image">
-                    <div class=mt-2>
-                        Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
-
-                        <p class="mt-2">
-                            <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
-                                aria-expanded="false" aria-controls="collapseExample2">
-                                More info
-                            </button>
-                        </p>
-                        <div class="collapse" id="collapseExample2">
-                            <div class="card card-body">
-                                <ul class="list-unstyled">
-                                    <li><span class="fw-bold">Duration: </span>4 hours approx.</li>
-                                    <li><span class="fw-bold">Price: </span>$40 USD</li>
-                                    <li><span class="fw-bold">Minimum: </span>4 pax</li>
-                                </ul>
+                <article class="col-lg card border-0">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">The Matrix Reloaded</h4>
+                        <p class="card-text">
+                            <p class="mb-2">
+                                Freedom fighters Neo, Trinity and Morpheus continue to lead the revolt against the Machine Army, unleashing their arsenal of extraordinary skills and weaponry.</p>
+                            <div class="mb-2">
+                                <button class="btn btn-primary btn-sm py-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-synopsis-2" aria-expanded="false"
+                                    aria-controls="collapse-synopsis-2">
+                                    Read more
+                                </button>
                             </div>
-                        </div>    
-                    </div>                        
+                            <p class="collapse" id="collapse-synopsis-2">
+                                In their quest to save the human race from extinction, they gain greater insight into
+                                the construct of The Matrix and Neo's pivotal role in the fate of mankind.
+                            </p>
+                        </p>
+                    </div>
+                </article>
+                <article class="col-lg card border-0">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">The Matrix Revolutions</h4>
+                        <p class="card-text">
+                            <p class="mb-2">
+                                In a dystopia overrun by robots, Neo, mankind's greatest hope, is trapped in a limbo
+                                world.
+                            </p>
+                            <div class="mb-2">
+                                <button class="btn btn-primary btn-sm py-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-synopsis-3" aria-expanded="false"
+                                    aria-controls="collapse-synopsis-3">
+                                    Read more
+                                </button>
+                            </div>
+                            <p class="collapse" id="collapse-synopsis-3">
+                                Meanwhile, the majority of the planet's population remains in a state of suspended virtual reality. The few humans who are cognizant of the grim realities of the world desperately try to hold off their mechanical enemies long enough for Neo to escape and
+                                save the day, but things turn disastrous when all-powerful computer program Agent Smith arrives in the flesh.
+                            </p>
+                        </p>
+                    </div>
                 </article>
             </div>
-            <div class="row">
-                <form class="col">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section id="reviews" class="bg-light pt-5 my-0">
+        <div class="container">
+            <div class="text-center">
+                <h2>Reviews</h2>
+            </div>
+            <div class="row my-2 g-5 justify-content-around align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/img/digital-rain.jpeg" class="img-fluid" alt="Matrix revolutions film image">
+                </div>
+                <div class="col-lg-6">
+                    <!-- accordion -->
+                    <div class="accordion" id="reviews-content">
+                        <article class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#review-1" aria-expanded="true" aria-controls="review-1">
+                                    The Matrix - The emergence of the One
+                                </button>
+                            </h2>
+                            <div id="review-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                                data-bs-parent="#reviews-content">
+                                <div class="accordion-body">
+                                    <p>
+                                        Nothing is what it seems. Reality is just what our senses tell it is.  
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#review-2" aria-expanded="false" aria-controls="review-2">
+                                    The Matrix Reloaded - An "integral" anomaly?
+                                </button>
+                            </h2>
+                            <div id="review-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                                data-bs-parent="#reviews-content">
+                                <div class="accordion-body">
+                                    <p>
+                                        One individual is enough to trigger a wave of questioning against the system. 
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#review-3" aria-expanded="false" aria-controls="review-1">
+                                    The Matrix Reloaded - Until the resurection
+                                </button>
+                            </h2>
+                            <div id="review-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                                data-bs-parent="#reviews-content">
+                                <div class="accordion-body">
+                                    <p>
+                                        The notion of death vanishes as our memories can be saved as files in a computer. 
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail2">Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Comment</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </form>
-            </div>                
-        </main>            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-black text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div class="mb-2">&copy; Your Website 2021. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Feedback Modal-->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 p-4">
+                    <form>
+                        <div class="form-group mb-4">
+                            <label for="email" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="comment" class="form-label">Comment:</label>
+                            <textarea class="form-control" id="comment" rows="3"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-secondary rounded-pill btn-lg disabled w-100" id="submitButton" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 
-        <!-- Bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
 </html>
