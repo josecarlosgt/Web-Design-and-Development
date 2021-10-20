@@ -13,9 +13,9 @@ In this tutorial, we will use [New Age](https://startbootstrap.com/previews/new-
 
 ## Part I: Creative Content Creation
 
-Before starting with the task below, think of your favorite film. Then, think of two more movies related to your favorite choice. These movies will serve as the content of your webpage. 
+Before starting with the tasks below, think of three related films that you like. These movies will serve as the content of your webpage. 
 
-The topic of your website is something that all of your films share, such as star an actor you like, belong to the same genre, or portray a social issue that you care about. Although each film is different, all of them should relate to your webpage's topic, making your webpage distinct while maintaining the focus of your webpage on a single idea. Selecting and elaborating on a topic makes it easier to concretize a message in our web pages and create content, such as images and text, to communicate the message. 
+The topic of your website is something that all of your films share, such as star an actor you like, belong to the same genre, or portray a social issue that you care about. Although each film is different, all of them should relate to your webpage's topic, making your webpage distinct while maintaining the focus of your webpage on a single idea. Selecting and elaborating on a topic makes it easier to concretize a message in our web pages and create content, such as images and text, to communicate the message.
 
 Then, for each movie, create the following content:
 - The title of the movie
