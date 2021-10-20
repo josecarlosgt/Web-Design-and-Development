@@ -5,7 +5,7 @@ In this tutorial, you will see several examples that give you practical insight 
 Bootstrap components covered in this lab:
 - Slider
 - Cards
-- Collapsible content
+- Collapse
 - Accordion
 - Modal window
 
