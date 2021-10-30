@@ -1,4 +1,4 @@
-# Tutorial #12: Events
+# Tutorial #12: Handling Events
 The following list contains links to examples and exercises in JavaScript. Each link also provides a reference to suggested solutions.
 
 - [Hello, World! with events in JavaScript](https://jsfiddle.net/joseortiz/Lzj2etaf/)
