@@ -1,19 +1,21 @@
 # Tutorial: Content Panels with Bootstrap 
 
-In this lab, you will see several examples that give you practical insight into using Bootstrap components to include information in your website using content panels.
+In this tutorial, you will see several examples that give you practical insight into using Bootstrap components to include information in your website using content panels.
 
 Bootstrap components covered in this lab:
 - Slider
 - Cards
-- Collapsible content
+- Collapse
 - Accordion
 - Modal window
 
+In this tutorial, we will use [New Age](https://startbootstrap.com/previews/new-age) template from the [Start Bootstrap](https://startbootstrap.com/) website. Download the template from [here](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-9-content-panels/new-age-template.zip).
+
 ## Part I: Creative Content Creation
 
-Before starting with the task below, think of your favorite film. Then, think of two more movies related to your favorite choice. These movies will serve as the content of your webpage. 
+Before starting with the tasks below, think of three related films that you like. These movies will serve as the content of your webpage. 
 
-The topic of your website is something that all of your films share, such as star an actor you like, belong to the same genre, or portray a social issue that you care about. Although each film is different, all of them should relate to your webpage's topic, making your webpage distinct while maintaining the focus of your webpage on a single idea. Selecting and elaborating on a topic makes it easier to concretize a message in our web pages and create content, such as images and text, to communicate the message. 
+The topic of your website is something that all of your films share, such as star an actor you like, belong to the same genre, or portray a social issue that you care about. Although each film is different, all of them should relate to your webpage's topic, making your webpage distinct while maintaining the focus of your webpage on a single idea. Selecting and elaborating on a topic makes it easier to concretize a message in our web pages and create content, such as images and text, to communicate the message.
 
 Then, for each movie, create the following content:
 - The title of the movie
@@ -24,8 +26,6 @@ Then, for each movie, create the following content:
 Then, proceed by completing the tasks in the following part.
 
 ## Part II: Webpage Creation with Content Panels
-
-In this lab, we will use [New Age](https://startbootstrap.com/previews/new-age) template from the [Start Bootstrap](https://startbootstrap.com/) website. Download the template from [here]().
 
 Before creating the content panels, let's create the page title and headings.
 
