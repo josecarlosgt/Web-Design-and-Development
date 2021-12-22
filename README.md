@@ -1,4 +1,4 @@
-# Tutorial #1 - Exercise: Creating an HTML document
+# Tutorial: Creating an HTML document
 
 In this exercise, you will create an HTML document from scratch with the basic structure.
 
