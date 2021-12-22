@@ -12,7 +12,7 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 
 > You should not attempt to memorize each available tag that exists in HTML. You should know how the basic HTML tags work and where to look for new HTML elements and functionality when needed.
 
- On-page SEO techiniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
+ On-page Search Engine Optimization (SEO) techiniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
 - Laguna Brava
 - Ecotourism
 - Nature
