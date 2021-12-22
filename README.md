@@ -1,4 +1,4 @@
-# Tutorial: JavaScript Basics
+# Examples: JavaScript Basics
 
 The following list contains links to examples and exercises in JavaScript. Each link also provides a reference to suggested solutions.
 - [Expressions and operators](https://jsfiddle.net/joseortiz/83k5cdp4/)
