@@ -1,4 +1,4 @@
-# Tutorial #2 - Exercise: Structuring the content of your website
+# Tutorial: Structuring the content of your website
 
 This document describes the steps for structuring information in a HTML document. 
 
