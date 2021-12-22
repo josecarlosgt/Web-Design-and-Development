@@ -1,4 +1,4 @@
-# Tutorial #4: Styling the content of your website
+# Tutorial: Styling the content of your website
 After structuring the content of your website using HTML, you are ready to start styling it using CSS. Implementing CSS rules to make your webpage look like you want requires time, and you could easily spend an entire semester learning CSS techniques for controlling the presentation of a website.
 
 Thus, we will use a CSS framework called [Bootstrap](https://getbootstrap.com/), one of the most popular frameworks for styling websites. 
