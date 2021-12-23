@@ -1,4 +1,4 @@
-# Tutorial #10: Working with the DOM
+# Examples: Working with the DOM
 The following list contains links to examples and exercises in JavaScript. Each link also provides a reference to suggested solutions.
 
 - [Hello, World! with dynamic HTML and more](https://jsfiddle.net/joseortiz/485qzfxr/)
