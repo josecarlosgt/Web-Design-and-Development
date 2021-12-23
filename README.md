@@ -1,4 +1,4 @@
-# Tutorial #11: Python Basics
+# Examples: Python Basics
 
 This tutorial covers essential programming skills in Python:
 
