@@ -21,19 +21,20 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 We will use the following text obtained from the content design process. Note the text contains the keywords highlighted in bold.
 
 > *Lake description*  
-> **Laguna Brava** **Ecotourism** is an organization run by local community members based in **Laguna Brava**. **Laguna Brava** is a karstic lake of incomparable beauty located in western Guatemala. **Laguna Brava** is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme **adventure** and intimate contact with **nature**. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. **Laguna Brava** is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of **Laguna Brava** Laguna are so calm that they instantly awaken a deep feeling of peace.
+> **Laguna Brava** is a karstic lake of incomparable beauty located in western Guatemala. **Laguna Brava** is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme **adventure** and intimate contact with **nature**. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. **Laguna Brava** is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of **Laguna Brava** Laguna are so calm that they instantly awaken a deep feeling of peace.
 >
-> *Company description*  
-> We provide guided visits to **Laguna Brava** and welcome travellers from all regions of the world. We believe that visitors and responsible tourism practices are essential to support the development of our local community.
+> *Description of the local communities*  
+> Members of the communities settled around **Laguna Brava** welcome travelers from all regions of the world looking for **adventure** and **nature**. They believe that visitors and responsible **ecotourism** practices are essential to support the development of their communities.
+
 >
-> *Guided visits description*  
-> We offer two options for guided visits that allow you to enjoy **Laguna Brava** beauty. In both options, we provide life vests and local guides who know the lake very well to take care of your safety.
+> *Description of activities*  
+> The communities offer two options for guided visits that allow visitors to enjoy **Laguna Brava's** natural beauty. In both options, they provide life vests and local guides who know the lake very well to take care of your safety.
 >
 > *Guided visits options*
 >
 > *Option 1*  
 > The Lake Challenge  
-> Cross the four kilometres in a kayak guided by a local guide. This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.
+> Cross the four kilometres in a kayak guided by a local guide. This guided visit is physically demanding, and it is recommended for only those in excellent physical condition.
 > - Duration: 5 hours approx.
 > - Price: $50 USD
 > - Minimum: 2 pax
@@ -83,16 +84,16 @@ You can follow the structure below:
 ```
 
 ```html
-<!-- company description -->
-<h2>Who are we?</h2>
+<!-- business/organization description -->
+<h2>The Local Communities</h2>
 <p>
     ...
 </p>
 ```
 
 ```html
-<!-- guided visits description -->
-<h2>What do we offer?</h2>
+<!-- activities description -->
+<h2>Activities</h2>
 <p>
     ...
 </p>
