@@ -23,7 +23,7 @@ When creating a webpage from scratch, the first step is to create the basic tags
 </html>
 ```
 
-To start creating your webpage, write down the code above in a text file using a source-code editor (e.g., VS Code). Save the text file with the name "index.html". As a convention, any website's home page or main page is located in a file called index.html.
+To start creating your webpage, write down the code above in a text file using a source-code editor (e.g., VS Code, Notepad ++). Save the text file with the name "index.html". As a convention, any website's home page or main page is located in a file called index.html.
 
 Now, try to open it using a web browser by clicking on the index.html file. When opening the text file in the browser, you should get a blank page. Alternatively, you can use the local development server provided by the Live Server extension of VS Code.
 
