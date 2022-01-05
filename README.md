@@ -370,7 +370,7 @@ Final result:
 Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
 
-## Task 8: Making the header image full-height (EXTRA)
+## Task 8: Making the header image full-height
 
 We could attempt to increase the appealing of our website by making the header image to fill the full height of the screen. These images are called *hero* or banner images, and they are commonly used together with the main headline to communicate the primary message of the webpage quickly.
 
