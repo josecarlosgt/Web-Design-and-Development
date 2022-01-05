@@ -182,7 +182,38 @@ Note that *my-4* follows the notation {property}{sides}-{size} where
 - {size} is *4*
 - Look at the documentation for learn about the different configuations
 
-## Task 4: Creating containers
+## Task 4: Creating buttons
+Reference: https://getbootstrap.com/docs/5.0/components/buttons/
+
+Bootstrap includes several predefined button styles. Add a "Book here" button in each guided visit using the *btn* class:
+
+```html
+<a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
+```
+> This button also specifies color and size.
+
+## Task 5: Adding icons
+Reference: https://icons.getbootstrap.com/
+
+Finally, try out Bootstrap Icons library for adding icons to your webpage. To use Bootstrap icons library, you need to add the corresponding CSS resource into the \<head\> tag:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+```
+
+Remember we adjusted the color of the warning statement in the first guided visit option? Add an exclamation icon to increase the attion of the viewer:
+
+```html
+<i class="bi bi-exclamation-triangle"></i>
+```
+>Icons are also a great way to make your content more accessible for people with color blindness.
+
+Final result:
+```html
+Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
+```
+
+## Task 6: Creating containers
 Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
 
 Features:
@@ -216,7 +247,7 @@ This means the *div* container will keep constant widths to fit your content in 
 
 Experiment with different container classes to appreciate the difference. What happens if you use the container-xxl class instead of the default container? Use the inspector tool to appreciate the difference.
 
-## Task 5: Adjusting the grid layout
+## Task 7: Adjusting the grid layout
 Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
 
 [Bootstrap's grid layout system](https://getbootstrap.com/docs/5.0/layout/grid/) allows you to arrange content in columns and rows following a fully responsive design. The grid layout uses a twelve-column system which means the width of a single column can vary from one to twelve.
@@ -337,37 +368,6 @@ Result:
         ...
     </article>
 </div>
-```
-
-## Task 6: Creating buttons
-Reference: https://getbootstrap.com/docs/5.0/components/buttons/
-
-Bootstrap includes several predefined button styles. Add a "Book here" button in each guided visit using the *btn* class:
-
-```html
-<a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
-```
-> This button also specifies color and size.
-
-## Task 7: Adding icons
-Reference: https://icons.getbootstrap.com/
-
-Finally, try out Bootstrap Icons library for adding icons to your webpage. To use Bootstrap icons library, you need to add the corresponding CSS resource into the \<head\> tag:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-```
-
-Remember we adjusted the color of the warning statement in the first guided visit option? Add an exclamation icon to increase the attion of the viewer:
-
-```html
-<i class="bi bi-exclamation-triangle"></i>
-```
->Icons are also a great way to make your content more accessible for people with color blindness.
-
-Final result:
-```html
-Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
 
 ## Task 8: Making the header image full-height
