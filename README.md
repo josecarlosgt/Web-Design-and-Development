@@ -55,12 +55,12 @@ The predefined size names are xx-small, x-small, small, medium, large, x-large, 
 
 An absolute size is a size that is fixed and independent of other CSS sizes. Absolute size units include:
 
-- cm - centimeters
-- mm - millimeters
-- -in - inches
-- px - pixels (1px = 1/96in)
-- pt - points (1pt = 1/72in)
-- pc - pica (1pc = 12pt)
+- cm: centimeters
+- mm: millimeters
+- in: inches
+- px: pixels (1px = 1/96in)
+- pt: points (1pt = 1/72in)
+- pc: pica (1pc = 12pt)
 
 A relative size is a size that is relative to another size. Some common relative size units include:
 
