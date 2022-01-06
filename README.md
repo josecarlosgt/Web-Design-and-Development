@@ -1,408 +1,336 @@
-# Tutorial: Styling the content of your website with Bootstrap
-After structuring the content of your website using HTML, you are ready to start styling it using CSS. Implementing CSS rules to make your webpage look like you want requires time, and you could easily spend an entire semester learning CSS techniques for controlling the presentation of a website.
+# Tutorial: Styling the content of your website
 
-Thus, we will use a CSS framework called [Bootstrap](https://getbootstrap.com/), one of the most popular frameworks for styling websites. 
-We will use Bootstrap for two reasons:
-1. Bootstrap makes it faster to style a webpage
-2. Bootstrap allows you to build responsive websites and applications
+CSS (Cascading Style Sheets) is a textual language for describing how a web page is styled for visual presentation.
 
-In this tutorial, you will find several links to [Bootstrap official documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/) in each task. This tutorial's main purpose is to familiarize yourself with the Bootstrap documentation and apply Bootstrap main CSS classes to style your website.
+This document explains the steps for styling content in a HTML document using CSS. Each task below provides links that explain the purpose CSS properties and techniques.
 
-Before proceeding, download the version of the [website](https://github.com/josecarlosgt/Web-Design-and-Development/tree/tutorial-2-designing-and-structuring-content) created in the previous tutorial containing the structure and images. In this tutorial, we will apply Bootstrap styling rules to the index.html file.
+Before starting with Task 1, rename the file *structure.html* to *index.html* and create an external CSS stylesheet with the name: *mystyel.css*. Include the external stylesheet in the index.html file:
 
-## Task 1: Installing bootstrap
-Reference: [Bootstrap Docs > Introduction](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-
-The easiest way to add Bootstrap to your website is using the content delivery network (CDN) servers recommended by Boostrap. More sophisticated ways of using Bootstrap require downloading the source files, which allows higher customization.
-
-We will use the CDN resources:
-- Include the CSS resource into the \<head\> element
-- Include the JavaScript resource right before the closing </body> tag
-- You also need to include a [responsive meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) which ensures proper rendering of your webpage on mobile devices. This is necessary because Bootstrap automatically optimizes your code for mobile devices.
-
-Put it all together and your webpage should look like this:
 ```html
-<!doctype html>
-<html lang="en">
-    <head>
+<head>
     ...
-       
-        <!-- Responsive metatag -->    
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+```
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+## Task 1: Styling the text
 
+### Font properties
+
+Many CSS properties control the font properties for displaying text. CSS font properties include:
+
+- font-family: specifies the font family, such as "Times New Roman" or serif.
+- font-size: changes the font size, such as 120%, small, or 12px.
+- font-weight: specifies the font weight, such as normal or bold.
+- font-style: changes the text style, such as normal, italic, or oblique.
+- font-variant: specifies the variant of the text, such as normal or small-caps.
+- font: is shorthand for setting several font properties at the same time. Ex: font: italic 12pt Georgia, serif;
+
+**[font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)**
+
+The font-family property contains a list of fonts specified as a family name or a generic family separated by commas.
+A family name is the name of a specific font, like "Times New Roman", "Arial", or "Georgia". Family names containing spaces must be wrapped in quotations marks, while family names without spaces do not.
+
+A generic family is a more general group of fonts, like serif, sans-serif, cursive, fantasy, or monospace. The web browser will use the first font listed that is available.
+
+> A good practice is to start the list with the intended font and end with a generic family. Ex: font-family: Arial, Helvetica, sans-serif;
+
+This [link](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#some_common_font_families) contains a list of common font famliies:
+
+Add the following CSS rule to give the text of your website a sharp look:
+
+```css
+body {
+    font-family: Arial, sans-serif;
+}
+```
+
+> Serif fonts convey a classic, elegant, or traditional feel. In contrast, the clean lines and sharp edges of sans-serif fonts are more appropriate for more direct communication. For this reason, sans-serif fonts are more common in Web development as they render out content on a screen more clearly, which increases legibility for users across different devices.
+
+**[font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)**
+
+The font size can be specified using a predefined size name, a relative size name, or a number with an absolute or relative size unit.
+
+The predefined size names are xx-small, x-small, small, medium, large, x-large, and xx-large, where medium is the default size. The relative size names are smaller and larger which change the font size for an element to be smaller or larger than the font size of the parent element.
+
+An absolute size is a size that is fixed and independent of other CSS sizes. Absolute size units include:
+
+- cm - centimeters
+- mm - millimeters
+- -in - inches
+- px - pixels (1px = 1/96in)
+- pt - points (1pt = 1/72in)
+- pc - pica (1pc = 12pt)
+
+A relative size is a size that is relative to another size. Some common relative size units include:
+
+- em - Relative to the element's font size. Ex: 2em = 2 × current font size.
+- rem - Relative to the root element's font size. Ex: 1.5rem = 1.5 × <html> element's font size.
+- vw - 1% of the viewport's width. Ex: 10vw = 10% of browser's width.
+- vh - 1% of the viewport's height. Ex: 5vh = 5% of browser's height.
+- % - Percentage of the element's font size. Ex: 120% = 20% larger than the current font size.
+
+Most web browsers use a default font size of 16px.
+
+Add the following CSS rules to increase the font size of the headers in your website:
+
+```css
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+```
+
+> The rules above also includes other font properties, such as [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant) and [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style).
+
+**Text properties**
+
+In addition to font properties, CSS also provides text properties to control how text is displayed. Some common CSS text properties include:
+
+- text-align: changes the horizontal alignment of text for an element. Possible values are: left, right, center, and justify.
+- text-decoration: add or remove text decorations like underlining or a line-through. Possible values are: overline, line-through, underline, and none.
+- text-transform: converts letters to UPPERCASE, lowercase, or Capitalizes Initial Letters. Possible values are: uppercase, lowercase, and capitalize.
+- text-indent: specifies the first line's indentation amount.
+
+Use the [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) property to text in the main header:
+
+```css
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+    font-variant: small-caps;
+
+    text-align: center;
+}
+```
+
+> The main heading is a block element, thus it occupies an entire line on the webpage. The text-align property is useful for aligning text that lives inside a block element. We will use another technique later for centering other types of content. 
+
+## Task 2: Overriding the default styling of elements
+
+Browsers come with several default CSS rules for elements like links and list items.
+
+Apply the following CSS rules to style the links in the navigation menu:
+
+```css
+nav a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: larger;
+}
+```
+
+The following rule removes the decoration or bullet points included by default in list items:
+
+```css
+nav li {
+    list-style-type: none;
+}
+```
+
+## Task 3: Sizing
+
+A block element's content spans the width of the enclosing parent element by default, but the content size can be changed with the width and height CSS properties:
+
+- The width property specifies the content's width. Ex: width: 20px; makes the content 20px wide.
+- The height property specifies the content's height. Ex: height: 30px; makes the content 30px high.
+
+> A common error is to use width or height on inline elements. An inline element like <span> has a width and height equal to the size of the element's content. The width and height cannot be changed unless the inline element's display property is changed to inline-block (more on this later).
+
+However, images are special because although they have a display value of inline by default, their dimensions are defined by the image's intrinsic values, like inline-block. 
+
+Currently, the *width* and *height* attributes of the *img* tag control the size of the images displayed on our website. However, image size is unrelated to our HTML document's structure or content, and CSS rules should control any size adjustment.
+
+Remove all the *width* and *height* attributes of the image elements and add the following CSS rules:
+
+```css
+header img {
+    width: 960px;
+    height: 320px;
+}
+
+article img {
+    width: 450px;
+    height: 350px;
+}
+```
+
+> The rules above specify the size of the images using a length or absolute value.
+
+The values for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) dimension properties can be:
+
+- length: defines the dimension as an absolute value.
+- percentage: defines the dimension as a percentage of the containing block's height.
+- auto: the browser will calculate and select a height for the specified element. This value is useful with other properties when centering block elements.
+
+## Task 4: Positioning
+
+The content of each activity would look better if positioned to the right of each activity's photo. The CSS rules below below positions or *floats* the content left, causing the description and features list of each activity to appear next to the activity's photo:
+
+```css
+.activity-image {
+    float: left;
+}
+```
+
+The [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) CSS property places an element on the left or right side of its container, *allowing text and inline elements to wrap around it*. The element is removed from the normal flow of the page, though still remaining a part of the flow! (yes, this is very confusing). 
+
+After adding the rule above, you noticed the property affected the content directly following the image and all subsequent content! To avoid this behavior, we use float’s sister property is [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear). An element with the clear property set on it will not move up adjacent to the float like the float desires but will move itself down past the float.
+
+If you are in a situation where you always know what the succeeding element will be, you can apply the clear: both; This is ideal as it requires no fancy hacks and no additional elements making it perfectly semantic.
+
+Another common technique is the *Empty Div Method*, which is quite literally an empty div. Sometimes you’ll see an <br> element or another random element used, but div is the most common. This is because it has no browser default styling, doesn’t have any particular function, and is unlikely to be generically styled with CSS. Semantic purists scorn this method since its presence has no contextual meaning at all to the page and is there purely for presentation. Of course, in the strictest sense, they are correct, but it gets the job done right and doesn’t hurt anybody.
+
+Add the following rule:
+
+```css
+.clear {
+    clear: both;
+}
+```
+
+Then, create an empty div with the rule above applied and place it right after the last element that you want to be positioned left to activity's image (the unordered list element): 
+
+```html
+<ul>
     ...
-    </head>
-    <body>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
-        ...
-  </body>
-</html>       
-```
-## Task 2: Styling text and images
-
-### Reboot: [Bootstrap Docs > Content > Reboot](https://getbootstrap.com/docs/5.0/content/reboot/)
-
-When you start using Bootstrap out of the box, it applies a reboot of the default browser styles. This means Bootstrap strips out all the default styles like margin, padding, font styles, and size, replacing them with a clean and basic set of default Bootstrap styles. The purpose of this reboot is to provide you with a simple baseline to build upon the style of your website that is consistent across browsers.  
-
-### Typography: [Bootstrap Docs > Content > Typography](https://getbootstrap.com/docs/5.0/content/typography/)
-
-Bootstrap also provides several features for styling text content that allow you to create customized headings, paragraphs, lists, and more.
-
-The feature [display headings](https://getbootstrap.com/docs/5.0/content/typography/#display-headings) allows you to display your headings in a larger, slightly more prominent style.
-
-Add "display-2" to h1, "display-5" to h2, and "display-6" to h3 elements:
-
-```html
-<h1 class="display-2">...</h1>
-<h2 class="display-5">...</h2>
-<h3 class="display-6">...</h3>
-```
-> Note the display headings classes use a numbering independent of the HTML heading elements. The display headings classes can be used with any HTML element.
-
-The feature [lead](https://getbootstrap.com/docs/5.0/content/typography/#lead) allows you to make paragraphs stand out. We can use this feature for the first paragraph on our website to make it look slightly bigger and relevant than the rest of the paragraphs:
-
-```html
-<p class="lead">
-    <em>Laguna Brava</em> is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. Laguna Brava is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
-</p>
-```
-
-Use the [unstyled lists](https://getbootstrap.com/docs/5.0/content/typography/#lists) feature to remove the decoration and margin of list items:
-```html
-<ul class="list-unstyled">
-    <li>Duration: 5 hours approx.</li>
-    <li>Price: $50 USD</li>
-    <li>Minimum: 2 pax</li>
 </ul>
+<div class="clear"></div>
 ```
 
-### Images: [Bootstrap Docs > Content > Images](https://getbootstrap.com/docs/5.0/content/images/)
+> While floats can still be used for layout, these days, we have much stronger tools for creating layout on web pages. Namely, **Flexbox** and **Grid**. Floats are still useful to know about because they have some abilities entirely unique to them, which is all covered in this article.
 
-Images in Bootstrap are made responsive with the *.img-fluid* class. Add this class to the three images in the website:
+Reference:
+- [All About Floats](https://css-tricks.com/all-about-floats/)
 
-```html    
-<img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image">
-...
+## Task 5: Spacing
+
+HTML elements take up space on the web page. The box model is essential for understanding how to adjust the space between elements. The box model describes the size of each element as a series of nested boxes, where each box determines a different property:
+
+- Content: The innermost box contains the content of the element, such as text and images.
+- Padding: The padding box contains the content box and adds a transparent area around the content.
+- Border: The border box contains the padded content and adds an optionally colored area around the padding.
+- Margin: The margin box contains all three boxes and adds a transparent area around the border.
+
+![box-model](img/box-model.png)
+
+The CSS properties that control the padding, border, and margin are:
+
+- padding: specifies the padding thickness. Ex: padding: 5px; creates a 5 pixel padding around the content.
+- border: specifies the border's thickness, style, and color. Ex: border: 2px solid blue; creates a solid blue border that is 2 pixels thick.
+- margin: specifies the margin thickness. Ex: margin: 10px; creates a 10 pixel margin.
+
+The padding and margin properties may have from 1 to 4 values:
+
+- One value - Specifies uniform thickness around the box. Ex: margin: 20px; specifies 20px margin thickness around the box.
+- Two values - Specifies top and bottom, right and left thickness. Ex: margin: 10px 20px; specifies 10px top and bottom margins and 20px right and left margins.
+- Three values - Specifies top, right and left, and bottom thickness. Ex: margin: 10px 30px 20px; specifies 10px top margin, 30px right and left margins, and 20px bottom margin.
+- Four values - Specifies top, right, bottom, and left thickness. Ex: margin: 10px 30px 20px 40px; specifies 10px top margin, 30px right margin, 20px bottom margin, and 40px left margin.
+
+The padding, border, and margin CSS properties can apply only to one side by adding a -top, -left, -bottom, or -right suffix to the CSS property. Ex: padding-top:5px; specifies 5 pixels of padding above the content.
+
+To change the size of the *content box*, use the *height* and *width* properties explained in Task 3.
+
+Add the following rule to adjust the space between each item in the navigation menu:
+
+```css
+nav li {
+    list-style-type: none;
+
+    display: inline-block;
+    padding: 10px;
+}
 ```
 
-Notes:
-- Adding responsive behavior usually involves adjusting the [max-width](https://www.w3schools.com/cssref/pr_dim_max-width.asp) CSS property of HTML elements. This property defines the maximum width of an element's content and it prevents the element from becoming larger than the value specified by max-width.
-- img-fluid maintains a 100% max-width regardless of the size of the screen, so images never become larger than their parent elements (containers). As a result, images are resized to fit the screen. 
+> Properties like padding, margin, height, and width can only be applied to block elements. Block elements, like paragraphs and headings, occupy the entire line of the webpage, while inline elements, like links and spans, occupy only the space corresponding to the content they contain.
 
-## Task 3: Leveraging class utilities
-Bootstrap provides several utility classes for styling content. Many of these classes follow conventions on how to refer to the sides of HTML elements.
-For example,
-- *start* refers to left
-- *end* refers to right
-- *top* and *bottom* remain the same
-These terms act as suffixes in several classes that control style aspects such as borders, alignment, and spacing, as you will see below.
+We can use the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property to transform *inline* elements into *block* elements. The *inline-block* value generates a block element box surrounding the element's content, as if it were a single inline box, with adjustable margin, padding, width, and height. 
 
-### Text: [Bootstrap Docs > Utilities > Text](https://getbootstrap.com/docs/5.0/utilities/text/)
+Adjust the space between the activit's photo and description:
 
-Bootstrap provides common text utilities to control weight, alignment, and more.
-
-Using [font weight](https://getbootstrap.com/docs/5.0/utilities/text/#font-weight-and-italics) classes, control the style of the labels on the guided visits options:
-
-```html
-<span class="fw-bold">Duration: </span>...</li>
-<span class="fw-bold">Price: </span>...</li>
-<span class="fw-bold">Minimum: </span>...</li>
+```css
+.activity-image {
+    margin-right: 10px;
+}
 ```
 
-Using [text decoration](https://getbootstrap.com/docs/5.0/utilities/text/#text-decoration) classes, adjust the style of the safety statement on the introductory text to the guided visits:
+Place the bullet points of each activity's features inside the element's content box:
 
-```html
-<strong class="text-decoration-underline fw-normal">we provide life vests and local guides who know the lake very well to take care of your safety.</strong>
- ```
-
-Using [text alignment](https://getbootstrap.com/docs/5.0/utilities/text/#text-alignment) classes, center the main heading and the headings in guided visits sections:
-
-```html
-<h1 class="display-2 text-center">...</h1>
-<h3 class="display-6 text-center">...</h3>
-```
-Notes:
-- Text alignment classes also include *text-start* for aligning text to the left and *text-end* for aligning text to the right. 
-
-### Borders: [Bootstrap Docs > Utilities > Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
-
-Border utilities allow you to style the border and border-radius of an element like images and buttons. For example:
-
-```html
-<span class="border"></span>
-<span class="border-top"></span>
-<span class="border-end"></span>
-<span class="border-bottom"></span>
-<span class="border-start"></span>
+```css
+.activity-description li {
+    list-style-position: inside;
+}
 ```
 
-[Border-radius](https://getbootstrap.com/docs/5.0/utilities/borders/#border-radius) classes in Bootstrap allow you to modify the border-radius property. [border-radius](https://www.w3schools.com/cssref/css3_pr_border-radius.asp) is a CSS property that defines the radius of an element's corners. Round the corner of the guided visits images: 
+Adjust the spacing of the form elements:
 
-```html
-<img src="img/kayak.jpg" class="img-fluid rounded-pill" alt="Lake challenge kayak image">
+```css
+.experience input[type=text], .experience input[type=email], .experience textarea {
+    width: 100%;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+}
 ```
 
-This effect gives the images a more natural appearance by eliminating the abrupt pauses that result when lines change direction in sharp corners.
+> The rule above uses another kind of CSS selector, namely, [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a certain attribute.
 
-### Color: [Bootstrap Docs > Utilities > Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
+## Task 6: Centering the webpage
 
-Color utilities include predefined classes to colorize text. Adjust the color and font weight of the warning statement in the first guided visit option:
+The rule below centers block elements by setting the top and bottom margins to 0 and the left and right margins to auto, i.e., they are determined by the browser. The *centering* effect is achieved by also setting the width (otherwise, a block element will take up the entire width of the page). Once you have specified the width, setting the left and right margins to auto will make the browser put an equal gap on each side of these elements. As a result, we can use this rule to center any block element on the page.
 
-```html
-<strong class="text-warning fw-bold">This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
+```css
+.center {
+    max-width: 960px;
+    margin: 0 auto;
+}
 ```
 
-Bootstrap enables more comprehensive customization for working with colors. For now, we will use the default [color system](https://getbootstrap.com/docs/5.0/customize/color/). You can also use this system for defining [background colors](https://getbootstrap.com/docs/5.0/utilities/background/) of any HTML element.
+> When applying the previous rule to center the web page,  [max-width] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) corresponds to the screen size in which we tailor our page to be rendered. 960px is a value commonly used for web pages designed to be rendered on large screens. We can also use *max-width* in combination with the *width* property to implement a responsive design, but we will discuss this topic later.
 
-### Spacing: [Bootstrap Docs > Utilities > Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
-
-Spacing utilities provide a wide range of shorthand classes to specify margin and padding. These shorthand classes follow the notation {property}{sides}-{size} to set specific values of margin and padding.
-
-Add a gap between the sections following the lead paragraph by adding a vertical margin. Since we want to add a margin to the entire section (title and paragraph), we wrap all the elements in the section in a *div* element that acts as a container. Then, we apply the spacing shorthand class.
-
-Add the *div* container to the "Who are we?" and "What do we offer?" sections:
+Create a new div to wrap all the content of the webpage and apply the rule above:
 
 ```html
-<div class="my-4">
-    <h2 class="display-5">...</h2>
-    <p>
+<body>
+    <div class="center"> 
         ...
-    </p>
-</div>
-```
-
-Note that *my-4* follows the notation {property}{sides}-{size} where
-- {property} is *m* (margin)
-- {sides} is *y* (vertical)
-- {size} is *4*
-- Look at the documentation for learn about the different configuations
-
-## Task 4: Creating buttons
-Reference: https://getbootstrap.com/docs/5.0/components/buttons/
-
-Bootstrap includes several predefined button styles. Add a "Book here" button in each guided visit using the *btn* class:
-
-```html
-<a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
-```
-> This button also specifies color and size.
-
-## Task 5: Adding icons
-Reference: https://icons.getbootstrap.com/
-
-Finally, try out Bootstrap Icons library for adding icons to your webpage. To use Bootstrap icons library, you need to add the corresponding CSS resource into the \<head\> tag:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-```
-
-Remember we adjusted the color of the warning statement in the first guided visit option? Add an exclamation icon to increase the attion of the viewer:
-
-```html
-<i class="bi bi-exclamation-triangle"></i>
-```
->Icons are also a great way to make your content more accessible for people with color blindness.
-
-Final result:
-```html
-Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
-```
-
-## Task 6: Creating containers
-Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
-
-Features:
-- Containers are the most basic layout element in Bootstrap and are required to use the grid system, which you will use in the next task to arrange your content in rows and columns.
-- Containers allow you to wrap your page content and then apply padding around the content.
-- They can also center your content on the page in a central column.
-
-Use the default container which sets a fixed width for screen sizes.
-
-```html
-<main class="container">
-```
-
-### Breakpoints
-
-Bootstrap containers allow you to tailor the content of your webpage to fit a specific screen size. To represent screen sizes, Bootstrap use the concept of breakpoints. [Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/) are the building blocks of responsive design in Bootstrap. Bootstrap includes six default breakpoints:
--X-Small
--Small
--Medium
--Large
--Extra large
--Extra extra large  
-
-Each breakpoint has a dimension associated that represents a particular viewport or device screen size. The breakpoints serve as a system to specify responsive behavior in HTML elements. For example, if you want to tailor your webpage to be displayed in *large* screens (i.e., 992 pixels width or wider), you can wrap the webpage's content into a *container-lg* class container:
-
-```html
-<div class="container-lg">100% wide until large breakpoint</div>
-```
-
-This means the *div* container will keep constant widths to fit your content in large screens, *preserving paddings and center alignment.* If your webpage is displayed on smaller screens, the content will automatically occupy 100% of the screen. More technically, the breakpoints system specifies values for the max-width property.
-
-Experiment with different container classes to appreciate the difference. What happens if you use the container-xxl class instead of the default container? Use the inspector tool to appreciate the difference.
-
-## Task 7: Adjusting the grid layout
-Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
-
-[Bootstrap's grid layout system](https://getbootstrap.com/docs/5.0/layout/grid/) allows you to arrange content in columns and rows following a fully responsive design. The grid layout uses a twelve-column system which means the width of a single column can vary from one to twelve.
-
-This system allows you, for example, to arrange your content three columns of size four each:
-
-```html
-<div class="container">
-  <div class="row">
-    <div class="col">
-      Column
     </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
+</body>
 ```
 
-Furthermore, you can add breakpoints to create a grid system that starts out stacked and becomes horizontal at the small breakpoint (sm):
+## Task 7: Pseudo-classes
 
-```html
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            Column
-        </div>
-        <div class="col-sm">
-            Column
-        </div>
-        <div class="col-sm">
-            Column
-        </div>
-    </div>
-</div>
+The following CSS rules style contain [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) that change the default styles associated to the different states of link elements that result from interactions between the user and the elements. For example, the user hovering the mouse or pointer on a link causes the link to be in the state of *hover*.
+
+```css
+/* unvisited link */
+nav a:link {
+    color: black;
+}
+
+/* visited link */
+nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: blue;
+}
+
+/* selected link */
+nav a:active {
+    color: gray;
+}
 ```
-
-You can also adjust the size of the columns when they become horizontal:
-```html
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8">
-            Column
-        </div>
-        <div class="col-sm-2">
-            Column
-        </div>
-        <div class="col-sm-2">
-            Column
-        </div>
-    </div>
-</div>
-```
-
-> When arranging your content in columns using Bootstrap grid system, you need to use a combination of *col* classes wrapped inside a *row* class container.
-
-Use the *col-lg* class to display the content of the website as two columns for large screens (*lg* breakpoint) and as one column for smaller screens:
-
-```html
-<div class="row">
-    <article class="col-lg">
-        ...
-    </article>
-    <article class="col-lg">
-        ...
-    </article>
-</div>
-```
-
-Another approach to defining responsive behavior is explicitly specifying the number of columns to display in each breakpoint. Use the responsive *.row-cols-* classes to quickly set the number of columns that best render your content. 
-
-Using *.row-cols-* and the *lg* breakpoint, we can achieve the same behaviour that displays the content of the website as two columns for large screens and as one column for smaller screens:
-
-```html
-<div class="row row-cols-1 row-cols-lg-2">
-    <article class="col">
-        ...
-    </article>
-    <article class="col">
-        ...
-    </article>
-</div>
-```
-
-Adjust the spacing between each \<article\> to add gaps both horiontally and vertically using horizontal padding (*px*) and bottom margin (*mb*) classes:
-
-```html
-<article class="col px-5 mb-4">
-```
-
-Also, adjust the spacing between the image and the text within each guided visit by enclosing the text and features list inside a *div* container with top margin:
-```html
-<div class="mt-2">
-    ...
-    <ul class="list-unstyled">
-        ...
-    </ul>
-</div>
-```
-
-Result:
-```html
-<div class="row">
-    <article class="col-lg px-5 mb-4">
-        <h3 ...>...</h3>
-        <img ...>
-        <div class="mt-2">
-            ...
-            <ul class="list-unstyled">
-                ...
-            </ul>
-        </div>        
-    </article>
-    <article class="col-lg px-5 mb-4">
-        ...
-    </article>
-</div>
-```
-
-## Task 8: Making the header image full-height
-
-We could attempt to increase the appealing of our website by making the header image to fill the full height of the screen. These images are called *hero* or banner images, and they are commonly used together with the main headline to communicate the primary message of the webpage quickly.
-
-Adding a full-height image requires additional CSS rules that we can add internally to the webpage:
-
-```html
-<style>
-    /*
-        Full page image: https://www.w3schools.com/howto/howto_css_full_page.asp
-        Text on Images: https://css-tricks.com/design-considerations-text-images/
-        Text shadow property: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
-        CSS min-height Property: https://www.w3schools.com/cssref/pr_dim_min-height.asp 
-    */
-    header {
-        background: #FFFFFF url('img/panoramic-laguna-brava-2.jpg') no-repeat center;
-        background-size: cover;		
-        height: 100vh;	
-        min-height: 300px;
-    }
-    header div {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        text-shadow: 2px 2px 4px #000000;
-    }
-</style>
-```
-
-Notes:
-- The [index.html](./index.html) file contains the final HTML document. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/).
-- The [index-fh-header.html](./index-fh-header.html) file contains another version that uses additional CSS rules to implement a full-height image header. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/index-fh-header.html).
-- Note that the additional CSS rules added in the *index-fh-header.html* version were moved to an external CSS file. 

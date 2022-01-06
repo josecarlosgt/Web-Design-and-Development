@@ -1,0 +1,107 @@
+/* Task 1: Styling the text */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+    font-variant: small-caps;
+
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+nav {
+    text-align: center;
+}
+
+/* Task 2: Overriding the default styling of elements */
+
+nav a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Task 3: Sizing */
+
+header img {
+    width: 960px;
+    height: 320px;
+}
+
+article img {
+    width: 450px;
+    height: 350px;
+}
+
+/* Task 4: Positioning */
+
+.activity-image {
+    float: left;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Task 5: Spacing */
+
+nav li {
+    list-style-type: none;
+
+    display: inline-block;
+    padding: 10px;
+}
+
+.activity-description li {
+    list-style-position: inside;
+}
+
+.experience input[type=text], .experience input[type=email], .experience textarea {
+    width: 100%;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+/* Task 6: Centering the webpage */
+
+.center {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Task 7: Pseudo-classes */
+
+/* unvisited link */
+nav a:link {
+    color: black;
+}
+
+/* visited link */
+nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: blue;
+}
+
+/* selected link */
+nav a:active {
+    color: gray;
+}

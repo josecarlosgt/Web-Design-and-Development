@@ -1,119 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-216045757-1"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-
-  		gtag('config', 'UA-216045757-1');
-	</script>
-
-        <meta charset="utf-8">
+        <meta charset="utf-8"> 
 		<meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
+        <link rel="stylesheet" href="mystyle.css">
         <title>Laguna Brava Ecotourism</title>
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
-    <body>        
-        <header>
-            <!-- Content > images: responsive images 
-                img-fluid maintains a 100% max-width regardless of the size of the screen -->
-            <img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image">
+    <body>
+        <div class="center">    
+            <header><!-- Introductory content -->            
+                <img src="img/panoramic-laguna-brava-2.jpg" alt="Laguna Brava lake image">
+                <h1>Welcome to Laguna Brava Ecotourism</h1>
 
-            <!-- Content > typography: display headings -->
-            <!-- Utilities > text: text alignment
-                Options for text alignment: text-start, text-end, text-center, ...
-            -->
-            <h1 class="display-2 text-center">Welcome to Laguna Brava Ecotourism</h1>
-        </header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#communities">Communities</a>
+                        </li>
+                        <li>
+                            <a href="#activities">Activities</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <!-- Layout > containers
-            Class containers:
-                container: sets a max-width at each screen size (responsive breakpoint)
-                container-lg, container-xl, ...: specifies a max-width depending on the size of the screen and 100% max-width until a breakpoint
-                    The result is that for given sizes, the content preserves its margins and centered layout
-                container-fluid: maintains a 100% max-width regardless of the size of the screen
-                    The result is that content always occupies the entire width of the screen 
-        -->        
-        <main class="container">
+            </header>
 
-            <!-- Content > typography: lead -->
-            <p class="lead">
-                <em>Laguna Brava</em> is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. Laguna Brava is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
-            </p>
+            <main><!-- Dominant content of the web page -->         
+                <p>
+                    <em>Laguna Brava</em> is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. Laguna Brava is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
+                </p>
 
-            <!-- Utilities > spacing
-                Options for specifying maring and padding: 
-                    y: vertical, x: horizontal, t: top, b: bottom, s: start, e: end, ... -->
-            <div class="my-4">
-                <h2 class="display-5">The Local Communities?</h2>
+                <h2 id="communities">The Local Communities</h2>
                 <p>
                     Members of the communities settled around Laguna Brava welcome travelers from all regions of the world looking for adventure and nature. They believe that visitors and responsible tourism practices are essential to support the development of their communities.
                 </p>
-            </div>
 
-            <div class="my-4">
-                <h2 class="display-5">Activities</h2>
+                <h2 id="activities">Activities</h2>
                 <p>
-                    The communities offer two options for guided visits that allow visitors to enjoy Laguna Brava's natural beauty. In both options, <strong class="text-decoration-underline fw-normal">they provide life vests and local guides who know the lake very well to take care of your safety.</strong>
+                    The communities offer two options for guided visits that allow visitors to enjoy Laguna Brava's natural beauty. In both options, <strong>they provide life vests and local guides who know the lake very well to take care of your safety.</strong>
                 </p>
-            </div>
+                <article class="activity"><!-- Self-contained content intended to be independently distributable -->
+                    <h3>The Lake Challenge</h3>
+                    <img src="img/kayak.jpg" alt="Lake challenge kayak image" class="activity-image">
 
-            <!-- Layout > grid  -->
-            <div class="row">
-                <!-- Utilities > border
-                    Options for specifying border: 
-                        t: top, b: bottom, s: start, e: end, ... -->
-                <!-- <article class="my-4 p-2 border border-secondary border-2 text-center"> -->
-                <article class="col-lg px-5 mb-4">
-                    <h3 class="display-6 text-center">The Lake Challenge</h3>
-                    <!-- Utilities > border
-                        Options for specifying border that can be used with any element, including images:
-                            rounded, rounded-top, rounded-circle, rounded-pill... -->
-                    <img src="img/kayak.jpg" class="img-fluid rounded-pill" alt="The Lake Challenge kayak image">
-                    <div class=mt-2>
-                       <!-- Utilities > colors
-                           Other options for specifying colors: background color: bg-warning, ... -->
+                    Cross the four kilometres in a kayak guided by a local guide. <strong>This guided visit is physically demanding, and it is recommended for only those in excellent physical condition.</strong>
 
-                        <!--Bootstrap Icons: https://icons.getbootstrap.com/ 
-                            Install -> https://icons.getbootstrap.com/#install -->
-                        Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
-                        <!-- Content > typography: lists -->
-                        <ul class="list-unstyled">
-                            <!-- Utilities > text: font weight -->
-                            <li><span class="fw-bold">Duration: </span>5 hours approx.</li>
-                            <li><span class="fw-bold">Price: </span>$50 USD</li>
-                            <li><span class="fw-bold">Minimum: </span>2 pax</li>
-                        </ul>            
-                        <!-- Components > buttons -->
-                        <div class="text-center">
-                            <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
-                        </div>                            
-                    </div>                        
+                    <ul class="activity-description">
+                        <li>Duration: 5 hours approx.</li>
+                        <li>Price: $50 USD</li>
+                        <li>Minimum: 2 pax</li>
+                    </ul>   
+                    <div class="clear"></div>         
                 </article>
+                <article class="activity">
+                    <h3>Sit Back & Relax</h3>
+                    <img src="img/boat.jpg" alt="Sit Back & Relax boat image" class="activity-image">
 
-                <article class="col-lg px-5 mb-4">
-                    <h3 class="display-6 text-center">Sit Back & Relax</h3>
-                    <img src="img/boat.jpg" class="img-fluid rounded-pill" alt="Sit Back & Relax boat image">
-                    <div class=mt-2>
-                        Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
-                        <ul class="list-unstyled">
-                            <li><span class="fw-bold">Duration:  </span>4 hours approx.</li>
-                            <li><span class="fw-bold">Price:  </span>$40 USD</li>
-                            <li><span class="fw-bold">Minimum:  </span>4 pax</li>
-                        </ul>            
-                        <div class="text-center">
-                            <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
-                        </div>                            
-                    </div>                        
+                    Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
+
+                    <ul class="activity-description">
+                        <li>Duration: 3 hours approx.</li>
+                        <li>Price: $40 USD</li>
+                        <li>Minimum: 4 pax</li>
+                    </ul> 
+                    <div class="clear"></div>           
                 </article>
-            </div>                
-        </main>            
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </main>
+            <hr>  
+            <aside>
+                <!-- A form asking for page viewer's experiences -->	    	        
+                <h2 id="contact">Have you travelled to Laguna Brava?</h2>
+                <p>
+                    We want to know about your experiences.</h2>
+                    <form class="experience">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Write your name"><br><br>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Write your email"><br><br>
+                        <label for="experience">Experience: </label>
+                        <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5" cols="50"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </p>                  
+            </aside>    
+        </div>        
     </body>
 </html>
