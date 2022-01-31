@@ -302,6 +302,10 @@ What content would you consider to structure as articles? The guided visit optio
 </article>
 ```
 
+ [footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
+ 
+ [section]https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+ 
 Notes:
 - It is essential to understand the meaning of each semantic element (header, main, and article) and how these elements structure your web page's content in a way that is more representative of its content.
 - Although the structure of your web document represents the meaning of each piece of content better, it has not changed or improved the appearance of the webpage. To improve the appearance of a webpage to its visitors, you will use another technology different from HTML, namely CSS. CSS is the topic of the next tutorial.
@@ -331,7 +335,15 @@ And,
 <strong>This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
 
-## Task 11: Adding on-page SEO
+## Task 11: Adding the navigation element
+ 
+[nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
+ 
+ ## Task 12: Adding the figure element 
+ 
+[figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
+
+## Task 13: Adding on-page SEO
 
 Check your content against the following recommendations to improve SEO:
 1. Use \<title\> with descriptive text (i.e., text contains at least one keyword)
@@ -346,7 +358,7 @@ Check your content against the following recommendations to improve SEO:
 
 As mentioned in task 7, The use of semantic tags (task 8) also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
 
-## Task 12: Adding side content
+## Task 14: Adding side content
 Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
 
 ```html
@@ -360,4 +372,4 @@ Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HT
 </aside>
 ```
 
-The [index.html](./index.html) file contains the final HTML document. *Compare the structure of your HTML document using traditional HTML elements (paragraphs) versus HTML5 semantic elements (header, main, article, and aside).*
+The [index.html](./index.html) file contains the final HTML document. *Compare the structure of your HTML document using traditional HTML elements (paragraphs) versus HTML5 semantic elements.*
