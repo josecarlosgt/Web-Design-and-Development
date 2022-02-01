@@ -10,15 +10,13 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 - [Mozilla MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). This website contains detailed and up-to-date documentation on HTML.
 - [W3Schools](https://www.w3schools.com/) This website contains examples and brief explanations of HTML.
 
-> You should not attempt to memorize each available tag that exists in HTML. You should know how the basic HTML tags work and where to look for new HTML elements and functionality when needed.
-
  On-page Search Engine Optimization (SEO) techiniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
 - Laguna Brava
 - Ecotourism
 - Nature
 - Adventure
 
-We will use the following text obtained from the content design process. Note the text contains the keywords highlighted in bold.
+We will use the following text with the keywords highlighted in bold.
 
 > *Lake description*  
 > **Laguna Brava** is a karstic lake of incomparable beauty located in western Guatemala. **Laguna Brava** is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme **adventure** and intimate contact with **nature**. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. **Laguna Brava** is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of **Laguna Brava** Laguna are so calm that they instantly awaken a deep feeling of peace.
@@ -140,53 +138,61 @@ Each guided visit option contains details organized as a list (e.g., price and m
 ```
 
 ## Task 5: Adding links
-Chose at least three words or phrases and make them a hyperlink (link) using the [anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
+Choose at least three words or phrases and make them a hyperlink (link) using the [anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
 
 Specify the URL of another website using the hyperlink reference (href) attribute of the anchor element. HTML attributes are commonly used in HTML to provide additional information and control the content within an HTML tag.
 
 ```html
 Laguna Brava is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty located in western Guatemala.
 ```
+
 Notes:
 - The link allows the viewer of the page to click on it and jump into the referring or target page. When this happens, you may realize that the target page opens in the same browser window.
 - You may also look at how to make the hyperlink to open the target page in a browser tab or window.
 
 ## Task 6: Adding images
-Chose an image to display after the paragraph created in Task 5. Use the [image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). In this task, you need to specify the URL of the image that you want to display using the source (src) of the image element. You may look at other properties of the image element to adjust the size of the image.
+In this task, we will add a few images using the [image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) by specifying the URL of the image in the source (src) property of the \<img\> tag. You may look at other properties to adjust the image's size.
+
+We will use local images, which means the server will host these images. Create an *img/* in the same folder containing your *index.html* document and add the images to be included in each image tag below.
 
 Place the image before the level 1 heading created in task 2.
 
 ```html
-<img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500">
+<img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake">
 <h1>...</h1>
 ```
 
- Then, look at the pictures in the img/ folder and add an image in each option of the guided visit. Place each image right below the sub-heading in each option (before the description text).
+> Download the header image from [here](https://josecarlosgt.github.io/Web-Design-and-Development/img/panoramic-laguna-brava-2.jpg)
+
+ Then, add an image in each option of the guided visit. Place each image right below the sub-heading in each option (before the description text).
 
  ```html
  <h3>The Lake Challenge</h3>
  <p>
-   <img src="img/kayak.jpg" width="450" height="350">
+   <img src="img/kayak.jpg" width="450" height="350" alt="Lake challenge kayak">
     ...            
 </p>
 <h3>Sit Back & Relax</h3>
 <p>
-    <img src="img/boat.jpg" width="450" height="350">
+    <img src="img/boat.jpg" width="450" height="350" alt="Sit Back & Relax boat">
     ...            
 </p>
 ```
 
+> Download these images from here: [kayak image](https://josecarlosgt.github.io/Web-Design-and-Development/img/kayak.jpg) and [boat image](https://josecarlosgt.github.io/Web-Design-and-Development/img/boat.jpg) 
+
 Notes:
 - The image element does not require a closing tag because this element does not enclose any content. All the information required to display an image is specified as attributes of the image element.
-- To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. Create a folder named "images" with the image that you want to display. Then, use a relative path to this image, i.e., "images/myimage.jpg".
+- To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. Create a folder named "images" with the image you want to display. Then, use a relative path to this image, i.e., "images/myimage.jpg".
 
 ## Task 7: Adding a web form
 After the last paragraph, create a web form that requests comments from your page's viewer based on their experiences to Laguna Brava (if any). Web forms are useful for capturing information from users.
 
 A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)) element and a combination of input elements and other elements that allow the user to enter different types of data. Visit these sites to learn more about how to create web forms.
 
-- [HTML Forms](https://www.w3schools.com/html/html_forms.asp)
-- [HTML Input](https://www.w3schools.com/html/html_form_input_types.asp)
+- [Form element](https://www.w3schools.com/html/html_forms.asp)
+- [HTML input types](https://www.w3schools.com/html/html_form_input_types.asp)
+- [Label element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
 Create a text input field to capture the user's name:
 ```html
@@ -207,7 +213,7 @@ Use the [line break element](https://developer.mozilla.org/en-US/docs/Web/HTML/E
 ...
 ```
 
-Create a textarea field to capture the users' comment:
+Create a [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) field to capture the users' comment:
 ```html
 <label for="experience">Experience: </label>
 <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5" cols="50"></textarea>
@@ -260,10 +266,20 @@ The doctype for HTML5 is very short, concise, and case-insensitive. Add the foll
 <!doctype html>
 ```
 
+Many HTML semantic tags are *sectioning* elements because they create logical sections. This means they group content that is semantically related. Popular examples include:
+- header
+- main
+- footer
+- nav
+- article
+- section
+- figure
+- aside
+
 Notes:
 - The doctype declaration is usually the very first thing defined in an HTML document (even before the opening <html>tag); however, the doctype declaration itself is not an HTML tag.
 
-## Task 9: Adding semantic tags
+## Task 9: Adding semantic tags (header, main, and footer)
 In this task, you will be adding some of the most popular semantic tags introduced by HTML5.
 
 [header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header): represents introductory content and navigational aids. It may contain  heading elements, a logo, a search form, an author name, and other elements.
@@ -272,10 +288,12 @@ Use this element to enclose the lake image and the main heading:
 
 ```html
 <header><!-- Introductory content -->            
-    <img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake image">
+    <img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake">
     <h1>Welcome to Laguna Brava Ecotourism</h1>
 </header>
 ```
+
+A popular semantic tag that often lives insider the \<header\> element is \<nav\>. [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. We will use this element in a different tutorial.
 
 [main](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main): represents the dominant or primary content of a web document. This content should be unique to the document. Content that is repeated across a set of documents such as sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included here. 
 
@@ -287,6 +305,22 @@ Enclose the rest of your content in a main element:
 </main>
 ```
 
+[footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer): It typically contains copyright data or links to related documents.
+
+Add a copyright notice at the bottom of the HTML document using the \<footer\> element right before the closing tag of the \<body\> element.
+
+```html
+<footer><!-- Defines a footer for a document or section -->
+    &copy; 2022 Laguna Brava Ecotourism
+</footer>
+```
+
+Notes:
+- It is essential to understand the meaning of each semantic element and how these elements structure your web page's content in a way that is more representative of its content.
+- Although the structure of your web document represents the meaning of each piece of content better, it has not changed or improved the appearance of the webpage. To improve the appearance of a webpage to its visitors, you will use another technology different from HTML, namely CSS. CSS is the topic of the next tutorial.
+
+## Task 10: Structuring content using articles
+
 [article](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article): represents self-contained content. This means \<article\> content could be removed from the page and put on other pages and still make sense on its own. Thus, content inside an \<article\> element should be intended to be independently distributable or reusable. Content inside \<article\> is also intended to change often (e.g., online publications such as blogs, magazine articles, and event listings). Thus, this tag tells search engines the content it contains changes often and put more weight on the text it contains compared to other site elements.
 
 Each \<article\> should be identified, typically by including a heading as a child of the \<article\> element.  
@@ -294,7 +328,7 @@ Each \<article\> should be identified, typically by including a heading as a chi
 What content would you consider to structure as articles? The guided visit options are a good candidate:
 
 ```html
-<article>
+<article><!-- Self-contained content intended to be independently distributable -->
     <h3>...</h3>
     <img ...>   
     ...
@@ -302,18 +336,22 @@ What content would you consider to structure as articles? The guided visit optio
 </article>
 ```
 
- [footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
- 
- [section]https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
- 
-Notes:
-- It is essential to understand the meaning of each semantic element (header, main, and article) and how these elements structure your web page's content in a way that is more representative of its content.
-- Although the structure of your web document represents the meaning of each piece of content better, it has not changed or improved the appearance of the webpage. To improve the appearance of a webpage to its visitors, you will use another technology different from HTML, namely CSS. CSS is the topic of the next tutorial.
+## Task 11: Structuring content using sections
 
-## Task 10: Highlithing text importance
+[section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section): represents a generic sectioning element, and should only be used if there isn't a more specific element to represent it like \<main\>, \<nav\>, or \<aside\>. 
+
+Use the section element to enclose the headings and description of the local communities and activities sections. 
+
+Notes:
+- Although it might look similar to the \<article\> element, if the contents of the element represent a standalone, atomic unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
+- If you are only using the element as a styling wrapper, use \<div\> instead. As a sectioning element, a rule of thumb is that content inside \<section\> should be logically related.
+- Sections usually have a heading element as a childe
+- Sections can exist inside articles to group semantically connected content inside an article
+
+## Task 12: Highlithing text importance
 In addition to the semantic tags mentioned above, you can also use other elements to highlight important text, such as:
 
-The [emphasis element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em): represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
+The [emphasis element \(em\)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em): represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
 
 Choose a word or words in your content that you think should be emphasized. For example, you can emphasize the words "local community members" in the sentence: "Laguna Brava Ecotourism is an organization run by local community members based in Laguna Brava.":
 
@@ -335,15 +373,21 @@ And,
 <strong>This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
 
-## Task 11: Adding the navigation element
+ ## Task 13 Adding the figure element 
  
-[nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
- 
- ## Task 12: Adding the figure element 
- 
-[figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
+Use the [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element with a caption to structure the content related to the image in each activity. Use the description of the activity as the caption of figure:
 
-## Task 13: Adding on-page SEO
+```html
+<figure>
+    <img src="..."
+         alt="...">
+    <figcaption>[Activity description]</figcaption>
+</figure>
+```
+
+> The figure element groups together related content, contributing to the meaning (semantics) of the HTML document when compared to the image tag.
+
+## Task 14: Adding on-page SEO
 
 Check your content against the following recommendations to improve SEO:
 1. Use \<title\> with descriptive text (i.e., text contains at least one keyword)
@@ -356,14 +400,14 @@ Check your content against the following recommendations to improve SEO:
 <meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
 ```
 
-As mentioned in task 7, The use of semantic tags (task 8) also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
+As mentioned in task 7, the use of semantic tags (task 8) also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
 
-## Task 14: Adding side content
+## Task 15: Adding side content
 Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
 
 ```html
 <hr>	        
-<aside>
+<aside><!-- Defines content aside from the content it is placed in -->
     ...    
     <!-- A form asking for page viewer's experiences -->	
     <form>
@@ -371,5 +415,7 @@ Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HT
     </form>
 </aside>
 ```
+
+> The \<aside\> HTML element represents tangential information or content indirectly related to the document's central theme, such as sidebars or callout boxes.
 
 The [index.html](./index.html) file contains the final HTML document. *Compare the structure of your HTML document using traditional HTML elements (paragraphs) versus HTML5 semantic elements.*
