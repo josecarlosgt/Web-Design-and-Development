@@ -16,7 +16,7 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 - Nature
 - Adventure
 
-We will use the following text with the keywords highlighted in bold.
+We will use the following text. Note the keywords are highlighted in bold.
 
 > *Lake description*  
 > **Laguna Brava** is a karstic lake of incomparable beauty located in western Guatemala. **Laguna Brava** is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme **adventure** and intimate contact with **nature**. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. **Laguna Brava** is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of **Laguna Brava** Laguna are so calm that they instantly awaken a deep feeling of peace.
@@ -47,7 +47,7 @@ We will use the following text with the keywords highlighted in bold.
 ## Task 1: Creating the basic structure
 
 Fill in the \<title\> element with a descriptive title and specify UTF-8 as the character encoding set (charset) using the meta tag.
-This title will appear on the browser's window.
+Recall this title will appear on the browser's window or tab.
 
 ```html
 <html lang="en">
@@ -151,7 +151,7 @@ Notes:
 - You may also look at how to make the hyperlink to open the target page in a browser tab or window.
 
 ## Task 6: Adding images
-In this task, we will add a few images using the [image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) by specifying the URL of the image in the source (src) property of the \<img\> tag. You may look at other properties to adjust the image's size.
+Add a few images using the [image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). Specify the URL of the image in the source (src) property of the \<img\> tag. You may look at other properties to adjust the image's size.
 
 We will use local images, which means the server will host these images. Create an *img/* in the same folder containing your *index.html* document and add the images to be included in each image tag below.
 
@@ -183,7 +183,7 @@ Place the image before the level 1 heading created in task 2.
 
 Notes:
 - The image element does not require a closing tag because this element does not enclose any content. All the information required to display an image is specified as attributes of the image element.
-- To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. Create a folder named "images" with the image you want to display. Then, use a relative path to this image, i.e., "images/myimage.jpg".
+- To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. The image URL can be a relative path, e.g., "images/myimage.jpg", which means the image is served locally or an absolute path, e.g., https://josecarlosgt.github.io/Web-Design-and-Development/img/kayak.jpg, which means the image is served externally by another web server.
 
 ## Task 7: Adding a web form
 After the last paragraph, create a web form that requests comments from your page's viewer based on their experiences to Laguna Brava (if any). Web forms are useful for capturing information from users.
@@ -277,7 +277,7 @@ Many HTML semantic tags are *sectioning* elements because they create logical se
 - aside
 
 Notes:
-- The doctype declaration is usually the very first thing defined in an HTML document (even before the opening <html>tag); however, the doctype declaration itself is not an HTML tag.
+- The doctype declaration is usually the very first thing defined in an HTML document (even before the opening \<html\>tag); however, the doctype declaration itself is not an HTML tag.
 
 ## Task 9: Adding semantic tags (header, main, and footer)
 In this task, you will be adding some of the most popular semantic tags introduced by HTML5.
@@ -343,13 +343,13 @@ What content would you consider to structure as articles? The guided visit optio
 Use the section element to enclose the headings and description of the local communities and activities sections. 
 
 Notes:
-- Although it might look similar to the \<article\> element, if the contents of the element represent a standalone, atomic unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
+- Although it might behaver similar to the \<article\> element, if the contents of the element represent a standalone unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
 - If you are only using the element as a styling wrapper, use \<div\> instead. As a sectioning element, a rule of thumb is that content inside \<section\> should be logically related.
-- Sections usually have a heading element as a childe
-- Sections can exist inside articles to group semantically connected content inside an article
+- Sections usually have a heading element as a child
+- Sections can exist inside articles to group semantically connected content inside an article or other elements
 
 ## Task 12: Highlithing text importance
-In addition to the semantic tags mentioned above, you can also use other elements to highlight important text, such as:
+In addition to the sectioning tags mentioned above, you can also use other elements to highlight important text, such as:
 
 The [emphasis element \(em\)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em): represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
 
@@ -372,6 +372,8 @@ And,
 ```html
 <strong>This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
+
+These elements are preferred instead of the once glorious but now less popular [\<b\>](https://www.w3schools.com/tags/tag_b.asp) and [\<i\>](https://www.w3schools.com/tags/tag_i.asp) tags.
 
  ## Task 13 Adding the figure element 
  
