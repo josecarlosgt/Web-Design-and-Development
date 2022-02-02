@@ -184,6 +184,7 @@ Place the image before the level 1 heading created in task 2.
 Notes:
 - The image element does not require a closing tag because this element does not enclose any content. All the information required to display an image is specified as attributes of the image element.
 - To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. The image URL can be a relative path, e.g., "images/myimage.jpg", which means the image is served locally or an absolute path, e.g., https://josecarlosgt.github.io/Web-Design-and-Development/img/kayak.jpg, which means the image is served externally by another web server.
+- You can also use the title attribute to provide additional information about the image. Most browsers will display the content of this attribute in a tootip when the user hovers over the image.
 
 ## Task 7: Adding a web form
 After the last paragraph, create a web form that requests comments from your page's viewer based on their experiences to Laguna Brava (if any). Web forms are useful for capturing information from users.
