@@ -151,14 +151,14 @@ Notes:
 - You may also look at how to make the hyperlink to open the target page in a browser tab or window.
 
 ## Task 6: Adding images
-Add a few images using the [image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). Specify the URL of the image in the source (src) property of the \<img\> tag. You may look at other properties to adjust the image's size.
+Add a few images using the [image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). Specify the URL of the image in the source (src) property of the \<img\> tag. 
 
 We will use local images, which means the server will host these images. Create an *img/* in the same folder containing your *index.html* document and add the images to be included in each image tag below.
 
 Place the image before the level 1 heading created in task 2.
 
 ```html
-<img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake">
+<img src="img/panoramic-laguna-brava-2.jpg" alt="Laguna Brava lake" title="Laguna Brava">
 <h1>...</h1>
 ```
 
@@ -169,12 +169,12 @@ Place the image before the level 1 heading created in task 2.
  ```html
  <h3>The Lake Challenge</h3>
  <p>
-   <img src="img/kayak.jpg" width="450" height="350" alt="Lake challenge kayak">
+   <img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
     ...            
 </p>
 <h3>Sit Back & Relax</h3>
 <p>
-    <img src="img/boat.jpg" width="450" height="350" alt="Sit Back & Relax boat">
+    <img src="img/boat.jpg" alt="Sit Back & Relax boat" title="Boat trip">
     ...            
 </p>
 ```
