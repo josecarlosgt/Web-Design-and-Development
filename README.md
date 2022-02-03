@@ -405,6 +405,8 @@ Check your content against the following recommendations to improve SEO:
 
 As mentioned in task 7, the use of semantic tags (task 8) also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
 
+You may also visit the page [How Search organizes information](https://www.google.com/search/howsearchworks/crawling-indexing/) to get a basic understanding of how Google's Search service works.
+
 ## Task 15: Adding side content
 Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
 
