@@ -356,10 +356,10 @@ In addition to the sectioning tags mentioned above, you can also use other eleme
 
 The [emphasis element \(em\)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em): represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
 
-Choose a word or words in your content that you think should be emphasized. For example, you can emphasize the words "local community members" in the sentence: "Laguna Brava Ecotourism is an organization run by local community members based in Laguna Brava.":
+Choose a word or words in your content that you think should be emphasized. For example, you can emphasize the words "responsible ecotourism practices" in the sentence: "They believe that visitors and responsible ecotourism practices are essential to support the development of their communities.":
 
 ```html
-<em>local community members</em>
+<em>responsible ecotourism practices</em>
 ```
 
 The [strong element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong): element indicates that its contents have strong importance, seriousness, or urgency.
@@ -367,7 +367,7 @@ The [strong element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
 Choose sentences in your content that you think should be marked as serious or urgent. For example, statements about safety and the requirement of excellent physical condition for the first option of guided visits:
 
 ```html
-<strong>we provide life vests and local guides who know the lake very well to take care of your safety.</strong>
+<strong>they provide life vests and local guides who know the lake very well to take care of your safety.</strong>
 ```
 
 And,
