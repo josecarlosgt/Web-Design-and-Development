@@ -117,24 +117,25 @@ Each guided visit option contains details organized as a list (e.g., price and m
 <h3>The Lake Challenge</h3>
 <p>
 ...
-    <ul>
-        <li>Duration: 5 hours approx.</li>
-        <li>Price: $50 USD</li>
-        <li>Minimum: 2 pax</li>
-    </ul>
-</p>            
+</p>
+<ul>
+    <li>Duration: 5 hours approx.</li>
+    <li>Price: $50 USD</li>
+    <li>Minimum: 2 pax</li>
+</ul>
+            
 ```
 
 ```html
 <h3>Sit Back & Relax</h3>
 <p>
 ...
-    <ul>
-        <li>Duration: 3 hours approx.</li>
-        <li>Price: $40 USD</li>
-        <li>Minimum: 4 pax</li>
-    </ul>
 </p>
+<ul>
+    <li>Duration: 3 hours approx.</li>
+    <li>Price: $40 USD</li>
+    <li>Minimum: 4 pax</li>
+</ul>
 ```
 
 ## Task 5: Adding links
@@ -167,14 +168,15 @@ Place the image before the level 1 heading created in task 2.
  Then, add an image in each option of the guided visit. Place each image right below the sub-heading in each option (before the description text).
 
  ```html
- <h3>The Lake Challenge</h3>
- <p>
-   <img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
+<h3>The Lake Challenge</h3>
+<img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
+<p>
     ...            
 </p>
+
 <h3>Sit Back & Relax</h3>
+<img src="img/boat.jpg" alt="Sit Back & Relax boat" title="Boat trip">
 <p>
-    <img src="img/boat.jpg" alt="Sit Back & Relax boat" title="Boat trip">
     ...            
 </p>
 ```
