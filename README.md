@@ -22,9 +22,9 @@ Many CSS properties control the font properties for displaying text. CSS font pr
 - font-family: specifies the font family, such as "Times New Roman" or serif.
 - font-size: changes the font size, such as 120%, small, or 12px.
 - font-weight: specifies the font weight, such as normal or bold.
-- font-style: changes the text style, such as normal, italic, or oblique.
-- font-variant: specifies the variant of the text, such as normal or small-caps.
-- font: is shorthand for setting several font properties at the same time. Ex: font: italic 12pt Georgia, serif;
+- [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style): changes the text style, such as normal, italic, or oblique.
+- [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant): specifies the variant of the text, such as normal or small-caps.
+- [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font): is shorthand for setting several font properties at the same time. Ex: font: italic 12pt Georgia, serif;
 
 **[font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)**
 
