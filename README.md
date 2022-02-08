@@ -76,7 +76,7 @@ Add the following CSS rules to increase the font size of the headers in your web
 
 ```css
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-style: italic;
     font-variant: small-caps;
 }
@@ -92,6 +92,8 @@ h3 {
 ```
 
 > The rules above also includes other font properties, such as [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant) and [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style).
+    
+Try to declare all properties for the h1 element using the shorthand property [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
 
 **Text properties**
 
