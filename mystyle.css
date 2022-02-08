@@ -1,4 +1,4 @@
-/* Task 1: Styling the text */
+/* Task 1: Font and text properties */
 
 body {
     font-family: Arial, sans-serif;
@@ -29,7 +29,6 @@ nav {
 
 nav a {
     text-decoration: none;
-    text-transform: lowercase;
     font-weight: bold;
     font-size: larger;
 }
@@ -43,7 +42,7 @@ header img {
 
 article img {
     width: 450px;
-    height: 350px;
+    height: 254;
 }
 
 /* Task 4: Positioning */
@@ -58,6 +57,10 @@ article img {
 }
 
 /* Task 5: Spacing */
+
+nav ul {
+    padding: 0;
+}
 
 nav li {
     list-style-type: none;

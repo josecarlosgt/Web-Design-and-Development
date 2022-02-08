@@ -122,12 +122,29 @@ h1 {
 
 Browsers come with several default CSS rules for elements like links and list items.
 
+Before starting this taks, let's add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
+
+```html
+<nav>
+    <ul>
+        <li>
+            <a href="#communities">Communities</a>
+        </li>
+        <li>
+            <a href="#activities">Activities</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+```
+
 Apply the following CSS rules to style the links in the navigation menu:
 
 ```css
 nav a {
     text-decoration: none;
-    text-transform: lowercase;
     font-weight: bold;
     font-size: larger;
 }
@@ -247,6 +264,11 @@ To change the size of the *content box*, use the *height* and *width* properties
 Add the following rule to adjust the space between each item in the navigation menu:
 
 ```css
+
+nav ul {
+    padding: 0;
+}
+
 nav li {
     list-style-type: none;
 
