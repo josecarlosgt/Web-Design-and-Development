@@ -171,21 +171,19 @@ However, images are special because although they have a display value of inline
 
 Currently, the *width* and *height* attributes of the *img* tag control the size of the images displayed on our website. However, image size is unrelated to our HTML document's structure or content, and CSS rules should control any size adjustment.
 
-Remove all the *width* and *height* attributes of the image elements and add the following CSS rules:
+Remove all the *width* and *height* attributes (if any) of the image elements and add the following CSS rules:
 
 ```css
 header img {
     width: 960px;
-    height: 320px;
 }
 
 article img {
-    width: 450px;
-    height: 350px;
+    width: 400px;
 }
 ```
 
-> The rules above specify the size of the images using a length or absolute value.
+> The rules above specify the size of the images using a length (absolute) value. When specifying only the width attribute of an image, the browser automatically calculates the image's height.
 
 The values for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) dimension properties can be:
 
@@ -193,23 +191,91 @@ The values for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/widt
 - percentage: defines the dimension as a percentage of the containing block's height.
 - auto: the browser will calculate and select a height for the specified element. This value is useful with other properties when centering block elements.
 
-## Task 4: Positioning
+## Task 4: Spacing
+
+**The box model**
+
+HTML elements take up space on the web page. The box model is essential for understanding how to adjust the space between elements. The box model describes the size of each element as a series of nested boxes, where each box determines a different property:
+
+- Content: The innermost box contains the content of the element, such as text and images. To change the size of the *content box*, use the *height* and *width* properties shown in Task 3.
+- Padding: The padding box contains the content box and adds a transparent area around the content.
+- Border: The border box contains the padded content and adds an optionally colored area around the padding.
+- Margin: The margin box contains all three boxes and adds a transparent area around the border.
+
+![box-model](img/box-model.png)
+
+The CSS properties that control the padding, border, and margin are:
+
+- padding: specifies the padding thickness. Ex: padding: 5px; creates a 5 pixel padding around the content.
+- border: specifies the border's thickness, style, and color. Ex: border: 2px solid blue; creates a solid blue border that is 2 pixels thick.
+- margin: specifies the margin thickness. Ex: margin: 10px; creates a 10 pixel margin.
+
+The padding and margin properties may have from 1 to 4 values:
+
+- One value - Specifies uniform thickness around the box. Ex: margin: 20px; specifies 20px margin thickness around the box.
+- Two values - Specifies top and bottom, right and left thickness. Ex: margin: 10px 20px; specifies 10px top and bottom margins and 20px right and left margins.
+- Three values - Specifies top, right and left, and bottom thickness. Ex: margin: 10px 30px 20px; specifies 10px top margin, 30px right and left margins, and 20px bottom margin.
+- Four values - Specifies top, right, bottom, and left thickness. Ex: margin: 10px 30px 20px 40px; specifies 10px top margin, 30px right margin, 20px bottom margin, and 40px left margin.
+
+The padding, border, and margin CSS properties can apply only to one side by adding a -top, -left, -bottom, or -right suffix to the CSS property. Ex: padding-top:5px; specifies 5 pixels of padding above the content.
+
+**Block and inline boxes**
+
+The box model also broadly defines two general types of boxes: block boxes and inline boxes. Their characteristics refer to how the box behaves in terms of page flow and in relation to other boxes on the page.
+
+If a box has an outer display type of block, it will behave in the following ways:
+
+- The box will break onto a new line.
+- The box will extend in the inline direction to fill the space available in its container. In most cases this means that the box will become as wide as its container, filling up 100% of the space available.
+- The width and height properties are respected.
+- Padding, margin and border will cause other elements to be pushed away from the box.
+- Examples: <\h1\>, \<p\>, \<div\>
+
+If a box has an outer display type of inline, then:
+
+- The box will not break onto a new line.
+- The width and height properties will not apply.
+- Vertical padding, margins, and borders will not cause other inline boxes to move away from the box.
+- Horizontal padding, margins, and borders will apply and will cause other inline boxes to move away from the box.
+
+> In short, properties like padding, margin, height, and width only work with block elements. Block elements, like paragraphs and headings, occupy the entire line of the webpage, while inline elements, like links and spans, occupy only the space corresponding to the content they contain.
+
+We can use the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property to transform *inline* elements into *block* elements. The *inline-block* value generates a block element box surrounding the element's content, as if it were a single inline box, with adjustable margin, padding, width, and height. 
+
+Add the following rule to adjust the space between each item in the navigation menu:
+
+```css
+
+nav ul {
+    padding: 0;
+    text-align:center;
+}
+
+nav li {
+    list-style-type: none;
+
+    display: inline-block;
+    padding: 10px;
+}
+```
+
+## Task 5: Positioning
 
 The content of each activity would look better if positioned to the right of each activity's photo. The CSS rules below below positions or *floats* the content left, causing the description and features list of each activity to appear next to the activity's photo:
 
 ```css
-.activity-image {
+.activity img {
     float: left;
 }
 ```
 
-The [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) CSS property places an element on the left or right side of its container, *allowing text and inline elements to wrap around it*. The element is removed from the normal flow of the page, though still remaining a part of the flow! (yes, this is very confusing). 
+The [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) CSS property places an element on the left or right side of its container, *allowing text and inline elements to wrap around it*. The element is removed from the normal flow of the page, though still remaining a part of the flow! 
 
 After adding the rule above, you noticed the property affected the content directly following the image and all subsequent content! To avoid this behavior, we use float’s sister property is [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear). An element with the clear property set on it will not move up adjacent to the float like the float desires but will move itself down past the float.
 
 If you are in a situation where you always know what the succeeding element will be, you can apply the clear: both; This is ideal as it requires no fancy hacks and no additional elements making it perfectly semantic.
 
-Another common technique is the *Empty Div Method*, which is quite literally an empty div. Sometimes you’ll see an <br> element or another random element used, but div is the most common. This is because it has no browser default styling, doesn’t have any particular function, and is unlikely to be generically styled with CSS. Semantic purists scorn this method since its presence has no contextual meaning at all to the page and is there purely for presentation. Of course, in the strictest sense, they are correct, but it gets the job done right and doesn’t hurt anybody.
+Another common technique is the *empty div method*, which is literally an empty div. Sometimes you’ll see an <br> element or another random element used, but div is the most common. This is because it has no browser default styling, doesn’t have any particular function, and is unlikely to be generically styled with CSS. The downside of this approach is that an empty div has no contextual meaning to the page and is there purely for presentation. 
 
 Add the following rule:
 
@@ -233,58 +299,12 @@ Then, create an empty div with the rule above applied and place it right after t
 Reference:
 - [All About Floats](https://css-tricks.com/all-about-floats/)
 
-## Task 5: Spacing
-
-HTML elements take up space on the web page. The box model is essential for understanding how to adjust the space between elements. The box model describes the size of each element as a series of nested boxes, where each box determines a different property:
-
-- Content: The innermost box contains the content of the element, such as text and images.
-- Padding: The padding box contains the content box and adds a transparent area around the content.
-- Border: The border box contains the padded content and adds an optionally colored area around the padding.
-- Margin: The margin box contains all three boxes and adds a transparent area around the border.
-
-![box-model](img/box-model.png)
-
-The CSS properties that control the padding, border, and margin are:
-
-- padding: specifies the padding thickness. Ex: padding: 5px; creates a 5 pixel padding around the content.
-- border: specifies the border's thickness, style, and color. Ex: border: 2px solid blue; creates a solid blue border that is 2 pixels thick.
-- margin: specifies the margin thickness. Ex: margin: 10px; creates a 10 pixel margin.
-
-The padding and margin properties may have from 1 to 4 values:
-
-- One value - Specifies uniform thickness around the box. Ex: margin: 20px; specifies 20px margin thickness around the box.
-- Two values - Specifies top and bottom, right and left thickness. Ex: margin: 10px 20px; specifies 10px top and bottom margins and 20px right and left margins.
-- Three values - Specifies top, right and left, and bottom thickness. Ex: margin: 10px 30px 20px; specifies 10px top margin, 30px right and left margins, and 20px bottom margin.
-- Four values - Specifies top, right, bottom, and left thickness. Ex: margin: 10px 30px 20px 40px; specifies 10px top margin, 30px right margin, 20px bottom margin, and 40px left margin.
-
-The padding, border, and margin CSS properties can apply only to one side by adding a -top, -left, -bottom, or -right suffix to the CSS property. Ex: padding-top:5px; specifies 5 pixels of padding above the content.
-
-To change the size of the *content box*, use the *height* and *width* properties explained in Task 3.
-
-Add the following rule to adjust the space between each item in the navigation menu:
-
-```css
-
-nav ul {
-    padding: 0;
-}
-
-nav li {
-    list-style-type: none;
-
-    display: inline-block;
-    padding: 10px;
-}
-```
-
-> Properties like padding, margin, height, and width can only be applied to block elements. Block elements, like paragraphs and headings, occupy the entire line of the webpage, while inline elements, like links and spans, occupy only the space corresponding to the content they contain.
-
-We can use the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property to transform *inline* elements into *block* elements. The *inline-block* value generates a block element box surrounding the element's content, as if it were a single inline box, with adjustable margin, padding, width, and height. 
-
 Adjust the space between the activit's photo and description:
 
 ```css
-.activity-image {
+.activity img {
+    float: left;
+
     margin-right: 10px;
 }
 ```
@@ -292,7 +312,7 @@ Adjust the space between the activit's photo and description:
 Place the bullet points of each activity's features inside the element's content box:
 
 ```css
-.activity-description li {
+.activity li {
     list-style-position: inside;
 }
 ```
@@ -305,6 +325,10 @@ Adjust the spacing of the form elements:
 
     padding: 12px 20px;
     margin: 8px 0;
+}
+
+.experience {
+    margin-bottom: 20px;
 }
 ```
 

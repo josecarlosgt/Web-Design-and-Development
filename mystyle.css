@@ -1,4 +1,4 @@
-/* Task 1: Font and text properties */
+/* Font & text properties for headings  */
 
 body {
     font-family: Arial, sans-serif;
@@ -21,11 +21,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-nav {
-    text-align: center;
-}
-
-/* Task 2: Overriding the default styling of elements */
+/* Navigation */
 
 nav a {
     text-decoration: none;
@@ -33,33 +29,9 @@ nav a {
     font-size: larger;
 }
 
-/* Task 3: Sizing */
-
-header img {
-    width: 960px;
-    height: 320px;
-}
-
-article img {
-    width: 450px;
-    height: 254;
-}
-
-/* Task 4: Positioning */
-
-.activity-image {
-    float: left;
-    margin-right: 10px;
-}
-
-.clear {
-    clear: both;
-}
-
-/* Task 5: Spacing */
-
 nav ul {
     padding: 0;
+    text-align:center;
 }
 
 nav li {
@@ -69,9 +41,30 @@ nav li {
     padding: 10px;
 }
 
-.activity-description li {
+/* Header image */
+
+header img {
+    width: 992px;
+}
+
+/* Activities */
+
+.activity img {
+    width: 400px;
+    margin-right: 10px;
+
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.activity li {
     list-style-position: inside;
 }
+
+/* Contact form */
 
 .experience input[type=text], .experience input[type=email], .experience textarea {
     width: 100%;
@@ -80,14 +73,18 @@ nav li {
     margin: 8px 0;
 }
 
-/* Task 6: Centering the webpage */
+.experience {
+    margin-bottom: 20px;
+}
+
+/* Center the webpage */
 
 .center {
     max-width: 960px;
     margin: 0 auto;
 }
 
-/* Task 7: Pseudo-classes */
+/* Pseudo-classes */
 
 /* unvisited link */
 nav a:link {
