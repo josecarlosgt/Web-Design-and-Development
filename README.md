@@ -197,6 +197,12 @@ A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/do
 - [HTML input types](https://www.w3schools.com/html/html_form_input_types.asp)
 - [Label element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
+Use the [break line element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br) to produces a line break in text (carriage-return) as necessary to separate each group of elements.
+
+```html
+<br>
+```
+
 Create a text input field to capture the user's name:
 ```html
 <label for="name">Name: </label>
@@ -246,7 +252,18 @@ Finally, add a comment on top of the form element to state the purpose of your f
 ```html
 <!-- A form asking for page viewer's experiences -->
 ```
- 
+
+**Exercise: Adding additional fields**
+
+Refer to [this documentation on input types](https://www.w3schools.com/html/html_form_input_types.asp) to add the following fields (you should add a label to each field):
+1. An input field for the date of visit
+2. An input field for the url of the user's personal blog
+3. An input field for the number of visitors
+4. An input field for the type of traveler (restrict the user to choose only from two options: Adventurer or Explorer)
+5. A dropdown for the visitor's region with the following values: North America, South America, Europe, Asia, Africa, and Australia
+
+Also, make the fields name, email, and experience required fields.
+
 ## Task 8: Make your Web page HTML5
 Let's improve the structure of your website by leveraging HTML5 features.
 

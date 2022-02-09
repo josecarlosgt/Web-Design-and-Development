@@ -104,13 +104,41 @@
         </p>
         <form>
             <label for="name">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Write your name"><br><br>
+            <input type="text" name="name" id="name" placeholder="Write your name" required="True"><br><br>
+
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="Write your email"><br><br>
+            <input type="email" name="email" id="email" placeholder="Write your email" required="True"><br><br>
+
             <label for="experience">Experience: </label>
             <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5"
-                cols="50"></textarea><br><br>
-            <input type="submit" value="Submit">
+                cols="50" required="True"></textarea><br><br>
+
+            <label for="visit">Date of visit: </label>
+            <input type="date" name="visit" id="visit"><br><br>
+
+            <p>How would you describe yourself?</p>
+            <label for="adventurer">Adventurer</label>
+            <input type="radio" name="travelerType" id="adventurer">
+            <label for="explorer">Explorer</label>
+            <input type="radio" name="travelerType" id="explorer"><br><br>
+
+            <label for="blog">Personal blog:</label>
+            <input type="url" name="blog" id="blog" placeholder="Write the address of your blog" ><br><br>
+
+            <label for="visitors">Number of visitors:</label>
+            <input type="number" name="visitors" id="visitors"><br><br>
+
+            <label for="continent">Choose your region of origin:</label>
+            <select name="continent" id="continent">
+                <option value="north_america">North America</option>
+                <option value="south_america">South America</option>
+                <option value="europe">Europe</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="australia">Australia</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit"><br><br>
         </form>
     </aside>
     <footer>
