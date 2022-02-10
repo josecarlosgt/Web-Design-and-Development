@@ -25,12 +25,10 @@ nav a {
   font-weight: bold;
   font-size: larger;
 }
-
 nav ul {
   padding: 0;
   text-align: center;
 }
-
 nav li {
   list-style-type: none;
   display: inline-block;
