@@ -1,0 +1,107 @@
+/* Font & text properties for headings  */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    font-style: italic;
+    font-variant: small-caps;
+
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav ul {
+    padding: 0;
+    text-align:center;
+}
+
+nav li {
+    list-style-type: none;
+
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Header image */
+
+header img {
+    width: 960px;
+}
+
+/* Activities */
+
+.activity img {
+    width: 400px;
+    margin-right: 10px;
+
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.activity li {
+    list-style-position: inside;
+}
+
+/* Contact form */
+
+.experience input[type=text], .experience input[type=email], .experience textarea {
+    width: 100%;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+/* Center the webpage */
+
+.center {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Pseudo-classes */
+
+/* unvisited link */
+nav a:link {
+    color: black;
+}
+
+/* visited link */
+nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: blue;
+}
+
+/* selected link */
+nav a:active {
+    color: gray;
+}

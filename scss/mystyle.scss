@@ -1,3 +1,5 @@
+$page-width: 960px; 
+
 /* Font & text properties for headings  */
 
 body {
@@ -44,7 +46,7 @@ nav li {
 /* Header image */
 
 header img {
-    width: 992px;
+    width: $page-width;
 }
 
 /* Activities */
@@ -80,7 +82,7 @@ header img {
 /* Center the webpage */
 
 .center {
-    max-width: 960px;
+    max-width: $page-width;
     margin: 0 auto;
 }
 
