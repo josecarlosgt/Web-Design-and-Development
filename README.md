@@ -382,15 +382,3 @@ nav a:active {
     color: gray;
 }
 ```
-
-## Sass:
-
-Example command for generating a css file from a sass file:
-
-```
-sass scss/mystyle.scss css/mystyle-output.css
-```
-
-### More resources on Sass:
-- [Install Sass](https://sass-lang.com/install)
-- [Learn more about "Map Preprocessed Code to Source Code"](https://developer.chrome.com/docs/devtools/javascript/source-maps/)
