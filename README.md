@@ -360,13 +360,14 @@ What content would you consider to structure as articles? The guided visit optio
 
 [section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section): represents a generic sectioning element, and should only be used if there isn't a more specific element to represent it like \<main\>, \<nav\>, or \<aside\>. 
 
-Use the section element to enclose the headings and description of the local communities and activities sections. 
+Use the section element to enclose the headings and content of each section of the web page: the local communities and activities sections. 
 
 Notes:
 - Although it might behaver similar to the \<article\> element, if the contents of the element represent a standalone unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
 - If you are only using the element as a styling wrapper, use \<div\> instead. As a sectioning element, a rule of thumb is that content inside \<section\> should be logically related.
 - Sections usually have a heading element as a child
 - Sections can exist inside articles to group semantically connected content inside an article or other elements
+- Section can also be used to group semantically related article elements
 
 ## Task 12: Highlithing text importance
 In addition to the sectioning tags mentioned above, you can also use other elements to highlight important text, such as:
