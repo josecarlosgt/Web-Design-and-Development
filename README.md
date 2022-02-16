@@ -255,14 +255,14 @@ Finally, add a comment on top of the form element to state the purpose of your f
 
 **Exercise: Adding additional fields**
 
-Refer to [this documentation on input types](https://www.w3schools.com/html/html_form_input_types.asp) to add the following fields (you should add a label to each field):
-1. An input field for the date of visit
-2. An input field for the url of the user's personal blog
-3. An input field for the number of visitors
-4. An input field for the type of traveler (restrict the user to choose only from two options: Adventurer or Explorer)
-5. A dropdown for the visitor's region with the following values: North America, South America, Europe, Asia, Africa, and Australia
-
-Also, make the fields name, email, and experience required fields.
+Refer to [this documentation on input types](https://www.w3schools.com/html/html_form_input_types.asp) to add the following from controls (you should use a label in each form control):
+1. A form control to capture the date of the visit
+2. A form control to capture url of the user's personal blog
+3. A form control to capture the number of visitors
+4. A form control to capture the type of traveler (restrict the user to choose only from two options: Adventurer or Explorer)
+5. A form control to capture the visitor's region with the following values: North America, South America, Europe, Asia, Africa, and Australia
+6. Make the controls name, email, and experience required
+7. Use the [fieldset](https://www.w3schools.com/tags/tag_fieldset.asp) and [legend](https://www.w3schools.com/tags/tag_legend.asp) elements to group the form controls. Use your criterion to when grouping the form controls.
 
 ## Task 8: Make your Web page HTML5
 Let's improve the structure of your website by leveraging HTML5 features.
@@ -304,12 +304,15 @@ In this task, you will be adding some of the most popular semantic tags introduc
 
 [header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header): represents introductory content and navigational aids. It may contain  heading elements, a logo, a search form, an author name, and other elements.
 
-Use this element to enclose the lake image and the main heading:
+Use this element to enclose the lake image, the main heading, and the introductory paragraph about the lake:
 
 ```html
 <header><!-- Introductory content -->            
     <img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake">
     <h1>Welcome to Laguna Brava Ecotourism</h1>
+    <p>
+        Laguna Brava is a ...
+    </p>
 </header>
 ```
 
