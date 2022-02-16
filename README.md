@@ -372,6 +372,10 @@ Notes:
 - Sections can exist inside articles to group semantically connected content inside an article or other elements
 - Section can also be used to group semantically related article elements
 
+> The advantage is that each section can have its separate HTML heading. This can give search engines a better understanding of how the web page is segmented and structured. Search engines might be able to interpret the information hierarchy of the HTML document based on \<section\> tags.
+
+Reference: [HTML5 Elements That Can Affect Search Engine Indexing](https://www.webfx.com/blog/web-design/what-potential-impact-can-html5-have-on-seo/)
+
 ## Task 12: Highlithing text importance
 In addition to the sectioning tags mentioned above, you can also use other elements to highlight important text, such as:
 
