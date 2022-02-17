@@ -8,4 +8,4 @@ First, install in your computer the latest version of the Git client from [here]
 
 Then, continue with:
 1. The [Working with Git](https://docs.google.com/document/d/1HI7Wv8Is877O0P_IMUYzIgMBizpdBczGWDENzIlgqgE/edit?usp=sharing) guide
-2. And the [Working with GitHub](https://na) guide
+2. And the [Working with GitHub](https://docs.google.com/document/d/1W9yUNS-k7aylazSTJyVZO1EGVGsQF1G0eu80TYOQ-oY/edit?usp=sharing) guide
