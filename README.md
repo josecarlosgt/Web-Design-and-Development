@@ -356,29 +356,3 @@ Create a new div to wrap all the content of the webpage and apply the rule above
     </div>
 </body>
 ```
-
-## Task 7: Pseudo-classes
-
-The following CSS rules style contain [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) that change the default styles associated to the different states of link elements that result from interactions between the user and the elements. For example, the user hovering the mouse or pointer on a link causes the link to be in the state of *hover*.
-
-```css
-/* unvisited link */
-nav a:link {
-    color: black;
-}
-
-/* visited link */
-nav a:visited {
-    color: black;
-}
-
-/* mouse over link */
-nav a:hover {
-    color: blue;
-}
-
-/* selected link */
-nav a:active {
-    color: gray;
-}
-```
