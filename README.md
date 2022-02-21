@@ -13,6 +13,8 @@ Before starting with Task 1, rename the file *structure.html* to *index.html* an
 </head>
 ```
 
+You will need to website created in the previous tutorial. You can download the website from [here](https://github.com/josecarlosgt/Web-Design-and-Development/archive/refs/heads/tutorial-2-designing-and-structuring-content.zip).
+
 ## Task 1: Styling the text
 
 ### Font properties
