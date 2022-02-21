@@ -1,119 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-216045757-1"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
 
-  		gtag('config', 'UA-216045757-1');
-	</script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216045757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <meta charset="utf-8">
-		<meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
-        <title>Laguna Brava Ecotourism</title>
+        gtag('config', 'UA-216045757-1');
+    </script>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    </head>
-    <body>        
-        <header>
-            <!-- Content > images: responsive images 
+    <meta charset="utf-8">
+    <meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
+    <title>Laguna Brava Ecotourism</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        /* Required by the scrollspy component */
+        body {
+            position: relative;
+        }
+        /* 
+            Prevent the top navigation bar from hidding the content when the user scrolls down the page
+            Reference: https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/
+        */
+        section {
+            scroll-margin-top: 56px; /* Add a marging corresponding to the size of the top navigation bar */
+        }
+        /*
+            Prevent the top navigation from overlapping the header image     
+        */
+        header img {
+            margin-top: 50px; /* Leave approximately the size of the top navigation bar */
+        }
+    </style>
+</head>
+
+<!-- Components > scrollspy (https://getbootstrap.com/docs/5.0/components/scrollspy/) --> 
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="60">
+    <header>
+        <!-- Components > navbar: -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Laguna Brava</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#communities">Local Communities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#activities">Activities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content > images: responsive images 
                 img-fluid maintains a 100% max-width regardless of the size of the screen -->
-            <img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image">
-
-            <!-- Content > typography: display headings -->
-            <!-- Utilities > text: text alignment
-                Options for text alignment: text-start, text-end, text-center, ...
-            -->
-            <h1 class="display-2 text-center">Welcome to Laguna Brava Ecotourism</h1>
-        </header>
+        <img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image" title="Laguna Brava" >
 
         <!-- Layout > containers
-            Class containers:
-                container: sets a max-width at each screen size (responsive breakpoint)
-                container-lg, container-xl, ...: specifies a max-width depending on the size of the screen and 100% max-width until a breakpoint
-                    The result is that for given sizes, the content preserves its margins and centered layout
-                container-fluid: maintains a 100% max-width regardless of the size of the screen
-                    The result is that content always occupies the entire width of the screen 
-        -->        
-        <main class="container">
+                Class containers:
+                    container: sets a max-width at each screen size (responsive breakpoint)
+                    container-lg, container-xl, ...: specifies a max-width depending on the size of the screen and 100% max-width until a breakpoint
+                        The result is that for given sizes, the content preserves its margins and centered layout
+                    container-fluid: maintains a 100% max-width regardless of the size of the screen
+                        The result is that content always occupies the entire width of the screen 
+            -->
+        <div class="container">
+            <!-- Content > typography: display headings -->
+            <!-- Utilities > text: text alignment
+                    Options for text alignment: text-start, text-end, text-center, ...
+                -->
+            <h1 class="display-2 text-center">Welcome to Laguna Brava Ecotourism</h1>
 
             <!-- Content > typography: lead -->
             <p class="lead">
-                <em>Laguna Brava</em> is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. Laguna Brava is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
+                Laguna Brava is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty
+                located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so
+                reaching and exploring the lake takes a mix of extreme adventure and intimate contact with nature. The
+                lake beauty lies in the colours variety of its waters, which depends on the sun's position. Laguna Brava
+                is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its
+                name, the waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
             </p>
 
-            <!-- Utilities > spacing
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Utilities > spacing
                 Options for specifying maring and padding: 
                     y: vertical, x: horizontal, t: top, b: bottom, s: start, e: end, ... -->
-            <div class="my-4">
-                <h2 class="display-5">The Local Communities?</h2>
-                <p>
-                    Members of the communities settled around Laguna Brava welcome travelers from all regions of the world looking for adventure and nature. They believe that visitors and responsible tourism practices are essential to support the development of their communities.
-                </p>
-            </div>
+        <section class="my-4" id="communities">
+            <h2 class="display-5" >The Local Communities</h2>
+            <p>
+                Members of the communities settled around Laguna Brava welcome travelers from all regions of the world
+                looking for adventure and nature. They believe that visitors and <em>responsible ecotourism
+                practices</em> are essential to support the development of their communities.
+            </p>
+        </section>
 
-            <div class="my-4">
-                <h2 class="display-5">Activities</h2>
-                <p>
-                    The communities offer two options for guided visits that allow visitors to enjoy Laguna Brava's natural beauty. In both options, <strong class="text-decoration-underline fw-normal">they provide life vests and local guides who know the lake very well to take care of your safety.</strong>
-                </p>
-            </div>
+        <!-- Layout > grid  -->
+        <section class="my-4 row" id="activities">
+            <h2 class="display-5">Activities</h2>
+            <p>
+                The communities offer two options for guided visits that allow visitors to enjoy Laguna Brava's natural
+                beauty. In both options, <strong class="text-decoration-underline fw-normal">they provide life vests and
+                    local guides who know the lake very well to take care of your safety.</strong>
+            </p>
 
-            <!-- Layout > grid  -->
-            <div class="row">
-                <!-- Utilities > border
+            <!-- Utilities > border
                     Options for specifying border: 
                         t: top, b: bottom, s: start, e: end, ... -->
-                <!-- <article class="my-4 p-2 border border-secondary border-2 text-center"> -->
-                <article class="col-lg px-5 mb-4">
-                    <h3 class="display-6 text-center">The Lake Challenge</h3>
-                    <!-- Utilities > border
+
+            <!-- <article class="my-4 p-2 border border-secondary border-2 text-center"> -->
+            <article class="col-lg px-5 mb-4">
+                <h3 class="display-6 text-center">The Lake Challenge</h3>
+                <!-- Utilities > border
                         Options for specifying border that can be used with any element, including images:
                             rounded, rounded-top, rounded-circle, rounded-pill... -->
-                    <img src="img/kayak.jpg" class="img-fluid rounded-pill" alt="The Lake Challenge kayak image">
-                    <div class=mt-2>
-                       <!-- Utilities > colors
-                           Other options for specifying colors: background color: bg-warning, ... -->
+                <figure class=mb-2>
+                    <img src="img/kayak.jpg" class="img-fluid rounded-pill mb-2" alt="The Lake Challenge kayak image"
+                        title="Kayak on Laguna Brava">
+                    <figcaption>
+                        <!-- Utilities > colors
+                            Other options for specifying colors: background color: bg-warning, ... -->
 
                         <!--Bootstrap Icons: https://icons.getbootstrap.com/ 
-                            Install -> https://icons.getbootstrap.com/#install -->
-                        Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
-                        <!-- Content > typography: lists -->
-                        <ul class="list-unstyled">
-                            <!-- Utilities > text: font weight -->
-                            <li><span class="fw-bold">Duration: </span>5 hours approx.</li>
-                            <li><span class="fw-bold">Price: </span>$50 USD</li>
-                            <li><span class="fw-bold">Minimum: </span>2 pax</li>
-                        </ul>            
-                        <!-- Components > buttons -->
-                        <div class="text-center">
-                            <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
-                        </div>                            
-                    </div>                        
-                </article>
+                                Install -> https://icons.getbootstrap.com/#install -->
+                        Cross the four kilometres in a kayak guided by a local guide. <strong
+                            class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is
+                            physically demanding, and we recommend it for only those in excellent physical
+                            condition.</strong>
 
-                <article class="col-lg px-5 mb-4">
-                    <h3 class="display-6 text-center">Sit Back & Relax</h3>
-                    <img src="img/boat.jpg" class="img-fluid rounded-pill" alt="Sit Back & Relax boat image">
-                    <div class=mt-2>
-                        Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
-                        <ul class="list-unstyled">
-                            <li><span class="fw-bold">Duration:  </span>4 hours approx.</li>
-                            <li><span class="fw-bold">Price:  </span>$40 USD</li>
-                            <li><span class="fw-bold">Minimum:  </span>4 pax</li>
-                        </ul>            
-                        <div class="text-center">
-                            <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
-                        </div>                            
-                    </div>                        
-                </article>
-            </div>                
-        </main>            
+                    </figcaption>
+                </figure>
+                <!-- Content > typography: lists -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+                <ul class="list-unstyled">
+                    <!-- Utilities > text: font weight -->
+                    <li><span class="fw-bold">Duration: </span>5 hours approx.</li>
+                    <li><span class="fw-bold">Price: </span>$50 USD</li>
+                    <li><span class="fw-bold">Minimum: </span>2 pax</li>
+                </ul>
+                <!-- Components > buttons -->
+                <div class="text-center">
+                    <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a>
+                </div>
+                </div>
+            </article>
+
+            <article class="col-lg px-5 mb-4">
+                <h3 class="display-6 text-center">Sit Back & Relax</h3>
+                <figure class=mb-2>
+                    <img src="img/boat.jpg" class="img-fluid rounded-pill mb-2" alt="Sit Back & Relax boat image"
+                        title="Boat trip">
+                    <figcaption>
+                        Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit
+                        does not require physical effort.
+                    </figcaption>
+                </figure>
+                <ul class="list-unstyled">
+                    <li><span class="fw-bold">Duration: </span>4 hours approx.</li>
+                    <li><span class="fw-bold">Price: </span>$40 USD</li>
+                    <li><span class="fw-bold">Minimum: </span>4 pax</li>
+                </ul>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

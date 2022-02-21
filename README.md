@@ -10,7 +10,9 @@ In this tutorial, you will find several links to [Bootstrap official documentati
 
 Before proceeding, download the version of the [website](https://github.com/josecarlosgt/Web-Design-and-Development/tree/tutorial-2-designing-and-structuring-content) created in the previous tutorial containing the structure and images. In this tutorial, we will apply Bootstrap styling rules to the index.html file.
 
-## Task 1: Installing bootstrap
+## Part I: Basic Bootstrap 
+
+## Task 1: Installing Bootstrap
 Reference: [Bootstrap Docs > Introduction](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 The easiest way to add Bootstrap to your website is using the content delivery network (CDN) servers recommended by Boostrap. More sophisticated ways of using Bootstrap require downloading the source files, which allows higher customization.
@@ -213,6 +215,8 @@ Final result:
 Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
 ```
 
+## Part II: Understanding Bootstrap's Layout System 
+
 ## Task 6: Creating containers
 Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
 
@@ -370,39 +374,4 @@ Result:
 </div>
 ```
 
-## Task 8: Making the header image full-height
-
-We could attempt to increase the appealing of our website by making the header image to fill the full height of the screen. These images are called *hero* or banner images, and they are commonly used together with the main headline to communicate the primary message of the webpage quickly.
-
-Adding a full-height image requires additional CSS rules that we can add internally to the webpage:
-
-```html
-<style>
-    /*
-        Full page image: https://www.w3schools.com/howto/howto_css_full_page.asp
-        Text on Images: https://css-tricks.com/design-considerations-text-images/
-        Text shadow property: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
-        CSS min-height Property: https://www.w3schools.com/cssref/pr_dim_min-height.asp 
-    */
-    header {
-        background: #FFFFFF url('img/panoramic-laguna-brava-2.jpg') no-repeat center;
-        background-size: cover;		
-        height: 100vh;	
-        min-height: 300px;
-    }
-    header div {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        text-shadow: 2px 2px 4px #000000;
-    }
-</style>
-```
-
-Notes:
-- The [index.html](./index.html) file contains the final HTML document. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/).
-- The [index-fh-header.html](./index-fh-header.html) file contains another version that uses additional CSS rules to implement a full-height image header. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/index-fh-header.html).
-- Note that the additional CSS rules added in the *index-fh-header.html* version were moved to an external CSS file. 
+> The [index.html](./index.html) file contains the final HTML document. You can view this webpage in GitHub Pages [here](https://josecarlosgt.github.io/Web-Design-and-Development/).
