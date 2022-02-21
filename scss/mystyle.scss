@@ -88,24 +88,3 @@ header img {
     margin: 0 auto;
 }
 
-/* Pseudo-classes */
-
-/* unvisited link */
-nav a:link {
-    color: black;
-}
-
-/* visited link */
-nav a:visited {
-    color: black;
-}
-
-/* mouse over link */
-nav a:hover {
-    color: blue;
-}
-
-/* selected link */
-nav a:active {
-    color: gray;
-}
