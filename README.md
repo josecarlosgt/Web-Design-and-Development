@@ -163,7 +163,7 @@ Place the image before the level 1 heading created in task 2.
 <h1>...</h1>
 ```
 
-> Download the header image from [here](https://josecarlosgt.github.io/Web-Design-and-Development/img/panoramic-laguna-brava-2.jpg)
+> Download the header image from [here](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-2-designing-and-structuring-content/img/panoramic-laguna-brava-2.jpg)
 
  Then, add an image in each option of the guided visit. Place each image right below the sub-heading in each option (before the description text).
 
