@@ -145,7 +145,7 @@ Using [text alignment](https://getbootstrap.com/docs/5.0/utilities/text/#text-al
 Notes:
 - Text alignment classes also include *text-start* for aligning text to the left and *text-end* for aligning text to the right. 
 
-## Task 5: Leveraging class utilities for borders
+## Task 5.1: Leveraging class utilities for borders
 
 Reference: [Bootstrap Docs > Utilities > Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
 
@@ -167,7 +167,7 @@ Border utilities allow you to style the border and border-radius of an element l
 
 > This effect gives the images a more natural appearance by eliminating the abrupt pauses that result when lines change direction in sharp corners.
 
-## Task 5: Leveraging class utilities for colors
+## Task 5.2: Leveraging class utilities for colors
 
 Reference: [Bootstrap Docs > Utilities > Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
 
