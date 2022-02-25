@@ -231,7 +231,7 @@ If a box has an outer display type of block, it will behave in the following way
 - The box will extend in the inline direction to fill the space available in its container. In most cases this means that the box will become as wide as its container, filling up 100% of the space available.
 - The width and height properties are respected.
 - Padding, margin and border will cause other elements to be pushed away from the box.
-- Examples: <\h1\>, \<p\>, \<div\>
+- Examples: \<h1\>, \<p\>, \<div\>
 
 If a box has an outer display type of inline, then:
 
