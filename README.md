@@ -145,7 +145,7 @@ Using [text alignment](https://getbootstrap.com/docs/5.0/utilities/text/#text-al
 Notes:
 - Text alignment classes also include *text-start* for aligning text to the left and *text-end* for aligning text to the right. 
 
-## Task 5.1: Leveraging class utilities for borders
+## Task 5: Leveraging class utilities for borders
 
 Reference: [Bootstrap Docs > Utilities > Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
 
@@ -167,7 +167,7 @@ Border utilities allow you to style the border and border-radius of an element l
 
 > This effect gives the images a more natural appearance by eliminating the abrupt pauses that result when lines change direction in sharp corners.
 
-## Task 5.2: Leveraging class utilities for colors
+## Task 6: Leveraging class utilities for colors
 
 Reference: [Bootstrap Docs > Utilities > Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
 
@@ -179,7 +179,7 @@ Color utilities include predefined classes to colorize text. Adjust the color an
 
 Bootstrap enables more comprehensive customization for working with colors. For now, we will use the default [color system](https://getbootstrap.com/docs/5.0/customize/color/). You can also use this system for defining [background colors](https://getbootstrap.com/docs/5.0/utilities/background/) of any HTML element.
 
-## Task 6: Leveraging class utilities for spacing
+## Task 7: Leveraging class utilities for spacing
 
 Reference: [Bootstrap Docs > Utilities > Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
 
@@ -203,7 +203,7 @@ Note that *my-4* follows the notation {property}{sides}-{size} where
 - {sides} is *y* (vertical)
 - {size} is *4*
 
-## Task 7: Creating buttons
+## Task 8: Creating buttons
 
 Reference: https://getbootstrap.com/docs/5.0/components/buttons/
 
@@ -214,7 +214,7 @@ Bootstrap includes several predefined button styles. Add a "Book here" button in
 ```
 > This button also specifies color and size.
 
-## Task 8: Adding icons
+## Task 9: Adding icons
 Reference: https://icons.getbootstrap.com/
 
 Finally, try out Bootstrap Icons library for adding icons to your webpage. To use Bootstrap icons library, you need to add the corresponding CSS resource into the \<head\> tag:
@@ -237,7 +237,7 @@ Cross the four kilometres in a kayak guided by a local guide. <strong class="tex
 
 ## Part II: Understanding Bootstrap's Layout System 
 
-## Task 9: Creating containers
+## Task 10: Creating containers
 Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
 
 Features:
@@ -284,7 +284,7 @@ Use containers for the top image and main heading inside the \<header\> element 
 
 Experiment with different container classes to appreciate the difference. What happens if you use the *container-xxl* class instead of the default container? Use the inspector tool to appreciate the difference.
 
-## Task 10: Adjusting the grid layout
+## Task 11: Adjusting the grid layout
 Reference: [Bootstrap Docs > Layout > Containers](https://getbootstrap.com/docs/5.0/layout/containers/)
 
 [Bootstrap's grid layout system](https://getbootstrap.com/docs/5.0/layout/grid/) allows you to arrange content in columns and rows following a fully responsive design. The grid layout uses a twelve-column system which means the width of a single column can vary from one to twelve.
