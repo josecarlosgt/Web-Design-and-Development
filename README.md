@@ -347,7 +347,7 @@ The rule below centers block elements by setting the top and bottom margins to 0
 }
 ```
 
-> When applying the previous rule to center the web page,  [max-width] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) corresponds to the screen size in which we tailor our page to be rendered. 960px is a value commonly used for web pages designed to be rendered on large screens. We can also use *max-width* in combination with the *width* property to implement a responsive design, but we will discuss this topic later.
+> When applying the previous rule to center the web page,  [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) corresponds to the screen size in which we tailor our page to be rendered. 960px is a value commonly used for web pages designed to be rendered on large screens. We can also use *max-width* in combination with the *width* property to implement a responsive design, but we will discuss this topic later.
 
 Create a new div to wrap all the content of the webpage and apply the rule above:
 
