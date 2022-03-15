@@ -110,13 +110,6 @@ Notes:
  
 
 ## Task 4: Leveraging class utilities for text
-Bootstrap provides several utility classes for styling content. Many of these classes follow conventions on how to refer to the sides of HTML elements.
-For example,
-- *start* refers to left
-- *end* refers to right
-- *top* and *bottom* remain the same
-
-These terms act as suffixes in several classes that control style aspects such as borders, alignment, and spacing, as you will see below.
 
 ### Text: [Bootstrap Docs > Utilities > Text](https://getbootstrap.com/docs/5.0/utilities/text/)
 
@@ -148,6 +141,13 @@ Notes:
 ## Task 5: Leveraging class utilities for borders
 
 Reference: [Bootstrap Docs > Utilities > Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
+
+Many of these utility classes for styling content follow conventions on how to refer to the sides of HTML elements. For example,
+- *start* refers to left
+- *end* refers to right
+- *top* and *bottom* remain the same
+
+These terms act as suffixes in several classes that control style aspects such as borders, alignment, and spacing, as you will see below.
 
 Border utilities allow you to style the border and border-radius of an element like images and buttons. For example:
 
