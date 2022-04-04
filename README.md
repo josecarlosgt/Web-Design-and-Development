@@ -49,14 +49,25 @@ We will use the following text to complete the tasks below:
 > - How can I make an order?
 > - How can I place an order from the United States?
 
-## Task 0: Page's title 
+## Task 0: Page's settings and introduction
 
 Before creating the content panels, let's create the page title and headings.
 
-Give a title to the webpage.
+Update the webpage head settings.
 
 ```html
 <title>[PAGE TITLE]</title>
+<meta name="description" content="[DESCRIPTION]" />
+```
+
+Note the folder assets/img contains an image called "cup-934x800.png". Use the site [ICO Convert](https://icoconvert.com/) to convert the image in PNG format to a .ico image that you can use as a favicon.
+
+> A favicon (short for favorite icon) is a file containing small icons associated with a particular website or web page. Browsers that support favicon display show the page's favicon in the browser's address bar and next to the page's name in a list of bookmarks.
+
+Then, place the .ico image in the assets/ folder and update the link element with the .ico path.
+
+``html
+<link rel="icon" type="image/x-icon" href="[IMAGE PATH]" />
 ```
 
 Give the webpage a main heading and an enticing introduction (welcome blurb). You may also include the organization's logo in the header section. 
