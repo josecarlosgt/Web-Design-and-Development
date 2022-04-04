@@ -64,7 +64,7 @@ Note the folder assets/img contains an image called "cup-934x800.png". Use the s
 
 Then, place the .ico image in the assets/ folder and update the link element with the .ico path.
 
-``html
+```html
 <link rel="icon" type="image/x-icon" href="[IMAGE PATH]" />
 ```
 
