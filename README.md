@@ -9,9 +9,7 @@ This tutorial consists of customizing Bootstrap components to include informatio
 
 ### Download the resources
 
-We will use the [New Age](https://startbootstrap.com/previews/new-age) template from the [Start Bootstrap](https://startbootstrap.com/) website. Download the template from [here](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-9-content-panels-coffee/new-age-template.zip).
-
-You will also need a few assets, like images and favicon, that you can download from [here](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-9-content-panels-coffee/assets.zip).
+We will use the [New Age](https://startbootstrap.com/previews/new-age) template from the [Start Bootstrap](https://startbootstrap.com/) website. Download the template from [here](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-9-content-panels/template.zip).
 
 ## The business case: Café con Causa (Coffee with a Cause)
 
