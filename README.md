@@ -136,7 +136,7 @@ The following slider provides buttons that allow users to navigate between each 
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button </div>
+    </button> </div>
 </div>
 <!-- End of Slider -->
 ```
@@ -185,7 +185,7 @@ Edit your cards content to show only one or two sentences and use the collapse c
             <div class="mb-2">
                 <button class="btn btn-primary btn-sm py-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapse-transparency-1" aria-expanded="false"
-                    aria-controls="collapse-synopsis-1">
+                    aria-controls="ollapse-transparency-1">
                     Read more
                 </button>
             </div>
@@ -197,7 +197,7 @@ Edit your cards content to show only one or two sentences and use the collapse c
 </article>
 ```
 
-> Note the collapse behavior relies on assigning an identifier to the content to be expanded (e.g., *collapse-synopsis-1*). This identifier also appears on some of the properties (e.g., *data-bs-target* and *aria-controls*) in the button element that triggers the collapsible behavior. This identifier should be unique. Thus, adding more than one card involves assigning different ids.
+> Note the collapse behavior relies on assigning an identifier to the content to be expanded (e.g., *ollapse-transparency-1*). This identifier also appears on some of the properties (e.g., *data-bs-target* and *aria-controls*) in the button element that triggers the collapsible behavior. This identifier should be unique. Thus, adding more than one card involves assigning different ids.
 
 The collapse component uses different types of HTML attributes that are common across content panels components in Bootstrap:
 - *data-bs-toggle*: data property that specifies collapsible behavior
@@ -233,7 +233,7 @@ The accordion comprises a collection of content organized as pairs of titles and
         </div>
     </article>
     <article class="accordion-item">
-        <h2 class="accordion-header" id="faq-2">
+        <h2 class="accordion-header" id="heading-2">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
                 [FAQ 2]
