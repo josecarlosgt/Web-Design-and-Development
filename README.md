@@ -136,7 +136,8 @@ The following slider provides buttons that allow users to navigate between each 
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button> </div>
+    </button> 
+    </div>
 </div>
 <!-- End of Slider -->
 ```
