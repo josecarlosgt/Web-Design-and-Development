@@ -52,7 +52,28 @@ Use the [lang](https://www.w3schools.com/tags/ref_language_codes.asp) attribute 
 <html lang="en">
 ```
 
-## Task 5: Creating some content
+## Task 5: Adding the main headline
+
+Inside the body element, create the main heading. Use the [level 1 heading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) (\<h1\>) element.
+
+```html
+<h1>Welcome to Laguna Brava Ecotourism</h1>
+```
+
+## Task 6: Adding sub-headings and paragraphs
+Structure the content above using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and level 2 headings.
+
+You can follow the structure below:
+
+```html
+<!-- business/organization description -->
+<h2>The Local Communities</h2>
+<p>
+    ...
+</p>
+```
+
+## Task 7: Working with HTML entity names
 
 Add the following text inside the body tag:
 
@@ -73,24 +94,3 @@ Hello, this is my home page. &#60;what a simple page&#62;
 ```
 
 The [index.html](./index.html) file contains the final HTML document.
-
-## Task 6: Adding the main headline
-
-Inside the body element, create the main heading. Use the [level 1 heading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) (\<h1\>) element.
-
-```html
-<h1>Welcome to Laguna Brava Ecotourism</h1>
-```
-
-## Task 7: Adding sub-headings and paragraphs
-Structure the content above using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and level 2 headings.
-
-You can follow the structure below:
-
-```html
-<!-- business/organization description -->
-<h2>The Local Communities</h2>
-<p>
-    ...
-</p>
-```
