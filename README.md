@@ -64,7 +64,6 @@ Inside the body element, create the main heading. Use the [level 1 heading](http
 Create a section using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and level 2 headings.
 
 ```html
-<!-- business/organization description -->
 <h2>Sub-heading</h2>
 <p>
     Some text.
