@@ -5,7 +5,6 @@ This document describes the steps for structuring information in a HTML document
 - [Link to the website proposal](https://docs.google.com/document/d/1t9rW16i4xa9NTcTHrkrq6JiA9j90l3dWiHpdjkteAMM/edit?usp=sharing)
 
 ## Skills
-- Apply the planning, analysis, and design phases of the SDLC for the creation of websites
 - Structure content using standard HTML tags
 - Improve the structure of HTML code for search engines by implementing HTML5 semantics  
 
