@@ -1,7 +1,7 @@
 # Tutorial: Structuring the content of your website
 
 This document describes the steps for structuring information in a HTML document. 
-- [Link to the slides on planning and analysis](https://docs.google.com/presentation/d/1XBFzaDAOPIeGbVsMje_N27BR-bKkoZ8HO_a-sBpCCTI/edit?usp=sharing)
+- [Link to the slides on proposing a website](https://docs.google.com/presentation/d/1XBFzaDAOPIeGbVsMje_N27BR-bKkoZ8HO_a-sBpCCTI/edit?usp=sharing)
 - [Link to the website proposal](https://docs.google.com/document/d/1t9rW16i4xa9NTcTHrkrq6JiA9j90l3dWiHpdjkteAMM/edit?usp=sharing)
 
 ## Skills
