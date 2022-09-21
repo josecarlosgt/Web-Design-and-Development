@@ -194,7 +194,7 @@ Notes:
 ## Task 7: Adding a web form
 HTML borrows the concept of a form to refer to different elements that allow you to collect information from visitors to your site. Refer to Chapter 7: Forms (uploaded to Canvas) for a more detailed explanation of how web forms operate.
 
-A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)) element and a combination of controls, such as input and other elements that allow the user to enter different types of data. These sites provide more information creating web forms.
+A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)) element and a combination of controls, such as input and other elements that allow the user to enter different types of data. These sites provide more information on creating web forms.
 
 - [Form element](https://www.w3schools.com/html/html_forms.asp)
 - [HTML input types](https://www.w3schools.com/html/html_form_input_types.asp)
