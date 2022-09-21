@@ -192,24 +192,33 @@ Notes:
 - You can also use the title attribute to provide additional information about the image. Most browsers will display the content of this attribute in a tootip when the user hovers over the image.
 
 ## Task 7: Adding a web form
-After the last paragraph, create a web form that requests comments from your page's viewer based on their experiences to Laguna Brava (if any). Web forms are useful for capturing information from users.
+HTML borrows the concept of a form to refer to different elements that allow you to collect information from visitors to your site. Refer to Chapter 7: Forms (uploaded to Canvas) for a more detailed explanation of how web forms operate.
 
-A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)) element and a combination of input elements and other elements that allow the user to enter different types of data. Visit these sites to learn more about how to create web forms.
+A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)) element and a combination of controls, such as input and other elements that allow the user to enter different types of data. These sites provide more information creating web forms.
 
 - [Form element](https://www.w3schools.com/html/html_forms.asp)
 - [HTML input types](https://www.w3schools.com/html/html_form_input_types.asp)
 - [Label element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
+Form controls serve as points on the web page that direct or control the user's interaction with the web page. The simplest form control on a web form is a text input that directs the user to key in text content, such as their name or email address.
+
+After the last paragraph, create a web form that requests comments from your page's viewers based on their experiences in Laguna Brava:
+
+```html
+<form>
+</form>
+```
+
+Inside the form element, create a text input field to capture the user's name:
+```html
+<label for="name">Name: </label>
+<input type="text" name="name" id="name" placeholder="Write your name">
+```
+
 Use the [break line element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br) to produces a line break in text (carriage-return) as necessary to separate each group of elements.
 
 ```html
 <br>
-```
-
-Create a text input field to capture the user's name:
-```html
-<label for="name">Name: </label>
-<input type="text" name="name" id="name" placeholder="Write your name">
 ```
 
 Create an email input field to capture the user's email:
