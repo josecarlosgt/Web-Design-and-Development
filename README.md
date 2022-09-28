@@ -319,7 +319,7 @@ Use this element to enclose the lake image, the main heading, and the introducto
 </header>
 ```
 
-A popular semantic tag that often lives insider the \<header\> element is \<nav\>. [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. We will use this element in a different tutorial.
+A popular semantic tag that often lives insider the \<header\> element is \<nav\>. [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.
 
 [main](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main): represents the dominant or primary content of a web document. This content should be unique to the document. Content that is repeated across a set of documents such as sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included here. 
 
@@ -369,7 +369,7 @@ What content would you consider to structure as articles? The guided visit optio
 Use the section element to enclose the headings and content of each section of the web page: the local communities and activities sections. 
 
 Notes:
-- Although it might behaver similar to the \<article\> element, if the contents of the element represent a standalone unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
+- Although it might behave similar to the \<article\> element, if the contents of the element represent a standalone unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
 - If you are only using the element as a styling wrapper, use \<div\> instead. As a sectioning element, a rule of thumb is that content inside \<section\> should be logically related.
 - Sections usually have a heading element as a child
 - Sections can exist inside articles to group semantically connected content inside an article or other elements
