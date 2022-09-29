@@ -424,10 +424,9 @@ Use the [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figur
 
 Check your content against the following recommendations to improve SEO:
 1. Use \<title\> with descriptive text (i.e., text contains at least one keyword)
-2. Include keywords in your headings elements
-3. Repeat keywords in the web page text
-4. Use the alt attribute of image elements
-5. Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description:
+2. Include and repeat keywords in the web page text, including heading elements
+3. Use the alt attribute of image elements
+4. Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description:
 
 ```html
 <meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
