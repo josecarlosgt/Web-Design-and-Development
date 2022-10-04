@@ -50,21 +50,15 @@ header img {
 
 /* Activities */
 
-.flex-container {
- display: flex;   
-}
-
-.activity figure {
-    margin-top: 0;
-}
-
 .activity img {
     width: 400px;
     margin-right: 10px;
+
+    float: left;
 }
 
-.activity ul {
-    padding: 0;
+.clear {
+    clear: both;
 }
 
 .activity li {
