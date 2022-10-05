@@ -261,64 +261,6 @@ nav li {
 }
 ```
 
-## Task 5: Positioning
-
-The content of each activity would look better if positioned to the right of each activity's photo. The CSS rules below below positions or *floats* the content left, causing the description and features list of each activity to appear next to the activity's photo:
-
-```css
-.activity img {
-    float: left;
-}
-```
-
-The [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) CSS property places an element on the left or right side of its container, *allowing text and inline elements to wrap around it*. The element is removed from the normal flow of the page, though still remaining a part of the flow! 
-
-After adding the rule above, you noticed the property affected the content directly following the image and all subsequent content! To avoid this behavior, we use float’s sister property is [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear). An element with the clear property set on it will not move up adjacent to the float like the float desires but will move itself down past the float.
-
-If you are in a situation where you always know what the succeeding element will be, you can apply the clear: both; This is ideal as it requires no fancy hacks and no additional elements making it perfectly semantic.
-
-Another common technique is the *empty div method*, which is literally an empty div. Sometimes you’ll see an <br> element or another random element used, but div is the most common. This is because it has no browser default styling, doesn’t have any particular function, and is unlikely to be generically styled with CSS. The downside of this approach is that an empty div has no contextual meaning to the page and is there purely for presentation. 
-
-Add the following rule:
-
-```css
-.clear {
-    clear: both;
-}
-```
-
-Then, create an empty div with the rule above applied and place it right after the last element that you want to be positioned left to activity's image (the unordered list element): 
-
-```html
-<ul>
-    ...
-</ul>
-<div class="clear"></div>
-```
-
-> While floats can still be used for layout, these days, we have much stronger tools for creating layout on web pages. Namely, **Flexbox** and **Grid**. Floats are still useful to know about because they have some abilities entirely unique to them, which is all covered in this article.
-
-Reference:
-- [All About Floats](https://css-tricks.com/all-about-floats/)
-
-Adjust the space between the activit's photo and description:
-
-```css
-.activity img {
-    float: left;
-
-    margin-right: 10px;
-}
-```
-
-Place the bullet points of each activity's features inside the element's content box:
-
-```css
-.activity li {
-    list-style-position: inside;
-}
-```
-
 Adjust the spacing of the form elements:
 
 ```css
@@ -335,6 +277,69 @@ Adjust the spacing of the form elements:
 ```
 
 > The rule above uses another kind of CSS selector, namely, [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a certain attribute.
+
+## Task 5: Layout
+    
+An essential aspect of styling a website is the layout. The layout is the arrangement of all visual elements on a webpage. The traditional way in CSS to handle layout consisted of using floats and positioning properties, which often involved writing intricate HTML and CSS rules. The Flexible Box Layout, commonly known as Flexbox, and Grid are two popular alternatives to cope with the limitations of floats and position properties. In this tutorial, we will use flex.
+
+To use flex, we first have to create a container using an element with a display type of flex so that every descendent element within it becomes a flex item. The default behavior of flex items is to stack side to side.
+Then, we can control the presentation of those flex items using several flexbox CSS properties applied to the items themselves or the container.
+
+The content of each activity would look better if positioned to the right of each activity's photo. The CSS rules below use flex to position the content left, causing the description and features list of each activity to appear next to the activity's photo:
+
+```css
+.flex-container {
+ display: flex;   
+}
+```
+
+Use the following HTML as a guide to style the content of each actvity using the CSS rule above: 
+
+```html
+<article class="activity">
+    <!-- Self-contained content intended to be independently distributable -->
+    <h3>The Lake Challenge</h3>
+    <div class="flex-container">
+        <figure class="flex-container">
+            <img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
+            <figcaption>
+                Cross the four kilometres in a kayak guided by a local guide. <strong>This guided visit is
+                physically demanding, and it is recommended for only those in excellent physical
+                condition.</strong>
+                <ul>
+                    <li>Duration: 5 hours approx.</li>
+                    <li>Price: $50 USD</li>
+                    <li>Minimum: 2 pax</li>
+                </ul>
+            </figcaption>
+        </figure>
+    </div>
+</article>
+```
+
+Adjust the spacing of the elements reloated to each activity:
+
+```css
+.activity img {
+    margin-right: 10px;
+}
+    
+.activity figure {
+    margin-top: 0;
+}
+    
+.activity ul {
+    padding: 0;
+}
+```
+
+Place the bullet points of each activity's features inside the element's content box:
+
+```css
+.activity li {
+    list-style-position: inside;
+}
+```
 
 ## Task 6: Centering the webpage
 
