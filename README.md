@@ -110,7 +110,7 @@ Use the [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
 
 ```css
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-style: italic;
     font-variant: small-caps;
 
