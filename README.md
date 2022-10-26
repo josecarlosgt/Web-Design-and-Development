@@ -4,11 +4,17 @@ After structuring the content of your website using HTML, you are ready to start
 We will use a CSS framework called [Bootstrap](https://getbootstrap.com/), one of the most popular frameworks for styling websites. 
 We will use Bootstrap for two reasons:
 1. Bootstrap makes it faster to style a webpage
-2. Bootstrap allows you to build responsive websites and applications
+2. Bootstrap facilitates creating responsive websites
+## Responsive Web Design
 
-In this tutorial, you will find several links to [Bootstrap official documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/) in each task. This tutorial's main purpose is to familiarize yourself with the Bootstrap documentation and apply Bootstrap main CSS classes to style your website.
+***Responsive web design*** *(responsive design for short) is an approach to creating webpages that automatically adapt to the browser’s size*
 
-Before proceeding, download the version of the [website](https://github.com/josecarlosgt/Web-Design-and-Development/tree/tutorial-2-designing-and-structuring-content) created in the previous tutorial containing the structure and images. In this tutorial, we will apply Bootstrap styling rules to the index.html file.
+Responsive web design involves three techniques:
+- **Fluid images:** enables images to scale down to fit on narrower screens (covered in Part I of this tutorial).
+- **Fluid grids:** create different layouts that adapt to the screen on which the website is displayed (covered in Part II of this tutorial).
+- **Media queries:** apply different CSS rules depending on the screen's size.
+
+In this tutorial, you will find links to [Bootstrap official documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/) in each task. This tutorial's primary purpose is to familiarize yourself with the Bootstrap documentation and apply Bootstrap's main CSS classes to style your website.
 
 ## Getting the base content
 
@@ -56,11 +62,11 @@ Put it all together and your webpage should look like this:
 
 > Learn more about the [integrity \(subresource integrity\)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) and [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin) attributes.
 
-## Task 2: Styling text content
+## Task 2: Styling text
 
 ### Reboot: [Bootstrap Docs > Content > Reboot](https://getbootstrap.com/docs/5.0/content/reboot/)
 
-When you start using Bootstrap out of the box, it applies a reboot of the default browser styles. This means Bootstrap strips out all the default styles like margin, padding, font styles, and size, replacing them with a clean and basic set of default Bootstrap styles. The purpose of this reboot is to provide you with a simple baseline to build upon the style of your website that is consistent across browsers.  
+When you start using Bootstrap out of the box, it applies a reboot of the default browser styles. This means Bootstrap strips out all the default styles like margin, padding, font styles, and size, replacing them with a clean and basic set of default Bootstrap styles. The purpose of this reboot is to provide you with a simple baseline to build upon the style of your website that is consistent across browsers.
 
 ### Typography: [Bootstrap Docs > Content > Typography](https://getbootstrap.com/docs/5.0/content/typography/)
 
@@ -99,7 +105,7 @@ Use the [unstyled lists](https://getbootstrap.com/docs/5.0/content/typography/#l
 </ul>
 ```
 
-## Task 3: Styling images content
+## Task 3: Styling images
 
 Reference: [Bootstrap Docs > Content > Images](https://getbootstrap.com/docs/5.0/content/images/)
 
@@ -110,14 +116,12 @@ Images in Bootstrap are made responsive with the *.img-fluid* class. Add this cl
 ...
 ```
 
-> Download a larger image from [here](https://josecarlosgt.github.io/Web-Design-and-Development/img/panoramic-laguna-brava-2.jpg) that can fit larger screens. 
-
 Notes:
 - Adding responsive behavior usually involves adjusting the [max-width](https://www.w3schools.com/cssref/pr_dim_max-width.asp) CSS property of HTML elements. This property defines the maximum width of an element's content and it prevents the element from becoming larger than the value specified by max-width.
 - img-fluid maintains a 100% max-width regardless of the size of the screen, so images never become larger than their parent elements (containers). As a result, images are resized to fit the screen.
  
 
-## Task 4: Leveraging class utilities for text
+## Task 4: Class utilities for styling text
 
 ### Text: [Bootstrap Docs > Utilities > Text](https://getbootstrap.com/docs/5.0/utilities/text/)
 
@@ -146,7 +150,7 @@ Using [text alignment](https://getbootstrap.com/docs/5.0/utilities/text/#text-al
 Notes:
 - Text alignment classes also include *text-start* for aligning text to the left and *text-end* for aligning text to the right. 
 
-## Task 5: Leveraging class utilities for borders
+## Task 5: Class utilities for adding borders
 
 Reference: [Bootstrap Docs > Utilities > Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
 
@@ -175,7 +179,7 @@ Border utilities allow you to style the border and border-radius of an element l
 
 > This effect gives the images a more natural appearance by eliminating the abrupt pauses that result when lines change direction in sharp corners.
 
-## Task 6: Leveraging class utilities for colors
+## Task 6: Class utilities for specifying colors
 
 Reference: [Bootstrap Docs > Utilities > Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
 
@@ -187,7 +191,7 @@ Color utilities include predefined classes to colorize text. Adjust the color an
 
 Bootstrap enables more comprehensive customization for working with colors. For now, we will use the default [color system](https://getbootstrap.com/docs/5.0/customize/color/). You can also use this system for defining [background colors](https://getbootstrap.com/docs/5.0/utilities/background/) of any HTML element.
 
-## Task 7: Leveraging class utilities for spacing
+## Task 7: Class utilities for adjusting spacing
 
 Reference: [Bootstrap Docs > Utilities > Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
 
