@@ -191,7 +191,7 @@ Color utilities include predefined classes to colorize text. Adjust the color an
 
 Bootstrap enables more comprehensive customization for working with colors. For now, we will use the default [color system](https://getbootstrap.com/docs/5.0/customize/color/). You can also use this system for defining [background colors](https://getbootstrap.com/docs/5.0/utilities/background/) of any HTML element.
 
-## Task 7: Class utilities for adjusting spacing
+## Task 7: Class utilities for adjusting spaces
 
 Reference: [Bootstrap Docs > Utilities > Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
 
