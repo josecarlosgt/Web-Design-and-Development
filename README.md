@@ -10,6 +10,14 @@ In this tutorial, you will find several links to [Bootstrap official documentati
 
 Before proceeding, download the version of the [website](https://github.com/josecarlosgt/Web-Design-and-Development/tree/tutorial-2-designing-and-structuring-content) created in the previous tutorial containing the structure and images. In this tutorial, we will apply Bootstrap styling rules to the index.html file.
 
+## Getting the base content
+
+Download the [base.html](https://raw.githubusercontent.com/josecarlosgt/Web-Design-and-Development/tutorial-4-styling/base.html) and [img](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling/img.zip) zipped folder to your local directory. You can use this content to complete the following tasks.
+
+Remember to:
+1. Rename the base.html to index.html
+2. Unzip the img.zip file and place it right next to the index.html
+
 ## Part I: Basic Bootstrap 
 
 ## Task 1: Installing Bootstrap
