@@ -45,6 +45,10 @@ We will use the following text. Note the keywords are highlighted in bold.
 > - Price: 3 hours approx.
 > - Minimum: 4 pax
 
+## Preview
+
+![Web page Preview](preview-1.jpg)
+
 ## Task 1: Creating the basic structure
 
 Fill in the \<title\> element with a descriptive title and specify UTF-8 as the character encoding set (charset) using the meta tag.
