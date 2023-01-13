@@ -204,6 +204,10 @@ A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/do
 
 Form controls serve as points on the web page that direct or control the user's interaction with the web page. The simplest form control on a web form is a text input that directs the user to key in text content, such as their name or email address.
 
+### Preview
+
+![Preview 2](preview-2.jpg)
+
 After the last paragraph, create a web form that requests comments from your page's viewers based on their experiences in Laguna Brava:
 
 ```html
@@ -268,10 +272,6 @@ Finally, add a comment on top of the form element to state the purpose of your f
 ```
 
 Access [this document](https://docs.google.com/document/d/1BNzqHaJLZWRAdrWpbmLzlfnK9DNpUEbFq4BOBhRZJJ4/edit?usp=sharing) for guidelines to add **persistence** to the web form, which will allow storing the comments from Laguna Brava Ecotourism's visitors.
-
-### Preview
-
-![Preview 2](preview-2.jpg)
 
 ## Task 8: Make your Web page HTML5
 Let's improve the structure of your website by leveraging HTML5 features.
