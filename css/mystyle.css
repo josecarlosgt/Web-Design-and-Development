@@ -53,7 +53,7 @@ article img {
 
 /* Contact form */
 
-.experience input[type=text], .experience input[type=email], .experience textarea {
+.experience input, .experience textarea {
     width: 100%;
 
     padding: 12px 20px;
