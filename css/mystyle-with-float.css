@@ -1,12 +1,12 @@
 /* Font & text properties for headings  */
 
 body {
-    
+
     font-family: Arial, sans-serif;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 5em;
     font-style: italic;
     font-variant: small-caps;
 
@@ -14,12 +14,12 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3em;
     font-variant: small-caps;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 /* Navigation */
