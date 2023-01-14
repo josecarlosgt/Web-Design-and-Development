@@ -264,7 +264,7 @@ nav li {
 Adjust the spacing of the form elements:
 
 ```css
-.experience input[type=text], .experience input[type=email], .experience textarea {
+.experience input, .experience textarea {
     width: 100%;
 
     padding: 12px 20px;
