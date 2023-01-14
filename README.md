@@ -57,39 +57,39 @@ The predefined size names are xx-small, x-small, small, medium, large, x-large, 
 
 An absolute size is a size that is fixed and independent of other CSS sizes. Absolute size units include:
 
+- px: pixels (1px = 1/96in)
 - cm: centimeters
 - mm: millimeters
 - in: inches
-- px: pixels (1px = 1/96in)
 - pt: points (1pt = 1/72in)
 - pc: pica (1pc = 12pt)
 
 A relative size is a size that is relative to another size. Some common relative size units include:
 
-- em - Relative to the element's font size. Ex: 2em = 2 × current font size.
+- em - Relative to the parent element's font size. Ex: 2em = 2 × parent element's font size.
 - rem - Relative to the root element's font size. Ex: 1.5rem = 1.5 × <html> element's font size.
 - vw - 1% of the viewport's width. Ex: 10vw = 10% of browser's width.
 - vh - 1% of the viewport's height. Ex: 5vh = 5% of browser's height.
 - % - Percentage of the element's font size. Ex: 120% = 20% larger than the current font size.
 
-Most web browsers use a default font size of 16px.
+**As a rule of thumb, we will use *em* for defining font sizes and pixeles for images and spacing.**
 
 Add the following CSS rules to increase the font size of the headers in your website:
 
 ```css
 h1 {
-    font-size: 5rem;
+    font-size: 5em;
     font-style: italic;
     font-variant: small-caps;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2em;
     font-variant: small-caps;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 ```
 
@@ -110,7 +110,7 @@ Use the [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
 
 ```css
 h1 {
-    font-size: 5rem;
+    font-size: 5em;
     font-style: italic;
     font-variant: small-caps;
 
