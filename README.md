@@ -72,7 +72,7 @@ A relative size is a size that is relative to another size. Some common relative
 - vh - 1% of the viewport's height. Ex: 5vh = 5% of browser's height.
 - % - Percentage of the element's font size. Ex: 120% = 20% larger than the current font size.
 
-**As a rule of thumb, we will use *em* for defining font sizes and pixeles for images and spacing.**
+**As a rule of thumb, we will use *em* for defining font sizes and pixels for images and spacing.**
 
 Add the following CSS rules to increase the font size of the headers in your website:
 
