@@ -30,7 +30,7 @@ Many CSS properties control the font properties for displaying text. CSS font pr
 
 **[font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)**
 
-The font-family property contains a list of fonts specified as a family name or a generic family separated by commas.
+The font-family property contains a list of fonts specified as family names separated by commas.
 A family name is the name of a specific font, like "Times New Roman", "Arial", or "Georgia". Family names containing spaces must be wrapped in quotations marks, while family names without spaces do not.
 
 A generic family is a more general group of fonts, like serif, sans-serif, cursive, fantasy, or monospace. The web browser will use the first font listed that is available.
