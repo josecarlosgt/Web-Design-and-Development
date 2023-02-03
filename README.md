@@ -72,7 +72,7 @@ A relative size is a size that is relative to another size. Some common relative
 - vh - 1% of the viewport's height. Ex: 5vh = 5% of browser's height.
 - % - Percentage of the element's font size. Ex: 120% = 20% larger than the current font size.
 
-**As a rule of thumb, we will use *em* for defining font sizes and pixels for images and spacing.**
+**Sizes specified with rem have no relationship with the parent element; thus, rem sizes are suitable for achieving a consistent style in elements located on multiple locations of the website. In this practice, since we are working on a single page and creating CSS rules for elements at specific locations, we will use *em* for defining font sizes.**
 
 Add the following CSS rules to increase the font size of the headers in your website:
 
@@ -162,7 +162,7 @@ nav li {
 
 ## Task 3: Sizing
 
-A block element's content spans the width of the enclosing parent element by default, but the content size can be changed with the width and height CSS properties:
+A block element's content spans the width of the enclosing parent element by default. However, the content size can be changed with the width and height CSS properties:
 
 - The width property specifies the content's width. Ex: width: 20px; makes the content 20px wide.
 - The height property specifies the content's height. Ex: height: 30px; makes the content 30px high.
@@ -186,13 +186,15 @@ article img {
 ```
 
 > The rules above specify the size of the images using a length (absolute) value. When specifying only the width attribute of an image, the browser automatically calculates the image's height.
-
+    
 The values for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) dimension properties can be:
 
 - length: defines the dimension as an absolute value.
 - percentage: defines the dimension as a percentage of the containing block's height.
 - auto: the browser will calculate and select a height for the specified element. This value is useful with other properties when centering block elements.
 
+**Since image sizes and spacing between elements are rather independent, we will use pixels (an absolute size unit) for images and spacing.**
+    
 ## Task 4: Spacing
 
 **The box model**
