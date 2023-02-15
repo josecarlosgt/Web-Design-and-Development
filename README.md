@@ -18,7 +18,7 @@ In this tutorial, you will find links to [Bootstrap official documentation](http
 
 ## Getting the base content
 
-Download the [base.html](https://raw.githubusercontent.com/josecarlosgt/Web-Design-and-Development/tutorial-4-styling/base.html) and [img](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling/img.zip) zipped folder to your local directory. You can use this content to complete the following tasks.
+Download the [base-part-1.html](https://raw.githubusercontent.com/josecarlosgt/Web-Design-and-Development/tutorial-4-styling/base-part-1.html) and [img](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling/img.zip) zipped folder to your local directory. You can use this content to complete the following tasks.
 
 Remember to:
 1. Rename the base.html to index.html
