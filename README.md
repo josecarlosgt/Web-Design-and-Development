@@ -131,7 +131,7 @@ h3 {
     
 Try to declare all properties for the h1 element using the shorthand property [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font).
 
-**Text properties**
+### Text properties
 
 In addition to font properties, CSS also provides text properties to control how text is displayed. Some common CSS text properties include:
 
@@ -301,9 +301,9 @@ nav li {
 }
 ```
     
-### [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
+### Pseudo-classes
     
-We will pseudo-classes to style the link items in the navigation bar to achieve the following visual presentation:
+We will [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) to style the link items in the navigation bar to achieve the following visual presentation:
 - Show links as gray by default using the hexadecimal value of DCDCDC.
 - Show unvisited and visited links with the same default gray color.
 - The links should turn white when the user hovers the pointer over the links.
