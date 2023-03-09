@@ -1,19 +1,19 @@
 # Tutorial: Styling the content of your website
 
-CSS (Cascading Style Sheets) is a textual language for describing how a web page is styled for visual presentation.
+CSS (Cascading Style Sheets) is a language for describing how a web page is styled for visual presentation.
 
-**The box model**
+## The box model
 
 HTML elements take up space on the web page. The box model is essential for understanding how to adjust the space between elements. The box model describes the size of each element as a series of nested boxes, where each box determines a different property:
 
-- Content: The innermost box contains the content of the element, such as text and images. To change the size of the *content box*, use the *height* and *width* properties shown in Task 3.
+- Content: The innermost box contains the content of the element, such as text and images. To change the size of the *content box*, use the *height* and *width* properties (see Task 2 below).
 - Padding: The padding box contains the content box and adds a transparent area around the content.
 - Border: The border box contains the padded content and adds an optionally colored area around the padding.
 - Margin: The margin box contains all three boxes and adds a transparent area around the border.
 
 ![box-model](img/box-model.png)
 
-**Block and inline boxes**
+### Block and inline boxes
 
 The box model also broadly defines two general types of boxes: block boxes and inline boxes. Their characteristics refer to how the box behaves in terms of page flow and in relation to other boxes on the page.
 
@@ -34,7 +34,7 @@ If a box has an outer display type of inline, then:
 
 > In short, properties like padding, margin, height, and width only work with block elements. Block elements, like paragraphs and headings, occupy the entire line of the webpage, while inline elements, like links and spans, occupy only the space corresponding to the content they contain.
 
-**Instructions**
+## Instructions
 
 This document explains the steps for styling content in a HTML document using CSS. Each task below provides links that explain the purpose CSS properties and techniques.
 
@@ -244,11 +244,9 @@ Create a new div to wrap all the content of the webpage and apply the rule above
 </body>
 ```
 
-## Task 5: Creating a navigation menu
+## Task 5: Putting everything together: Create a navigation menu
 
-Browsers come with several default CSS rules for elements like links and list items.
-
-Before starting this taks, let's add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
+Let's add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
 
 ```html
 <nav>
@@ -266,7 +264,7 @@ Before starting this taks, let's add a navigation menu using the [nav](https://d
 </nav>
 ```
 
-Apply the following CSS rules to style the links in the navigation menu:
+Browsers come with several default CSS rules for elements like links and list items. Apply the following CSS rules to style the links in the navigation menu:
 
 ```css
 nav a {
