@@ -300,6 +300,40 @@ nav li {
     padding: 10px;
 }
 ```
+    
+### [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
+    
+We will pseudo-classes to style the link items in the navigation bar to achieve the following visual presentation:
+- Show links as gray by default using the hexadecimal value of DCDCDC.
+- Show unvisited and visited links with the same default gray color.
+- The links should turn white when the user hovers the pointer over the links.
+- The links should turn white when the user clicks on them.
+
+Use a hexadecimal code to specify the white color.
+
+```css
+/* unvisited link */
+nav a:link {
+  color: #DCDCDC;
+}
+
+/* visited link */
+nav a:visited {
+  color: #DCDCDC;
+}
+
+/* mouse over link */
+nav a:hover {
+  color: white;
+}
+
+/* selected link */
+nav a:active {
+  color: white;
+}    
+```
+
+> Pseudo-classes in CSS allow you to change the default styles associated with the different states of link elements that result from interactions between the user and the elements. For example, the user hovering the mouse or pointer on a link causes the link to be in the state of hover.
 
 ## Task 6: Layout (Advanced)
     
