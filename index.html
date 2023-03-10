@@ -66,7 +66,6 @@
             <article class="activity">
                 <!-- Self-contained content intended to be independently distributable -->
                 <h3>The Lake Challenge</h3>
-                <div class="flex-container">
                     <figure class="flex-container">
                         <img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
                         <figcaption>
@@ -80,11 +79,9 @@
                             </ul>
                         </figcaption>
                     </figure>
-                </div>
             </article>
             <article class="activity">
                 <h3>Sit Back & Relax</h3>
-                <div class="flex-container">
                     <figure class="flex-container">
                         <img src="img/boat.jpg" alt="Sit Back & Relax boat" title="Boat trip">
                         <figcaption>
@@ -97,12 +94,9 @@
                             </ul>        
                         </figcaption>
                     </figure>
-                </div>
             </article>
-        </section>
-        
+        </section>        
     </main>
-    <hr>
     <aside id="contact">
         <!-- Defines content aside from the content it is placed in -->
         <section>
@@ -112,14 +106,13 @@
             </p>
         </section>            
         <!-- A form asking for page viewer's experiences -->        
-        <form class="experience">
+        <form id="experience_form">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name" placeholder="Write your name"><br><br>
             <label for="email">Email: </label>
             <input type="email" name="email" id="email" placeholder="Write your email"><br><br>
             <label for="experience">Experience: </label>
-            <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5"
-                cols="50"></textarea><br><br>
+            <textarea name="experience" id="experience" placeholder="Please share with us your experience."></textarea><br><br>
             <input type="submit" value="Submit">
         </form>
     </aside>

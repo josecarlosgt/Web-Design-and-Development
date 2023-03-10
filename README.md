@@ -209,15 +209,19 @@ The padding, border, and margin CSS properties can apply only to one side by add
 Adjust the spacing of the form elements:
 
 ```css
-.experience input, .experience textarea {
-    width: 100%;
-
-    padding: 12px 20px;
-    margin: 8px 0;
+#experience_form {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-.experience {
-    margin-bottom: 20px;
+#experience_form input, #experience_form textarea {
+    width: 300px;
+    padding: 10px;
+}
+
+#experience_form textarea {
+    height: 100px;
 }
 ```
 
@@ -300,7 +304,7 @@ nav li {
     padding: 10px;
 }
 ```
-    
+
 ### Pseudo-classes
     
 We will [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) to style the link items in the navigation bar to achieve the following visual presentation:
@@ -356,21 +360,9 @@ Use the following HTML as a guide to style the content of each actvity using the
 <article class="activity">
     <!-- Self-contained content intended to be independently distributable -->
     <h3>The Lake Challenge</h3>
-    <div class="flex-container">
-        <figure class="flex-container">
-            <img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
-            <figcaption>
-                Cross the four kilometres in a kayak guided by a local guide. <strong>This guided visit is
-                physically demanding, and it is recommended for only those in excellent physical
-                condition.</strong>
-                <ul>
-                    <li>Duration: 5 hours approx.</li>
-                    <li>Price: $50 USD</li>
-                    <li>Minimum: 2 pax</li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
+    <figure class="flex-container">
+        ...
+    </figure>
 </article>
 ```
 
