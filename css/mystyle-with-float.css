@@ -65,19 +65,6 @@ header img {
     list-style-position: inside;
 }
 
-/* Contact form */
-
-.experience input, .experience textarea {
-    width: 100%;
-
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
-.experience {
-    margin-bottom: 20px;
-}
-
 /* Center the webpage */
 
 .center {

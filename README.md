@@ -191,7 +191,7 @@ The values for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/widt
 
 **Since sizes of elements like inputs and spacing between elements are rather independent, we will use pixels (an absolute size unit) for images and spacing.**
 
-## Task 3: Borders & Spacing
+## Task 3: Borders & spacing
 
 The CSS properties that control borders and spacing:
 
