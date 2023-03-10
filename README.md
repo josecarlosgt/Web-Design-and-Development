@@ -49,6 +49,8 @@ Before starting with Task 1, rename the file *structure.html* to *index.html* an
 
 You will need to website created in the previous tutorial. You can download the website from [here](https://github.com/josecarlosgt/Web-Design-and-Development/archive/refs/heads/tutorial-2-designing-and-structuring-content.zip).
 
+Download the img zipped folder to your local directory. You can use this content to complete the following tasks.
+
 ## Task 1: Styling text
 
 ### Font properties
@@ -150,6 +152,10 @@ h1 {
 
     text-align: center;
 }
+
+footer {
+    text-align: center;
+}
 ```
 
 > The main heading is a block element, thus it occupies an entire line on the webpage. The text-align property is useful for aligning text that lives inside a block element. We will use another technique later for centering other types of content. 
@@ -161,34 +167,30 @@ A block element's content spans the width of the enclosing parent element by def
 - The width property specifies the content's width. Ex: width: 20px; makes the content 20px wide.
 - The height property specifies the content's height. Ex: height: 30px; makes the content 30px high.
 
-> A common error is to use width or height on inline elements. An inline element like <span> has a width and height equal to the size of the element's content. The width and height cannot be changed unless the inline element's display property is changed to inline-block (more on this later).
+> A common error is using width or height on inline elements. An inline element like <span> has a width and height equal to the size of the element's content. The width and height cannot be changed unless the inline element's display property is changed to inline-block. However, images are special because although they have a display value of inline by default, their dimensions are defined by the image's intrinsic values, like inline-block. 
 
-However, images are special because although they have a display value of inline by default, their dimensions are defined by the image's intrinsic values, like inline-block. 
+Note that size is unrelated to an HTML document's structure; thus, CSS rules should control any size adjustment.
 
-Currently, the *width* and *height* attributes of the *img* tag control the size of the images displayed on our website. However, image size is unrelated to our HTML document's structure or content, and CSS rules should control any size adjustment.
-
-Remove all the *width* and *height* attributes (if any) of the image elements and add the following CSS rules:
+Increase the width of the input elements to a fixed size of 300px:
 
 ```css
-header img {
-    width: 960px;
-}
-
-article img {
-    width: 400px;
-}
+#experience_form input[type="text"], input[type="email"] {
+    width: 300px;
+} 
 ```
 
-> The rules above specify the size of the images using a length (absolute) value. When specifying only the width attribute of an image, the browser automatically calculates the image's height.
+> The rule above uses another kind of CSS selector, namely, [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a certain attribute.
+
+> The rule above also specifies size using a length (absolute) value.
     
 The values for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) dimension properties can be:
 
 - length: defines the dimension as an absolute value.
 - percentage: defines the dimension as a percentage of the containing block's height.
-- auto: the browser will calculate and select a height for the specified element. This value is useful with other properties when centering block elements.
+- auto: the browser will calculate and select a height for the specified element. This value is helpful with other properties when centering block elements.
 
-**Since image sizes and spacing between elements are rather independent, we will use pixels (an absolute size unit) for images and spacing.**
-    
+**Since sizes of elements like inputs and spacing between elements are rather independent, we will use pixels (an absolute size unit) for images and spacing.**
+
 ## Task 3: Borders & Spacing
 
 The CSS properties that control borders and spacing:
@@ -206,22 +208,17 @@ The padding and margin properties may have from 1 to 4 values:
 
 The padding, border, and margin CSS properties can apply only to one side by adding a -top, -left, -bottom, or -right suffix to the CSS property. Ex: padding-top:5px; specifies 5 pixels of padding above the content.
 
-Adjust the spacing of the form elements:
+Adjust the border and spacing of the article elements:
 
 ```css
-#experience_form {
+article {
     border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 30px;
+    margin: 10px;
+    padding: 5px;
 }
 
-#experience_form input, #experience_form textarea {
-    width: 300px;
-    padding: 10px;
-}
-
-#experience_form textarea {
-    height: 100px;
+.activity img {
+    margin-bottom: 5px;
 }
 ```
 
@@ -230,7 +227,9 @@ Adjust the spacing of the form elements:
 The rule below centers block elements by setting the top and bottom margins to 0 and the left and right margins to auto, i.e., they are determined by the browser. The *centering* effect is achieved by also setting the width (otherwise, a block element will take up the entire width of the page). Once you have specified the width, setting the left and right margins to auto will make the browser put an equal gap on each side of these elements. As a result, we can use this rule to center any block element on the page.
 
 ```css
-.center {
+body {
+    font-family: Arial, sans-serif;
+
     max-width: 960px;
     margin: 0 auto;
 }
@@ -238,19 +237,9 @@ The rule below centers block elements by setting the top and bottom margins to 0
 
 > When applying the previous rule to center the web page,  [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) corresponds to the screen size in which we tailor our page to be rendered. 960px is a value commonly used for web pages designed to be rendered on large screens. We can also use *max-width* in combination with the *width* property to implement a responsive design, but we will discuss this topic later.
 
-Create a new div to wrap all the content of the webpage and apply the rule above:
+## Task 5: Putting everything together
 
-```html
-<body>
-    <div class="center"> 
-        ...
-    </div>
-</body>
-```
-
-## Task 5: Putting everything together: Create a navigation menu
-
-Let's add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
+Create add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
 
 ```html
 <nav>
@@ -339,7 +328,7 @@ nav a:active {
 
 > Pseudo-classes in CSS allow you to change the default styles associated with the different states of link elements that result from interactions between the user and the elements. For example, the user hovering the mouse or pointer on a link causes the link to be in the state of hover.
 
-## Task 6: Layout (Advanced)
+## Task 6: Layout
     
 An essential aspect of styling a website is the layout. The layout is the arrangement of all visual elements on a webpage. The traditional way in CSS to handle layout consisted of using floats and positioning properties, which often involved writing intricate HTML and CSS rules. The Flexible Box Layout, commonly known as Flexbox, and Grid are two popular alternatives to cope with the limitations of floats and position properties. In this tutorial, we will use flex.
 
@@ -357,29 +346,14 @@ The content of each activity would look better if positioned to the right of eac
 Use the following HTML as a guide to style the content of each actvity using the CSS rule above: 
 
 ```html
-<article class="activity">
-    <!-- Self-contained content intended to be independently distributable -->
-    <h3>The Lake Challenge</h3>
-    <figure class="flex-container">
+<div class="flex-container">
+    <article class="activity">
         ...
-    </figure>
-</article>
-```
-
-Adjust the spacing of the elements reloated to each activity:
-
-```css
-.activity img {
-    margin-right: 10px;
-}
-    
-.activity figure {
-    margin-top: 0;
-}
-    
-.activity ul {
-    padding: 0;
-}
+    </article>
+    <article class="activity">
+        ...
+    </article>
+</div>    
 ```
 
 Place the bullet points of each activity's features inside the element's content box:
@@ -389,3 +363,32 @@ Place the bullet points of each activity's features inside the element's content
     list-style-position: inside;
 }
 ```
+
+## Task 7: Styling the contact form
+
+Add the following rules to complete the 
+
+
+```css
+#experience_form input, #experience_form textarea, #experience_form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#experience_form input, #experience_form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#experience_form label {
+    font-weight: bold;
+}
+
+#experience_form textarea {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+
+```
+
