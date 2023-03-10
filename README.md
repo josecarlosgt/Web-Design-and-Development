@@ -50,8 +50,8 @@ Before starting with Task 1, rename the file *structure.html* to *index.html* an
 You will need to website created in the previous tutorial. You can download the website from [here](https://github.com/josecarlosgt/Web-Design-and-Development/archive/refs/heads/tutorial-2-designing-and-structuring-content.zip).
 
 In this tutorial, we will be centering the content of the webpage. Thus, you need to resize images to the following dimensions:
-- header image: 968px
-- article images: 450px
+- header image: 960px wide
+- article images: 450px wide
 
 You can download this [img zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/img.zip) to your local directory with the resized images.
 
