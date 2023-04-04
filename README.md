@@ -4,6 +4,7 @@ The following list contains links to examples and exercises in JavaScript. Each 
 - [Working with object literals](https://jsfiddle.net/joseortiz/q96b4wje/)
 - [Working with arrays](https://jsfiddle.net/joseortiz/xnz4jh7r/)
 - [Working with an array of objects](https://jsfiddle.net/joseortiz/Lajtgsvq/)
+- [Updating an HTML interface with an array of objects](https://jsfiddle.net/joseortiz/zav6bLn4/)
 
 Optional:
 - [Assignment by Value vs Assignment vs Reference](https://jsfiddle.net/joseortiz/c5htzfu3/)
