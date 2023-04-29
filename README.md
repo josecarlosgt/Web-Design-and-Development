@@ -8,4 +8,3 @@ Optional
 - [Updating a list with events](https://jsfiddle.net/joseortiz/6uspdxoz/)
 - [Collapsible content](https://jsfiddle.net/joseortizauckluni/cufjL6p8/)
 - [Searching](https://jsfiddle.net/joseortizauckluni/co7nzyL1/)
-- [Asynchronous JavaScript And XML](https://jsfiddle.net/joseortizauckluni/e2jwtoac/) 
