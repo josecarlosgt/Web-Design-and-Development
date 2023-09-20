@@ -43,7 +43,7 @@ We will use the following text. Note the keywords are highlighted in bold.
 > - Minimum: 4 pax
 
 > *Description of the local communities*  
-> Members of the communities settled around **Laguna Brava** welcome travelers from all regions of the world looking for **adventure** and **nature**. They believe that visitors and responsible **ecotourism** practices are essential to support the development of their communities.
+> The area around **Laguna Brava** has been inhabited by Mayan communities of the Chuj ethnicity since the 19th century. Members of these communities welcome travelers from all regions of the world looking for **adventure** and **nature**. They believe that visitors and responsible **ecotourism** practices are essential to support the development of their communities.
 
 ## Preview
 
@@ -73,42 +73,29 @@ Inside the body element, create the main heading. Use the [level 1 heading](http
 <h1>Welcome to Laguna Brava Ecotourism</h1>
 ```
 
-## Task 3: Adding sub-headings and paragraphs
-Structure the content above using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and level 2 headings.
+## Task 3: Adding Paragraphs and sub-headings
+Structure the page's welcome blurb and general description of activities using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and level 2-3 headings.
 
 You can follow the structure below:
 
 ```html
-<!-- lake description -->
-<h1>Welcome to Laguna Brava Ecotourism</h1>
-<p>
-    ...
-</p>
-```
+<h1>...</h1>
+<p>[Welcome blurb]</p>
 
-```html
-<!-- business/organization description -->
-<h2>The Local Communities</h2>
-<p>
-    ...
-</p>
-```
-
-```html
 <!-- activities description -->
 <h2>Activities</h2>
 <p>
-    ...
+    [General description of activities ]
 </p>
 ```
 
 ```html
-<!-- Option 1 -->
+<!-- Activity 1 -->
 <h3>The Lake Challenge</h3>
 <p>
     ...
 </p>
-<!-- Option 2 -->
+<!-- Activity 2 -->
 <h3>Sit Back & Relax</h3>
 <p>
     ...
@@ -116,7 +103,7 @@ You can follow the structure below:
 ```
 
 ## Task 4: Adding lists
-Each guided visit option contains details organized as a list (e.g., price and minimum number of people). Use the [unordered list element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) to structure this information, right below the sub-heading in each option.
+Each guided visit option contains details organized as a list (e.g., price and minimum number of people). Use the [unordered list element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) to structure this information right below the sub-heading in each activity.
 
 ```html
 <h3>The Lake Challenge</h3>
@@ -144,12 +131,12 @@ Each guided visit option contains details organized as a list (e.g., price and m
 ```
 
 ## Task 5: Adding links
-Choose at least three words or phrases and make them a hyperlink (link) using the [anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
+Choose at least one word or phrase and make it a hyperlink (link) using the [anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
 
 Specify the URL of another website using the hyperlink reference (href) attribute of the anchor element. HTML attributes are commonly used in HTML to provide additional information and control the content within an HTML tag.
 
 ```html
-Laguna Brava is a <a href="https://en.wikipedia.org/wiki/Karst">karstic lake</a> of incomparable beauty located in western Guatemala.
+The area around **Laguna Brava** has been inhabited by Mayan communities of the <a href=["https://en.wikipedia.org/wiki/Karst](https://en.wikipedia.org/wiki/Chuj_people)">Chuj ethnicity</a> since the 19th century.
 ```
 
 Notes:
