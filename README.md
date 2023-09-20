@@ -1,6 +1,6 @@
 # Tutorial: Structuring the content of your website
 
-This document describes the steps for structuring information in an HTML document. The content is based on a proposal for the [Laguna Brava Ecotourism Website](https://docs.google.com/presentation/d/1n2hk0jvnh2hiACLtF8AVrQsfS-qk3iPBdHPB7ZkR2Jk/edit?usp=sharing)
+This document describes the steps for structuring information in an HTML document. The content is based on a proposal for the [Laguna Brava Ecotourism Website](https://docs.google.com/document/d/1-K0fuZdOEQEQq6HCd7yU6GHAOYYPLf6Sm5DsjUFXSa4/edit?usp=sharing) [discussed in class](https://docs.google.com/presentation/d/1n2hk0jvnh2hiACLtF8AVrQsfS-qk3iPBdHPB7ZkR2Jk/edit?usp=sharing).
 
 ## Skills
 - Structure content using HTML tags
