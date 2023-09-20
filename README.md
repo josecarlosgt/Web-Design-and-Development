@@ -47,7 +47,7 @@ We will use the following text. Note the keywords are highlighted in bold.
 
 ## Preview
 
-![Web page Preview](preview-1.jpg)
+![Web page Preview](page-preview-1.jpg)
 
 ## Task 1: Creating the basic structure
 
