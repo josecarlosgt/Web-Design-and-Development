@@ -3,7 +3,7 @@
 This document describes the steps for structuring information in an HTML document. The content is based on a proposal for the [Laguna Brava Ecotourism Website](https://docs.google.com/presentation/d/1n2hk0jvnh2hiACLtF8AVrQsfS-qk3iPBdHPB7ZkR2Jk/edit?usp=sharing)
 
 ## Skills
-- Structure content using standard HTML tags
+- Structure content using HTML tags
 - Improve the structure of HTML code for search engines by implementing HTML5 semantics  
 
 Each task below provides links that explain the purpose of each HTML tag. These links point to two popular learning resources on web development:
@@ -11,7 +11,7 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 - [Mozilla MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). This website contains detailed and up-to-date documentation on HTML.
 - [W3Schools](https://www.w3schools.com/) This website contains examples and brief explanations of HTML.
 
- On-page Search Engine Optimization (SEO) techiniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
+ On-page Search Engine Optimization (SEO) techniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
 - Laguna Brava
 - Ecotourism
 - Nature
