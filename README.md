@@ -19,31 +19,31 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 
 We will use the following text. Note the keywords are highlighted in bold.
 
-> *Lake description*  
-> **Laguna Brava** is a karstic lake of incomparable beauty located in western Guatemala. **Laguna Brava** is located in a remote and highly underdeveloped region, so reaching and exploring the lake takes a mix of extreme **adventure** and intimate contact with **nature**. The lake beauty lies in the colours variety of its waters, which depends on the sun's position. **Laguna Brava** is also known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the waters of **Laguna Brava** Laguna are so calm that they instantly awaken a deep feeling of peace.
+> *Page's Title:* Welcome to **Laguna Brava Ecotourism**
 >
-> *Description of the local communities*  
-> Members of the communities settled around **Laguna Brava** welcome travelers from all regions of the world looking for **adventure** and **nature**. They believe that visitors and responsible **ecotourism** practices are essential to support the development of their communities.
-
+> *Welcome blurb:* Learn everything about the activities that **Labuna Brava** offers to its visitors.
 >
 > *Description of activities*  
-> The communities offer two options for guided visits that allow visitors to enjoy **Laguna Brava's** natural beauty. In both options, they provide life vests and local guides who know the lake very well to take care of your safety.
+> The communities offer two activities for guided visits that allow visitors to enjoy **Laguna Brava's** natural beauty. In both activities, members of the **Laguna Brava's** community provide life vests and local guides who know the lake very well to ensure your safety.
 >
 > *Guided visits options*
 >
-> *Option 1*  
+> *Acitivy 1*  
 > The Lake Challenge  
-> Cross the four kilometres in a kayak guided by a local guide. This guided visit is physically demanding, and it is recommended for only those in excellent physical condition.
+> Put your strengths to work by crossing the four kilometers in a kayak guided by a local guide. This **adventure** is physically demanding and recommended for only those in excellent physical condition.
 > - Duration: 5 hours approx.
-> - Price: $50 USD
+> - Price: USD 50
 > - Minimum: 2 pax
 >
-> *Option 2*  
+> *Activity 2*  
 > Sit Back & Relax  
-> Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not require physical effort.
+> Admire the **nature** of **Laguna Brava** by boarding a rowing boat around the most beautiful parts of the lake. This guided visit does not require physical effort.
 > - Duration: 5 hours approx.
-> - Price: 3 hours approx.
+> - Price: USD 30
 > - Minimum: 4 pax
+
+> *Description of the local communities*  
+> Members of the communities settled around **Laguna Brava** welcome travelers from all regions of the world looking for **adventure** and **nature**. They believe that visitors and responsible **ecotourism** practices are essential to support the development of their communities.
 
 ## Preview
 
