@@ -21,7 +21,7 @@ We will use the following text. Note the keywords are highlighted in bold.
 
 > *Page's Title:* Welcome to **Laguna Brava Ecotourism**
 >
-> *Welcome blurb:* Learn everything about the activities that **Labuna Brava** offers to its visitors.
+> *Welcome blurb:* Learn everything about the activities that **Laguna Brava** offers to its visitors.
 >
 > *Description of activities*  
 > The communities offer two activities for guided visits that allow visitors to enjoy **Laguna Brava's** natural beauty. In both activities, members of the **Laguna Brava's** community provide life vests and local guides who know the lake very well to ensure your safety.
