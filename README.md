@@ -47,7 +47,7 @@ We will use the following text. Note the keywords are highlighted in bold.
 
 ## Preview
 
-![Web page Preview](page-preview-1.jpg)
+![Web page Preview](page-preview.jpg)
 
 ## Task 1: Creating the basic structure
 
@@ -201,7 +201,7 @@ Form controls serve as points on the web page that direct or control the user's 
 
 ### Preview
 
-![Preview 2](preview-2.jpg)
+![Preview 2](form-preview.jpg)
 
 After the last paragraph, create a web form that requests comments from your page's viewers based on their experiences in Laguna Brava:
 
