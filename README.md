@@ -346,7 +346,7 @@ Notes:
 
 ## Task 10: Structuring content using articles
 
-[article](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article): represents self-contained content. This means \<article\> content could be removed from the page and put on other pages and still make sense on its own. Thus, content inside an \<article\> element should be intended to be independently distributable or reusable. Content inside \<article\> is also intended to change often (e.g., online publications such as blogs, magazine articles, and event listings). Thus, this tag tells search engines the content it contains changes often and put more weight on the text it contains compared to other site elements.
+The [article element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) represents self-contained content. This means \<article\> content could be removed from the page and put on other pages and still make sense on its own. Thus, content inside an \<article\> element should be intended to be independently distributable or reusable. Content inside \<article\> is also intended to change often (e.g., online publications such as blogs, magazine articles, and event listings). Thus, this tag tells search engines the content it contains changes often and put more weight on the text it contains compared to other site elements.
 
 Each \<article\> should be identified, typically by including a heading as a child of the \<article\> element.  
 
@@ -363,9 +363,9 @@ What content would you consider to structure as articles? The guided visit optio
 
 ## Task 11: Structuring content using sections
 
-[section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section): represents a generic sectioning element, and should only be used if there isn't a more specific element to represent it like \<main\>, \<nav\>, or \<aside\>. 
+The [section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section): represents a generic sectioning element, and should only be used if there isn't a more specific element to represent it like \<main\>, \<nav\>, or \<aside\>. 
 
-Use the <section> element to create two sections: one section for the activities content and another section for description of the local communities. 
+Use the \<section\> element to create two sections: one section for the activities content and another section for description of the local communities. 
 
 Notes:
 - Although it might behave similar to the \<article\> element, if the contents of the element represent a standalone unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
@@ -381,7 +381,7 @@ Reference: [HTML5 Elements That Can Affect Search Engine Indexing](https://www.w
 ## Task 12: Highlithing text importance
 In addition to the sectioning tags mentioned above, you can also use other elements to highlight important text, such as:
 
-The [emphasis element \(em\)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em): represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
+The [emphasis element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
 
 Choose a word or words in your content that you think should be emphasized. For example, you can emphasize the words "responsible ecotourism practices" in the sentence: "They believe that visitors and responsible ecotourism practices are essential to support the development of their communities.":
 
@@ -389,7 +389,7 @@ Choose a word or words in your content that you think should be emphasized. For 
 <em>responsible ecotourism practices</em>
 ```
 
-The [strong element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong): element indicates that its contents have strong importance, seriousness, or urgency.
+The [strong element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element indicates that its contents have strong importance, seriousness, or urgency.
 
 Choose sentences in your content that you think should be marked as serious or urgent. For example, statements about safety and the requirement of excellent physical condition for the first option of guided visits:
 
@@ -401,7 +401,7 @@ These elements are preferred instead of the once glorious but now less popular [
 
  ## Task 13 Adding the figure element 
  
-Use the [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element with a caption to structure the content related to the image in each activity. Use the following statements as captions for each activity's image:
+Use the [figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) with a caption to structure the content related to the image in each activity. Use the following statements as captions for each activity's image:
 - The lake challenge activity: *Cross the four kilometers in a kayak.*
 - The sit back & relax activity: *Board a rowing boat and admire the nature of Laguna Brava.*
 
@@ -416,7 +416,7 @@ Use the [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figur
 > The figure element groups together related content, contributing to the meaning (semantics) of the HTML document when compared to the image tag.
 
 ## Task 14: Adding side content
-Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
+Use the [aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
 
 ```html
 <hr>	        
@@ -431,6 +431,20 @@ Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HT
 
 > The \<aside\> HTML element represents tangential information or content indirectly related to the document's central theme, such as sidebars or callout boxes.
 
+## Task 15: Adding a navigation menu
+
+Create add a navigation menu using the [nav element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav). Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
+
+```html
+<nav>
+    <ul>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#communities">The Local Communities</a></li>
+    </ul>
+</nav>
+```
+
+<!-- 
 ## Task 15: Adding on-page SEO
 
 Check your content against the following recommendations to improve SEO:
@@ -448,3 +462,5 @@ The use of HTML5 semantic tags also contributes to [improving SEO](https://resou
 You may also visit the page [How Search organizes information](https://www.google.com/search/howsearchworks/crawling-indexing/) to get a basic understanding of how Google's Search service works.
 
 The [index.html](./index.html) file contains the final HTML document. *Compare the structure of your HTML document using traditional HTML elements (paragraphs) versus HTML5 semantic elements.*
+
+-->
