@@ -74,7 +74,7 @@ Inside the body element, create the main heading. Use the [level 1 heading](http
 ```
 
 ## Task 3: Adding Paragraphs and sub-headings
-Structure the page's welcome blurb and general description of activities using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and level 2-3 headings.
+Structure the page's welcome blurb, general description of activities, and description of the local communities using [paragraph elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) and heading elements.
 
 You can follow the structure below:
 
@@ -97,6 +97,14 @@ You can follow the structure below:
 </p>
 <!-- Activity 2 -->
 <h3>Sit Back & Relax</h3>
+<p>
+    ...
+</p>
+```
+
+```html
+<!-- Local communities -->
+<h2>The Local Communities</h2>
 <p>
     ...
 </p>
@@ -136,7 +144,7 @@ Choose at least one word or phrase and make it a hyperlink (link) using the [anc
 Specify the URL of another website using the hyperlink reference (href) attribute of the anchor element. HTML attributes are commonly used in HTML to provide additional information and control the content within an HTML tag.
 
 ```html
-The area around **Laguna Brava** has been inhabited by Mayan communities of the <a href=["https://en.wikipedia.org/wiki/Karst](https://en.wikipedia.org/wiki/Chuj_people)">Chuj ethnicity</a> since the 19th century.
+The area around Laguna Brava has been inhabited by Mayan communities of the <a href="https://en.wikipedia.org/wiki/Chuj_people">Chuj ethnicity</a> since the 19th century.
 ```
 
 Notes:
@@ -261,15 +269,15 @@ Finally, add a comment on top of the form element to state the purpose of your f
 Access [this document](https://docs.google.com/document/d/1RAIx-JZjfczV0gJI_8PNTx6jgpuOi0jKEOdl4tw8HOo/edit?usp=sharing) for guidelines to add **persistence** to the web form, which will allow storing the comments from Laguna Brava Ecotourism's visitors.
 
 ## Task 8: Make your Web page HTML5
-Let's improve the structure of your website by leveraging HTML5 features.
+Let's improve the structure of your website by leveraging HTML5 tags.
 
 [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) is the current specification of HTML. HTML5 introduces standards designed to facilitate the development of modern web applications and websites.
 
 One of the main improvements introduced by HTML5 is a new set of semantic elements. The term [semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) refers to the meaning of a given element. Through new semantic elements, HTML5 allows web developers to describe more precisely what the content of a web page is.
 
 The benefits of using semantic elements include:
-- It allows search engines to identify relevant content on the web page, influencing the page's search rankings.
 - Screen readers can use semantic elements as signposts to help visually impaired users navigate a page.
+- It allows search engines to identify relevant content on the web page, influencing the page's search rankings.
 - Semantic elements also contribute to the purpose of HTML to represent content based on its structure and not on presentation (style). Presentation (i.e., how a web page should look) is the sole responsibility of CSS.
  
 **The HTML5 document type declaration**
@@ -296,7 +304,7 @@ Notes:
 - The doctype declaration is usually the very first thing defined in an HTML document (even before the opening \<html\>tag); however, the doctype declaration itself is not an HTML tag.
 
 ## Task 9: Adding semantic tags (header, main, and footer)
-In this task, you will be adding some of the most popular semantic tags introduced by HTML5.
+In this task, we will be adding some of the most popular semantic tags introduced by HTML5.
 
 [header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header): represents introductory content and navigational aids. It may contain  heading elements, a logo, a search form, an author name, and other elements.
 
@@ -304,19 +312,17 @@ Use this element to enclose the lake image, the main heading, and the introducto
 
 ```html
 <header><!-- Introductory content -->            
-    <img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake">
-    <h1>Welcome to Laguna Brava Ecotourism</h1>
+    <img>
+    <h1>...</h1>
     <p>
-        Laguna Brava is a ...
+        ...
     </p>
 </header>
 ```
 
-A popular semantic tag that often lives insider the \<header\> element is \<nav\>. [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.
-
 [main](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main): represents the dominant or primary content of a web document. This content should be unique to the document. Content that is repeated across a set of documents such as sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included here. 
 
-Enclose the rest of your content in a main element:
+Enclose the content describing the activities and local communities in a main element:
 
 ```html
 <main><!-- Dominant content of the web page -->
@@ -330,12 +336,12 @@ Add a copyright notice at the bottom of the HTML document using the \<footer\> e
 
 ```html
 <footer><!-- Defines a footer for a document or section -->
-    &copy; 2022 Laguna Brava Ecotourism
+    &copy; 2023 Laguna Brava Ecotourism
 </footer>
 ```
 
 Notes:
-- It is essential to understand the meaning of each semantic element and how these elements structure your web page's content in a way that is more representative of its content.
+- It is essential to understand the meaning of each semantic element and how these elements structure your web page's content in a way that is more descriptive.
 - Although the structure of your web document represents the meaning of each piece of content better, it has not changed or improved the appearance of the webpage. To improve the appearance of a webpage to its visitors, you will use another technology different from HTML, namely CSS. CSS is the topic of the next tutorial.
 
 ## Task 10: Structuring content using articles
@@ -349,7 +355,7 @@ What content would you consider to structure as articles? The guided visit optio
 ```html
 <article><!-- Self-contained content intended to be independently distributable -->
     <h3>...</h3>
-    <img ...>   
+    <img>   
     ...
     <ul>...</ul>
 </article>
@@ -359,14 +365,14 @@ What content would you consider to structure as articles? The guided visit optio
 
 [section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section): represents a generic sectioning element, and should only be used if there isn't a more specific element to represent it like \<main\>, \<nav\>, or \<aside\>. 
 
-Use the section element to enclose the headings and content of each section of the web page: the local communities and activities sections. 
+Use the <section> element to create two sections: one section for the activities content and another section for description of the local communities. 
 
 Notes:
 - Although it might behave similar to the \<article\> element, if the contents of the element represent a standalone unit of content that makes sense by itself (e.g., a blog post or blog comment, or a newspaper article), the \<article\> element should be used instead.
-- If you are only using the element as a styling wrapper, use \<div\> instead. As a sectioning element, a rule of thumb is that content inside \<section\> should be logically related.
 - Sections usually have a heading element as a child
 - Sections can exist inside articles to group semantically connected content inside an article or other elements
 - Section can also be used to group semantically related article elements
+- If you are only using the element as a styling wrapper, use \<div\> instead. As a sectioning element, a rule of thumb is that content inside \<section\> should be logically related.
 
 > The advantage is that each section can have its separate HTML heading. This can give search engines a better understanding of how the web page is segmented and structured. Search engines might be able to interpret the information hierarchy of the HTML document based on \<section\> tags.
 
@@ -388,48 +394,28 @@ The [strong element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
 Choose sentences in your content that you think should be marked as serious or urgent. For example, statements about safety and the requirement of excellent physical condition for the first option of guided visits:
 
 ```html
-<strong>they provide life vests and local guides who know the lake very well to take care of your safety.</strong>
-```
-
-And,
-
-```html
-<strong>This guided visit is physically demanding, and we recommend it for only those in excellent physical condition.</strong>
+<strong>members of the Laguna Brava's community provide life vests ...</strong>
 ```
 
 These elements are preferred instead of the once glorious but now less popular [\<b\>](https://www.w3schools.com/tags/tag_b.asp) and [\<i\>](https://www.w3schools.com/tags/tag_i.asp) tags.
 
  ## Task 13 Adding the figure element 
  
-Use the [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element with a caption to structure the content related to the image in each activity. Use the description of the activity as the caption of figure:
+Use the [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element with a caption to structure the content related to the image in each activity. Use the following statements as captions for each activity's image:
+- The lake challenge activity: *Cross the four kilometers in a kayak.*
+- The sit back & relax activity: *Board a rowing boat and admire the nature of Laguna Brava.*
 
 ```html
 <figure>
     <img src="..."
          alt="...">
-    <figcaption>[Activity description]</figcaption>
+    <figcaption>[caption]</figcaption>
 </figure>
 ```
 
 > The figure element groups together related content, contributing to the meaning (semantics) of the HTML document when compared to the image tag.
 
-## Task 14: Adding on-page SEO
-
-Check your content against the following recommendations to improve SEO:
-1. Use \<title\> with descriptive text (i.e., text contains at least one keyword)
-2. Include and repeat keywords in the web page text, including heading elements
-3. Use the alt attribute of image elements
-4. Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description:
-
-```html
-<meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
-```
-
-As mentioned in task 7, the use of semantic tags (task 8) also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
-
-You may also visit the page [How Search organizes information](https://www.google.com/search/howsearchworks/crawling-indexing/) to get a basic understanding of how Google's Search service works.
-
-## Task 15: Adding side content
+## Task 14: Adding side content
 Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
 
 ```html
@@ -444,5 +430,21 @@ Use the [aside semantic element](https://developer.mozilla.org/en-US/docs/Web/HT
 ```
 
 > The \<aside\> HTML element represents tangential information or content indirectly related to the document's central theme, such as sidebars or callout boxes.
+
+## Task 15: Adding on-page SEO
+
+Check your content against the following recommendations to improve SEO:
+1. Use \<title\> with descriptive text (i.e., text contains at least one keyword)
+2. Include and repeat keywords in the web page text, including heading elements
+3. Use the *alt* attribute of image elements
+4. Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description:
+
+```html
+<meta name="description" content="Laguna Brava Ecotourism promotes sustainable travel and activities to the Laguna Brava lake in western Guatemala." />
+```
+
+The use of HTML5 semantic tags also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
+
+You may also visit the page [How Search organizes information](https://www.google.com/search/howsearchworks/crawling-indexing/) to get a basic understanding of how Google's Search service works.
 
 The [index.html](./index.html) file contains the final HTML document. *Compare the structure of your HTML document using traditional HTML elements (paragraphs) versus HTML5 semantic elements.*
