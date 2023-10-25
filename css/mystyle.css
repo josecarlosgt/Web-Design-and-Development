@@ -1,19 +1,18 @@
-/* Font & text properties for headings & footer */
+/* Font & text properties for header and footer */
+
+/* Example of element selectors */
 
 body {
     font-family: Arial, sans-serif;
-
-    /* Center the webpage */
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 h1 {
-    font-size: 5em;
-    font-style: italic;
+    font-size: 6em;
     font-variant: small-caps;
 
     text-align: center;
+
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -21,39 +20,68 @@ h2 {
     font-variant: small-caps;
 }
 
-h3 {
-    font-size: 1.5em;
-}
-
 footer {
     text-align: center;
 }
 
-/* Articles */
+/* Example of a class selector */
 
-article {
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
+.bold {
+    font-weight: bold;
 }
 
-.activity img {
-    margin-bottom: 5px;
-}
+/* Example of an id selector */
 
-.activity li {
-    list-style-position: inside;
+#experience_form label {
+    font-weight: bold;
 }
-
-/* Contact form */
 
 /* Sizing */
+
+/* Full-width image */ 
+header img {
+    width: 100%;
+}
+
+/*Example of attribute selectors */
 #experience_form input[type="text"], input[type="email"] {
     width: 300px;
 } 
 
+#experience_form textarea {
+    height: 100px;
+    width: 100%;
+
+    padding: 10px;
+}
+
+/* Layout and spacing properties */
+
+/* Center content relative to the page's width */
+.container {
+    max-width: 960px;
+    margin: 0 auto 50px auto;
+
+    border-bottom: 1px solid grey;
+}
+
+/* Multicolumn layout for activities */
+.activity-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.activity-col {
+    padding: 10px;
+}
+
+#communities {
+    display: flex;
+}
+
 #experience_form input, #experience_form textarea, #experience_form label {
     display: block;
+
     margin-bottom: 10px;
 }
 
@@ -62,14 +90,11 @@ article {
     padding: 10px;
 }
 
-#experience_form label {
-    font-weight: bold;
-}
+/* Borders */
 
-#experience_form textarea {
-    height: 100px;
-    width: 100%;
-    padding: 10px;
+/* Circle-shaped images */
+.activity-col img {
+    border-radius: 50%;
 }
 
 /* Navigation menu */
@@ -77,24 +102,20 @@ article {
 nav a {
     text-decoration: none;
     font-weight: bold;
-    font-size: larger;
 }
 
 nav ul {
+    background-color: black;
+    margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: right;
 }
 
 nav li {
     list-style-type: none;
 
     display: inline-block;
-    padding: 10px;
-}
-
-nav ul {
-    background-color: black;
-    margin: 0 0 30px 0;
+    padding: 10px 10px 10px 10px;
 }
 
 /* unvisited link */
@@ -115,10 +136,4 @@ nav a:hover {
 /* selected link */
 nav a:active {
     color: white;
-}
-
-/* Layout */
-
-.flex-container {
-    display: flex;
 }
