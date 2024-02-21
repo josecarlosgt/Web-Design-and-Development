@@ -265,7 +265,7 @@ Finally, add a comment on top of the form element to state the purpose of your f
 <!-- A form asking for page viewer's experiences -->
 ```
 
-Access [this document](https://docs.google.com/document/d/1RAIx-JZjfczV0gJI_8PNTx6jgpuOi0jKEOdl4tw8HOo/edit?usp=sharing) for guidelines to add **persistence** to the web form, which will allow storing the comments from Laguna Brava Ecotourism's visitors.
+[**Persist** the data captured in the web form](https://docs.google.com/document/d/1RAIx-JZjfczV0gJI_8PNTx6jgpuOi0jKEOdl4tw8HOo/edit?usp=sharing) to store the comments from Laguna Brava Ecotourism's visitors.
 
 ## Task 8: Make your Web page HTML5
 Let's improve the structure of your website by leveraging HTML5 tags.
