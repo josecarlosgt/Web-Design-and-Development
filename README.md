@@ -1,6 +1,6 @@
 # Tutorial: Structuring the content of your website
 
-This document describes the steps for structuring information in an HTML document. The content is based on a proposal for the [Laguna Brava Ecotourism Website](https://docs.google.com/document/d/1-K0fuZdOEQEQq6HCd7yU6GHAOYYPLf6Sm5DsjUFXSa4/edit?usp=sharing) [discussed in class](https://docs.google.com/presentation/d/1n2hk0jvnh2hiACLtF8AVrQsfS-qk3iPBdHPB7ZkR2Jk/edit?usp=sharing).
+This document describes the steps for structuring information in an HTML document. The content is based on the narrative for the [Laguna Brava Ecotourism Website](https://docs.google.com/document/d/1km0BxhWLX4hsJDRVkEDGWBFxr76Hyf_FNUubJtaPo5c/edit?usp=sharing) created following [the web design process discussed in class](https://docs.google.com/presentation/d/17QH5RDWIGE9UkEPn0g89vhl6Iw7_nao2lsCcfX6HS2o/edit?usp=sharing).
 
 ## Skills
 - Structure content using HTML tags
@@ -11,15 +11,14 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 - [Mozilla MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). This website contains detailed and up-to-date documentation on HTML.
 - [W3Schools](https://www.w3schools.com/) This website contains examples and brief explanations of HTML.
 
- On-page Search Engine Optimization (SEO) techniques require a list of keywords that describe the most relevant and significant aspects of your website. Here are some examples:
+On-page Search Engine Optimization (SEO) techniques involve crafting a list of keywords that describe the most relevant and significant aspects of your web page. Here are some examples:
 - Laguna Brava
-- Ecotourism
 - Nature
 - Adventure
 
 We will use the following text. Note the keywords are highlighted in bold.
 
-> *Page's Title:* Welcome to **Laguna Brava Ecotourism**
+> *Page's Title:* Welcome to **Laguna Brava** Ecotourism
 >
 > *Welcome blurb:* Learn everything about the activities that **Laguna Brava** offers to its visitors.
 >
@@ -186,7 +185,7 @@ Place the image before the level 1 heading created in task 2.
 Notes:
 - The image element does not require a closing tag because this element does not enclose any content. All the information required to display an image is specified as attributes of the image element.
 - To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. The image URL can be a relative path, e.g., "images/myimage.jpg", which means the image is served locally or an absolute path, e.g., https://josecarlosgt.github.io/Web-Design-and-Development/img/kayak.jpg, which means the image is served externally by another web server.
-- You can also use the title attribute to provide additional information about the image. Most browsers will display the content of this attribute in a tootip when the user hovers over the image.
+- You can also use the title attribute to provide additional information about the image. Most browsers will display the content of this attribute in a tooltip when the user hovers over the image.
 
 ## Task 7: Adding a web form
 HTML borrows the concept of a form to refer to different elements that allow you to collect information from visitors to your site. Refer to Chapter 7: Forms (uploaded to Canvas) for a more detailed explanation of how web forms operate.
