@@ -4,8 +4,7 @@ This document describes the steps for structuring information in an HTML documen
 
 ## Skills
 - Optimize Web content by applying on-page SEO techniques
-- Structure content using HTML Semantic tags
-- Improve the structure of HTML code for search engines by implementing HTML5 semantics  
+- Structure content using HTML5 Semantic tags
 
 Each task below provides links that explain the purpose of each HTML tag. These links point to two popular learning resources on web development:
 
@@ -145,7 +144,23 @@ Notes:
 
 Reference: [HTML5 Elements That Can Affect Search Engine Indexing](https://www.webfx.com/blog/web-design/what-potential-impact-can-html5-have-on-seo/)
 
-## Task 7: Sectioning content using \<article\>
+## Task 7: Adding side content
+Use the [aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
+
+```html
+<hr>	        
+<aside><!-- Defines content aside from the content it is placed in -->
+    ...    
+    <!-- A form asking for page viewer's experiences -->	
+    <form>
+        ...
+    </form>
+</aside>
+```
+
+> The \<aside\> HTML element represents tangential information or content indirectly related to the document's central theme, such as sidebars or callout boxes.
+
+## Task 8: Sectioning content using \<article\>
 
 The [article element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) represents self-contained content. This means \<article\> content could be removed from the page and put on other pages and still make sense on its own. Thus, content inside an \<article\> element should be intended to be independently distributable or reusable. Content inside \<article\> is also intended to change often (e.g., online publications such as blogs, magazine articles, and event listings). Thus, this tag tells search engines the content it contains changes often and put more weight on the text it contains compared to other site elements.
 
@@ -162,7 +177,7 @@ What content would you consider to structure as articles? The guided visit optio
 </article>
 ```
 
-## Task 8: Highlithing text importance
+## Task 9: Emphasizing important text 
 In addition to the sectioning tags mentioned above, you can also use other elements to highlight important text, such as:
 
 The [emphasis element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
@@ -183,7 +198,7 @@ Choose sentences in your content that you think should be marked as serious or u
 
 These elements are preferred instead of the once glorious but now less popular [\<b\>](https://www.w3schools.com/tags/tag_b.asp) and [\<i\>](https://www.w3schools.com/tags/tag_i.asp) tags.
 
- ## Task 9 Adding the figure element 
+ ## Task 10: Adding the figure element 
  
 Use the [figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) with a caption to structure the content related to the image in each activity. Use the following statements as captions for each activity's image:
 - The lake challenge activity: *Cross the four kilometers in a kayak.*
@@ -198,22 +213,6 @@ Use the [figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Eleme
 ```
 
 > The figure element groups together related content, contributing to the meaning (semantics) of the HTML document when compared to the image tag.
-
-## Task 10: Adding side content
-Use the [aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
-
-```html
-<hr>	        
-<aside><!-- Defines content aside from the content it is placed in -->
-    ...    
-    <!-- A form asking for page viewer's experiences -->	
-    <form>
-        ...
-    </form>
-</aside>
-```
-
-> The \<aside\> HTML element represents tangential information or content indirectly related to the document's central theme, such as sidebars or callout boxes.
 
 ## Task 11: Adding a navigation menu
 
