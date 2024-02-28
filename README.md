@@ -4,26 +4,20 @@ This document describes the steps for structuring information in an HTML documen
 
 ## Skills
 - Structure content using HTML tags
-- Improve the structure of HTML code for search engines by implementing HTML5 semantics  
 
 Each task below provides links that explain the purpose of each HTML tag. These links point to two popular learning resources on web development:
 
 - [Mozilla MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). This website contains detailed and up-to-date documentation on HTML.
 - [W3Schools](https://www.w3schools.com/) This website contains examples and brief explanations of HTML.
 
-On-page Search Engine Optimization (SEO) techniques involve crafting a list of keywords that describe the most relevant and significant aspects of your web page. Here are some examples:
-- Laguna Brava
-- Nature
-- Adventure
+We will use the following text. 
 
-We will use the following text. Note the keywords are highlighted in bold.
-
-> *Page's Title:* Welcome to **Laguna Brava** Ecotourism
+> *Page's Title:* Welcome to Laguna Brava Ecotourism
 >
-> *Welcome blurb:* Learn everything about the activities that **Laguna Brava** offers to its visitors.
+> *Welcome blurb:* Learn everything about the activities that Laguna Brava offers to its visitors.
 >
 > *Description of activities*  
-> The Mayan communities of the Chuj ethnicity settled around the lake offer several activities that allow visitors to enjoy **Laguna Brava's** natural beauty. In these activities, members of the **Laguna Brava's** community provide life vests and local guides who know the lake very well to ensure your safety.
+> The Mayan communities of the Chuj ethnicity settled around the lake offer several activities that allow visitors to enjoy **Laguna Brava's** natural beauty. In these activities, members of the Laguna Brava community provide life vests and local guides who know the lake very well to ensure your safety.
 >
 > *Guided visits options*
 >
