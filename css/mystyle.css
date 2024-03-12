@@ -1,6 +1,6 @@
-/* Font & text properties for header and footer */
+/* Font & text properties */
 
-/* Example of element selectors */
+/* Type selectors */
 
 body {
     font-family: Arial, sans-serif;
@@ -8,8 +8,6 @@ body {
 
 h1 {
     font-size: 6em;
-    font-variant: small-caps;
-
     text-align: center;
 
     margin-bottom: 5px;
@@ -17,36 +15,25 @@ h1 {
 
 h2 {
     font-size: 3em;
-    font-variant: small-caps;
 }
 
 footer {
     text-align: center;
 }
 
-/* Example of a class selector */
+/* Class selector */
 
 .bold {
     font-weight: bold;
 }
 
-/* Example of an id selector */
+/* Combinator selector: descendant selector using id and type selectors */
 
 #experience_form label {
     font-weight: bold;
 }
 
 /* Sizing */
-
-/* Full-width image */ 
-header img {
-    width: 100%;
-}
-
-/*Example of attribute selectors */
-#experience_form input[type="text"], input[type="email"] {
-    width: 300px;
-} 
 
 #experience_form textarea {
     height: 100px;
@@ -55,14 +42,27 @@ header img {
     padding: 10px;
 }
 
-/* Layout and spacing properties */
+/* Descendant selector using id and attribute selectors */
+#experience_form input[type="text"], input[type="email"] {
+    width: 300px;
+} 
+
+/* Spacing */
+
+#experience_form input, #experience_form textarea, #experience_form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#experience_form input, #experience_form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
 
 /* Center content relative to the page's width */
 .container {
     max-width: 960px;
     margin: 0 auto 50px auto;
-
-    border-bottom: 1px solid grey;
 }
 
 /* Multicolumn layout for activities */
@@ -75,26 +75,15 @@ header img {
     padding: 10px;
 }
 
-#communities {
-    display: flex;
-}
-
-#experience_form input, #experience_form textarea, #experience_form label {
-    display: block;
-
-    margin-bottom: 10px;
-}
-
-#experience_form input, #experience_form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-/* Borders */
-
 /* Circle-shaped images */
 .activity-col img {
     border-radius: 50%;
+}
+
+/* Enclose the main content using top and bottom borders */
+main {
+    border-top: 1px solid grey; 
+    border-bottom: 1px solid grey; 
 }
 
 /* Navigation menu */
@@ -108,24 +97,25 @@ nav ul {
     background-color: black;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: center;
 }
 
 nav li {
     list-style-type: none;
 
     display: inline-block;
+    margin: 0;
     padding: 10px 10px 10px 10px;
 }
 
 /* unvisited link */
 nav a:link {
-    color: #DCDCDC;
+    color: grey;
 }
 
 /* visited link */
 nav a:visited {
-    color: #DCDCDC;
+    color: lightGray;
 }
 
 /* mouse over link */
