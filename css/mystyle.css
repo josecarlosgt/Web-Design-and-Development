@@ -1,16 +1,14 @@
-/* Font & text properties */
 
-/* Type selectors */
-
+/* Specify the font for all the page */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Contrast of the main heading and subheadings */
+
 h1 {
     font-size: 6em;
     text-align: center;
-
-    margin-bottom: 5px;
 }
 
 h2 {
@@ -21,33 +19,23 @@ footer {
     text-align: center;
 }
 
-/* Class selector */
-
 .bold {
     font-weight: bold;
 }
 
 /* Combinator selector: descendant selector using id and type selectors */
-
-#experience_form label {
-    font-weight: bold;
-}
-
-/* Sizing */
-
 #experience_form textarea {
     height: 100px;
     width: 100%;
-
     padding: 10px;
 }
 
-/* Descendant selector using id and attribute selectors */
-#experience_form input[type="text"], input[type="email"] {
+/* Combinator selector: descendant selector using id and attribute selectors */
+#experience_form input[type="text"], #experience_form input[type="email"] {
     width: 300px;
 } 
 
-/* Spacing */
+/* Sizing & spacing of form elements */
 
 #experience_form input, #experience_form textarea, #experience_form label {
     display: block;
@@ -55,17 +43,17 @@ footer {
 }
 
 #experience_form input, #experience_form textarea {
-    margin-bottom: 10px;
     padding: 10px;
 }
 
-/* Center content relative to the page's width */
+/* Center content relative to the page */
 .container {
     max-width: 960px;
     margin: 0 auto 50px auto;
 }
 
 /* Multicolumn layout for activities */
+
 .activity-row {
     display: flex;
     margin-bottom: 20px;
@@ -75,15 +63,15 @@ footer {
     padding: 10px;
 }
 
-/* Circle-shaped images */
-.activity-col img {
-    border-radius: 50%;
-}
-
-/* Enclose the main content using top and bottom borders */
+/* Specify top and bottom borders */
 main {
     border-top: 1px solid grey; 
     border-bottom: 1px solid grey; 
+}
+
+/* Circle-shaped images */
+.activity-col img {
+    border-radius: 50%;
 }
 
 /* Navigation menu */
@@ -102,7 +90,6 @@ nav ul {
 
 nav li {
     list-style-type: none;
-
     display: inline-block;
     margin: 0;
     padding: 10px 10px 10px 10px;

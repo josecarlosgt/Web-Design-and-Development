@@ -71,7 +71,16 @@ When including images, it is a good practice to specify the height and width of 
 ...
 ```
 
-Increase the width of the input elements to a fixed size of 300px using [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a particular attribute:
+Now, we will style the elements in the contact form. Specifying a unique ID for the form will help us to create CSS rules specific to the elements in the form.
+
+```html
+<form id="experience_form">
+    ...
+</form>
+```
+...
+
+Increase the width of the input elements to a fixed size of 300px using [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a particular attribute. Then, style the textarea element so that it occupies all the width of the page. 
 
 ```css
 #experience_form input[type="text"], input[type="email"] {
@@ -88,7 +97,7 @@ Increase the width of the input elements to a fixed size of 300px using [attribu
 
 ## Layout
 
-Layout is the the visual arrangement of all elements on a webpage. In invovles several principles that deal with *contrast*, *alignment*,  *balance*, *proximity*, *space*, *balance*, and *repetition*. 
+Layout is the the visual arrangement of all elements on a webpage. In invovles the principles of *contrast*, *alignment*,  *balance*, *proximity*, *space*, *balance*, and *repetition*. 
 
 ## Task #3: Contrast
 
@@ -141,13 +150,7 @@ Create a rule with a class named *bold* to display the text used as labels for e
 }
 ```
 
-Display in bold the label elements in the contact form:
-
-```css
-#experience_form label {
-    font-weight: bold;
-}
-```
+Add the *bold* class to all elements to be displayed in bold, including the activity's features and the label elements in the contact form. Create *span* elements when necessary.
 
 ## Task #4: Alignment
 
@@ -197,11 +200,8 @@ Use the padding and margin properties and the [display](https://developer.mozill
 }
 ```
 
-Add the following rules to adjust the margin and padding between elements of the contact form:
-
 ```css
 #experience_form input, #experience_form textarea {
-    margin-bottom: 10px;
     padding: 10px;
 }
 ```
@@ -275,7 +275,25 @@ Use the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to c
 
 We will use a border to isolate the page's main content and display it further from the remaining elements. [Border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) properties specify the border's thickness, style, and color, among other aspects. For example, *border: 2px solid blue;* creates a solid blue border 2 pixels thick.
 
-Draw a separator dividing the main section on the web page by drawing a border at the bottom and top of the main element:
+Draw a separator dividing the main section on the web page by drawing borders on the main element:
+
+```css
+main {
+    border-width: 1px;
+    border-style: solid;
+    border-width: grey; 
+}
+```
+
+The rule above can be simplified using the *border* shorthand property:
+
+```css
+main {
+    border: 1px solid grey;
+}
+```
+
+The border shorthand property can also be applied to element sides:
 
 ```css
 main {
