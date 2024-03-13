@@ -4,14 +4,29 @@ CSS (Cascading Style Sheets) is a language that describes how a web page is styl
 
 ## Instructions
 
-This document explains the steps for styling content in an HTML document using CSS. Each task below provides links that describe the purpose of several CSS properties.
+This document explains the steps for styling content in an HTML document using CSS. Each task below provides links that describe the purpose of common CSS properties.
 
-Before starting with Task 1, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip). Create a css folder with an external CSS stylesheet with the name: *mystyel.css*. Include the external stylesheet in the index.html file:
+[The styling work explained in the tasks implement the design contained in this mockup](https://drive.google.com/file/d/17DU9uiLM94beeoNBodDh5CYSwKlthBav/view?usp=sharing).
+
+Before starting, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip) and define a location for the CSS rules to be created in each task. You can either use an external or internal stylesheet.
+
+Using an external stylesheet requires *linking* the external stylesheet in your index.html file:
 
 ```html
 <head>
     ...
     <link rel="stylesheet" href="css/mystyle.css">
+</head>
+```
+
+Alternatively, you can use an internal stylesheet:
+
+```html
+<head>
+    ...
+    <style>
+        /* CSS rules go here */
+    </style>
 </head>
 ```
 
