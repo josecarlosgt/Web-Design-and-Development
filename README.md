@@ -6,7 +6,7 @@ CSS (Cascading Style Sheets) is a language that describes how a web page is styl
 
 This document explains the steps for styling content in an HTML document using CSS. Each task below provides links that describe the purpose of common CSS properties.
 
-[The styling work explained in the tasks implement the design contained in this mockup](https://drive.google.com/file/d/17DU9uiLM94beeoNBodDh5CYSwKlthBav/view?usp=sharing).
+[The styling work explained in the tasks implement the design contained in this mockup](https://drive.google.com/file/d/1YG11pKr9H9Hbmrz6orV3PFeOEMPgpqU3/view?usp=sharing).
 
 Before starting, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip) and define a location for the CSS rules to be created in each task. You can either use an external or internal stylesheet.
 
