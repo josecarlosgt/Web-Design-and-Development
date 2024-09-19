@@ -18,7 +18,7 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 
 Fill in the \<title\> element with the text below. Recall this title will appear on the browser's window or tab.
 
-> Laguna Brava Ecotourism
+> **Page title:** Laguna Brava Ecotourism
 
 Specify UTF-8 as the character encoding set (charset) using the meta tag.
 
@@ -26,7 +26,7 @@ Specify UTF-8 as the character encoding set (charset) using the meta tag.
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>[Page title]</title>
     </head>
     <body>
     </body>
@@ -37,7 +37,7 @@ Specify UTF-8 as the character encoding set (charset) using the meta tag.
 
 Inside the body element, create the main heading with the following text. Use the [level 1 heading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) (\<h1\>) element.
 
-> **Main  heading:** Welcome to Laguna Brava Ecotourism
+> **Main heading:** Welcome to Laguna Brava Ecotourism
 
 ```html
 <h1>[Main heading]</h1>
