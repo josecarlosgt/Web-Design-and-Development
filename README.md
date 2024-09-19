@@ -10,38 +10,23 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 - [Mozilla MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). This website contains detailed and up-to-date documentation on HTML.
 - [W3Schools](https://www.w3schools.com/) This website contains examples and brief explanations of HTML.
 
-We will use the following content to complete the tasks below. 
-
-> *Page's Title:* Welcome to Laguna Brava Ecotourism
->
-> *Welcome blurb:* Learn everything about the activities that Laguna Brava offers to its visitors.
->
-> *Description of activities*  
-> The Mayan communities of the Chuj ethnicity settled around the lake offer several activities that allow visitors to enjoy **Laguna Brava's** natural beauty. In these activities, members of the Laguna Brava community provide life vests and local guides who know the lake very well to ensure your safety.
->
-> *Guided visits options*
->
-> *Acitivy 1*  
-> The Lake Challenge  
-> Put your strengths to work by crossing the four kilometers in a kayak guided by a local guide. This **adventure** is physically demanding and recommended for only those in excellent physical condition.
-> - Duration: 5 hours approx.
-> - Price: USD 50
-> - Minimum: 2 pax
-
 ## Preview
 
 ![Web page Preview](page-preview.jpg)
 
 ## Task 1: Creating the basic structure
 
-Fill in the \<title\> element with a descriptive title and specify UTF-8 as the character encoding set (charset) using the meta tag.
-Recall this title will appear on the browser's window or tab.
+Fill in the \<title\> element with the text below. Recall this title will appear on the browser's window or tab.
+
+> Laguna Brava Ecotourism
+
+Specify UTF-8 as the character encoding set (charset) using the meta tag.
 
 ```html
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Laguna Brava Ecotourism</title>
+        <title></title>
     </head>
     <body>
     </body>
@@ -50,10 +35,12 @@ Recall this title will appear on the browser's window or tab.
 
 ## Task 2: Adding the main headline
 
-Inside the body element, create the main heading. Use the [level 1 heading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) (\<h1\>) element.
+Inside the body element, create the main heading with the following text. Use the [level 1 heading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) (\<h1\>) element.
+
+> **Main  heading:** Welcome to Laguna Brava Ecotourism
 
 ```html
-<h1>Welcome to Laguna Brava Ecotourism</h1>
+<h1>[Main heading]</h1>
 ```
 
 ## Task 3: Adding Paragraphs and sub-headings
@@ -61,6 +48,13 @@ Structure the page's welcome blurb, general description of activities, and descr
 
 You can follow the structure below:
 
+> **Welcome blurb:** Learn everything about the activities that Laguna Brava offers to its visitors.
+>
+> **General description of activities:** The Mayan communities of the Chuj ethnicity settled around the lake offer several activities that allow visitors to enjoy Laguna Brava's natural beauty.
+>
+>**The lake challange description:** Put your strengths to work by crossing the four kilometers in a kayak guided by a local guide. This adventure is physically demanding and recommended for only those in excellent physical condition.
+>
+ 
 ```html
 <h1>...</h1>
 <p>[Welcome blurb]</p>
@@ -68,7 +62,7 @@ You can follow the structure below:
 <!-- activities description -->
 <h2>Activities</h2>
 <p>
-    [General description of activities ]
+    [General description of activities]
 </p>
 ```
 
@@ -76,12 +70,17 @@ You can follow the structure below:
 <!-- Activity 1 -->
 <h3>The Lake Challenge</h3>
 <p>
-    ...
+    [The lake challange description]
 </p>
 ```
 
 ## Task 4: Adding lists
 Each guided visit option contains details organized as a list (e.g., price and minimum number of people). Use the [unordered list element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) to structure this information right below the sub-heading in each activity.
+
+> **List of features:**
+> - Duration: 5 hours approx.
+> - Price: USD 50
+> - Minimum: 2 pax
 
 ```html
 <h3>The Lake Challenge</h3>
@@ -89,9 +88,8 @@ Each guided visit option contains details organized as a list (e.g., price and m
 ...
 </p>
 <ul>
-    <li>Duration: 5 hours approx.</li>
-    <li>Price: $50 USD</li>
-    <li>Minimum: 2 pax</li>
+    <li>[Feature #1]</li>
+    ...
 </ul>
             
 ```
@@ -101,8 +99,11 @@ Choose at least one word or phrase and make it a hyperlink (link) using the [anc
 
 Specify the URL of another website using the hyperlink reference (href) attribute of the anchor element. HTML attributes are commonly used in HTML to provide additional information and control the content within an HTML tag.
 
+> URL (link) to Wikipedia's page on *Chuj ethniciy*: https://en.wikipedia.org/wiki/Chuj_people 
+>
+
 ```html
-The Mayan communities of the <a href="https://en.wikipedia.org/wiki/Chuj_people">Chuj ethnicity</a> settled around the lake offer several activities that allow visitors to enjoy Laguna Brava's natural beauty.
+The Mayan communities of the <a href="...">Chuj ethnicity</a> settled around the lake offer several activities that allow visitors to enjoy Laguna Brava's natural beauty.
 ```
 
 Notes:
@@ -114,21 +115,48 @@ Add a few images using the [image element](https://developer.mozilla.org/en-US/d
 
 We will use local images, which means the server will host these images. Create an *img/* in the same folder containing your *index.html* document and add the images to be included in each image tag below.
 
-Place the image before the level 1 heading created in task 2.
+> [Download the original images](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-2-designing-and-structuring-content/original_images.zip)
+
+Edit the images using an [online image editor](https://www.online-image-editor.com/) based on the sizes specified below.
+
+> *Header (panoramic) image*
+>
+> **Dimensions:** 1500 pixels (wide) x 300 pixels (height)
+>
+> **Image description \(to be used as alternative text\):** Laguna Brava lake
+>
+> **Title:** Laguna Brava
+>
+> *Kayak image*
+>
+> **Dimensions:** 450 pixels (wide) x 254 pixels (height)
+>
+> **Image description \(to be used as alternative text\):** Lake challenge kayak
+>
+> **Title:** Kayak on Laguna Brava
+
+Place the panoramic image before the level 1 heading.
 
 ```html
-<img src="img/panoramic-laguna-brava-2.jpg" alt="Laguna Brava lake" title="Laguna Brava">
+<img src="..." alt="..." title="...">
 <h1>...</h1>
 ```
 
-> [Download the header image](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-2-designing-and-structuring-content/img/panoramic-laguna-brava-2.jpg)
+Place the kayak image after the description of 'The Lake Challenge' activity.
+
+```html
+<h3>...</h3>
+<p>...</p>
+<ul>...</ul>
+<img src="..." alt="..." title="...">
+```
 
 Notes:
 - The image element does not require a closing tag because this element does not enclose any content. All the information required to display an image is specified as attributes of the image element.
 - To make the \<img\> tag work, you need to add an image file and make it accessible from the folder where your index.html is located. Developers usually create an image folder named "img" or "images" that contains all the images displayed on a website. The image URL can be a relative path, e.g., "images/myimage.jpg", which means the image is served locally or an absolute path, e.g., https://josecarlosgt.github.io/Web-Design-and-Development/img/kayak.jpg, which means the image is served externally by another web server.
 - You can also use the title attribute to provide additional information about the image. Most browsers will display the content of this attribute in a tooltip when the user hovers over the image.
 
-## Task 7: Adding a web form
+## Task 7: Adding a web form (Optional)
 HTML borrows the concept of a form to refer to different elements that allow you to collect information from visitors to your site. Refer to Chapter 7: Forms (uploaded to Canvas) for a more detailed explanation of how web forms operate.
 
 A web form consists of a form ([\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)) element and a combination of controls, such as input and other elements that allow the user to enter different types of data. These sites provide more information on creating web forms.
