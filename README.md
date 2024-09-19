@@ -115,7 +115,7 @@ Add a few images using the [image element](https://developer.mozilla.org/en-US/d
 
 We will use local images, which means the server will host these images. Create an *img/* in the same folder containing your *index.html* document and add the images to be included in each image tag below.
 
-> [Download the original images](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-2-designing-and-structuring-content/original_images.zip)
+> [Download the original images](https://github.com/josecarlosgt/Web-Design-and-Development/raw/refs/heads/tutorial-2-designing-and-structuring-content-basic-HTML/original_images.zip)
 
 Edit the images using an [online image editor](https://www.online-image-editor.com/) based on the sizes specified below.
 
