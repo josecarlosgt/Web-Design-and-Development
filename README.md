@@ -59,7 +59,7 @@ You can follow the structure below:
 <h1>...</h1>
 <p>[Welcome blurb]</p>
 
-<!-- activities description -->
+<!-- Activities description -->
 <h2>Activities</h2>
 <p>
     [General description of activities]
@@ -67,7 +67,7 @@ You can follow the structure below:
 ```
 
 ```html
-<!-- Activity 1 -->
+<!-- The Lake Challenge Activity -->
 <h3>The Lake Challenge</h3>
 <p>
     [The lake challange description]
