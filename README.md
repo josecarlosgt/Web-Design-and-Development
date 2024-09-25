@@ -214,7 +214,7 @@ Use the [figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Eleme
 
 > The figure element groups together related content, contributing to the meaning (semantics) of the HTML document when compared to the image tag.
 
-## Task 11: Adding a navigation menu
+## Task 11: Adding a navigation menu (Optional)
 
 Create add a navigation menu using the [nav element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav). Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
 
