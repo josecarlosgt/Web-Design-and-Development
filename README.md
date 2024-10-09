@@ -8,7 +8,7 @@ This document explains the steps for styling content in an HTML document using C
 
 [The styling work explained in the tasks implement the design contained in this mockup](https://drive.google.com/file/d/1YG11pKr9H9Hbmrz6orV3PFeOEMPgpqU3/view?usp=sharing).
 
-Before starting, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip) and define a location for the CSS rules to be created in each task. You can either use an external or internal stylesheet.
+Before starting, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip).
 
 We will use  an internal stylesheet, which our CSS code will live within the index.html file:
 
