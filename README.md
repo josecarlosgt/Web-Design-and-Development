@@ -1,6 +1,6 @@
 # Tutorial: Styling the content of your website
 
-CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by leveraging four concepts of graphic design to transmit a message to an audience effectively: typography, color, image composition, and layout.  
+CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by implementing four basic concepts of graphic design: typography, color, image composition, and layout.
 
 ## Instructions
 
@@ -10,16 +10,7 @@ This document explains the steps for styling content in an HTML document using C
 
 Before starting, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip) and define a location for the CSS rules to be created in each task. You can either use an external or internal stylesheet.
 
-Using an external stylesheet requires *linking* the external stylesheet in your index.html file:
-
-```html
-<head>
-    ...
-    <link rel="stylesheet" href="css/mystyle.css">
-</head>
-```
-
-Alternatively, you can use an internal stylesheet:
+We will use  an internal stylesheet, which our CSS code will live within the index.html file:
 
 ```html
 <head>
@@ -225,7 +216,7 @@ Use the padding and margin properties and the [display](https://developer.mozill
 
 An essential aspect of styling a website is the layout. The layout is the arrangement of all visual elements on a webpage.
 
-In this task, we will adjust the layout of the webpage by aligning block elements to the center. The rule below centers block elements by setting the top and bottom margins to 0, and the left and right margins to auto, i.e., the browser automatically determine them. The *centering* effect is achieved by setting the width (otherwise, a block element will take up the entire width of the page). Once you have specified the width, setting the left and right margins to auto will make the browser put an equal gap on each side of these elements. As a result, we can use this rule to center any block element on the page.
+In this task, we will adjust the layout of the webpage by aligning block elements to the center. The rule below centers block elements by setting the top and bottom margins to 0 and the left and right margins to auto, i.e., the browser automatically determines them. The *centering* effect is achieved by setting the width (otherwise, a block element will take up the entire width of the page). Once you have specified the width, setting the left and right margins to auto will make the browser put an equal gap on each side of these elements. As a result, we can use this rule to center any block element on the page.
 
 Create a container class that centers relative to the width of the page the content of the elements inside: 
 
@@ -327,7 +318,7 @@ The [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radi
 }
 ```
 
-## Task 7: Color and creating an in-page navigation menu
+## Task 7: Color
 
 Add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note that the links in the navigation menu are local to the page, and each section must contain an ID property with the same value.
 
