@@ -257,10 +257,12 @@ Thus, we can rewrite the rule above using the following shorthand:
 
 We will balance the page's main content and the excess of the page's space by creating a grid of two columns. We will display the activity image in one column and the description in another.
 
-The traditional way in CSS to handle multicolumn grids consisted of using floats and positioning properties, often involving writing intricate HTML and CSS rules. The Flexible Box Layout, commonly known as [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox), and Grid are two popular alternatives to cope with the limitations of floats and position properties. In this tutorial, we will use flex.
+The traditional way in CSS to handle multicolumn grids consisted of using floats and positioning properties, often involving writing intricate HTML and CSS rules. The Flexible Box Layout, commonly known as [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox), and Grid are two popular alternatives to cope with the limitations of floats and position properties. In this tutorial, we will use Flexbox. 
 
-To use flex, we first have to create a container using an element with a display type of flex so that every descendent element becomes a flex item. The default behavior of flex items is to stack side to side.
-Then, we can control the presentation of those flex items using several flexbox CSS properties applied to the items themselves or the container.
+Flexbox allows elements to automatically adjust in size and position within a container, simplifying tasks like aligning content in rows or columns without needing complex float or positioning rules. Flexbox works by using a parent container (called a flex container) and its child elements (called flex items). The container’s display is set to flex, which allows the flex items to be arranged in rows or columns.
+
+To use Flexbox on our page, we first have to create a container using an element with a display type of flex so that every descendent element becomes a flex item. The default behavior of flex items is to stack side to side.
+Then, we can control the presentation of those flex items using CSS properties applied to the items themselves or the container.
 
 The content of each activity would look better if positioned to the right of each activity's photo. The CSS rules below use flex to position the content left, causing each activity's description and features list to appear next to the activity's photo. Create a grid of two columns by using a flex container and adjusting the padding of the elements in the flex container:
 
