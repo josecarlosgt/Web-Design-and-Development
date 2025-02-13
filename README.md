@@ -15,7 +15,7 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 
 ![Web page Preview](page-preview.jpg)
 
-Download the [base.zip](base.zip) and complete the following tasks.
+Download the [base.zip](https://github.com/josecarlosgt/Web-Design-and-Development/raw/refs/heads/tutorial-2-designing-and-structuring-content-HTML5/base.zip) and complete the following tasks.
 
 ## Part I: On-page SEO
 On-page Search Engine Optimization (SEO) techniques involve crafting a list of keywords that describe the most relevant and significant aspects of your web page. 
