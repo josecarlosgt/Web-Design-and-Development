@@ -4,6 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Laguna Brava Ecotourism</title>
+
+    <!-- FORM SUBMISSION MESSAGES STYLE -->
+    <style>
+
+        .message {
+            display: none;
+        }
+    </style>    
+    <!-- END OF FORM SUBMISSION MESSAGES STYLE -->
 </head>
 
 <body>
@@ -39,20 +48,55 @@
     <p>
         We want to know about your experiences.
     </p>
-    <!-- A form asking for page viewer's experiences -->
-    <form action="https://api.sheetmonkey.io/form/55YHGD23mbrni37GBQ98j2" method="POST">
+    <!-- A form asking for page viewer's experiences -->     
+    <form id="comments" action="https://script.google.com/macros/s/AKfycbzhxwJFsohHaefSMGeNKV0JQhehX0Bm_IDqiP56f8LZggKuEhUp0WFmEIxBiGzqHLZK/exec" method="POST">
         <label for="name">Name: </label>
-        <input type="text" name="name" id="name" placeholder="Write your name" required="True"><br><br>
+        <input type="text" name="Name" id="name" placeholder="Write your name" required="True"><br><br>
 
         <label for="email">Email: </label>
-        <input type="email" name="email" id="email" placeholder="Write your email" required="True"><br><br>
+        <input type="email" name="Email" id="email" placeholder="Write your email" required="True"><br><br>
 
         <label for="experience">Experience: </label>
-        <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5"
+        <textarea name="Experience" id="experience" placeholder="Please share with us your experience." rows="5"
             cols="50" required="True"></textarea><br><br>
 
         <input type="submit" value="Submit"><br><br>
     </form>
+    <!-- FORM SUBMISSION MESSAGES -->
+    <div id="waiting-message" class="message">
+        <img src="img/hold-on.gif" with="50" height="50"><br>
+        Submitting comment.
+    </div>
+    <div id="success-message" class="message">
+        Comment submitted. Thank you for your comment!
+    </div>
+    <!-- END OF FORM SUBMISSION MESSAGES -->
+
+    <!-- FORM SUBMISSION HANDLERS -->
+    <script>
+        window.addEventListener("load", function () {
+            const form = document.getElementById('comments');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                document.getElementById('waiting-message').style.display = 'block';
+
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        document.getElementById('waiting-message').style.display = 'none';
+                        document.getElementById('success-message').style.display = 'block';
+                        form.reset();
+                    })
+            });
+        });        
+    </script>
+    <!-- END OF FORM SUBMISSION HANDLERS -->
+
 </body>
 
 </html>
