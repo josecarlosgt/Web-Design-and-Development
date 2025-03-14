@@ -202,7 +202,7 @@ Now, we will adjust the space between elements in the form. Use the padding and 
 }
 ```
 
-***Expanding form input elements with with and height***
+**Expanding form input elements with width and height**
 
 Images and input elements are inline elements but also support properties characteristic of block elements like width and height. A block element's content spans the width of the enclosing parent element by default. However, the content size can be changed with the width and height CSS properties:
 
@@ -281,7 +281,7 @@ Use the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to c
 }
 ```
 
-### Borders
+**border properties**
 
 We will use a border to isolate the page's main content and display it further from the remaining elements. [Border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) properties specify the border's thickness, style, and color, among other aspects. For example, *border: 2px solid blue;* creates a solid blue border 2 pixels thick.
 
