@@ -1,6 +1,6 @@
 # Tutorial: Styling the content of your website
 
-CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by implementing four basic concepts of graphic design: typography, color, image composition, and layout.
+CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by implementing basic concepts of graphic design: typography, color, and layout.
 
 ## Instructions
 
@@ -21,9 +21,9 @@ We will use  an internal stylesheet, which our CSS code will live within the ind
 </head>
 ```
 
-## Task 1: Typography
+## Typography
 
-### Font properties
+### Task 1: Understanding Font Properties: Exploring Font-Family
 
 Many CSS properties allow us to display text in a way that is visually appealing to the reader. CSS font properties include:
 
@@ -34,7 +34,7 @@ Many CSS properties allow us to display text in a way that is visually appealing
 - [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant): specifies the variant of the text, such as normal or small-caps.
 - [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font): is shorthand for setting several font properties at the same time. For example, *font: italic 12pt Georgia, serif;*
 
-### font-family
+**font-family**
 
 The [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) property contains a list of fonts specified as family names separated by commas. A family name is the name of a specific font, like "Times New Roman", "Arial", or "Georgia". Family names containing spaces must be wrapped in quotation marks, while family names without spaces do not.
 
@@ -50,7 +50,159 @@ body {
 
 > Serif fonts convey a classic, elegant, or traditional feel. In contrast, the clean lines and sharp edges of sans-serif fonts are more appropriate for direct communication. For this reason, sans-serif fonts are more common in web development as they render content on a screen more clearly, increasing users' legibility across different devices.
 
-## Task 2: Sizing
+## Layout
+
+Layout is the the visual arrangement of all elements on a webpage. In invovles the principles of *contrast*, *alignment*,  *balance*, *proximity*, *space*, and *repetition*. 
+
+### Task #3: Contrast
+
+*Contrast* is about adding visual prominence through various properties like size, color, and typography.
+
+**font-size**
+
+The [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) can be specified using a predefined size name, a relative size name, or a number with an absolute or relative size unit.
+
+The predefined size names are xx-small, x-small, small, medium, large, x-large, and xx-large, where medium is the default size. The relative size names are smaller and larger, which changes the font size for an element to be smaller or larger than the font size of the parent element.
+
+An absolute size is a size that is fixed and independent of other CSS sizes. Absolute size units include:
+
+- px: pixels (1px = 1/96in)
+- cm: centimeters
+- mm: millimeters
+- in: inches
+- pt: points (1pt = 1/72in)
+- pc: pica (1pc = 12pt)
+
+A relative size is a size that is relative to another size. These include:
+
+- em - Relative to the parent element's font size. For example, 2em = 2 × parent element's font size.
+- rem - Relative to the root element's font size. For example, 1.5rem = 1.5 × <html> element's font size.
+- vw - 1% of the viewport's width. For example, 10vw = 10% of browser's width.
+- vh - 1% of the viewport's height. For example, 5vh = 5% of browser's height.
+- % - Percentage of the element's font size. For example, 120% = 20% larger than the current font size.
+
+>Sizes specified with rem have no relationship with the parent element; thus, rem sizes are suitable for achieving a consistent style, as all elements sized with the "rem" unit will be updated automatically to maintain their relative size.
+
+Use the following type selectors to specify the sizes of the headers on the webpage:
+
+```css
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+```
+
+**font-weight**
+
+Create a rule with a class named *bold* to display the text used as labels for each activity's features list in bold. Use the [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) property:
+
+```css
+.bold {
+    font-weight: bold;
+}
+```
+
+Add the *bold* class to all elements to be displayed in bold, including the activity's features and the label elements in the contact form. Create *span* elements when necessary.
+
+### Task #4: Alignment
+
+*Alignment* involves arranging elements relative to the page or other elements to create order.
+
+CSS provides several text properties to control how text is displayed. Some common CSS text properties include:
+
+- [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align): changes the horizontal alignment of text for an element. Possible values are left, right, center, and justify.
+- [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration): add or remove text decorations like underlining or a line-through. Possible values are overline, line-through, underline, and none.
+- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform): converts letters to UPPERCASE, lowercase, or Capitalizes Initial Letters. Possible values are uppercase, lowercase, and capitalize.
+- [text-indent](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent): specifies the first line's indentation amount.
+
+**text-align**
+
+Use the [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) property to center text in the main header and footer:
+
+```css
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+```
+
+> The main heading is a block element, which occupies the whole width of the webpage. The text-align property helps align text that lives inside a block element. We will use other techniques to center block elements on the page.
+
+**Centering the webpage's content with margin properties**
+
+An essential aspect of styling a website is the layout. The layout is the arrangement of all visual elements on a webpage.
+
+In this task, we will adjust the layout of the webpage by aligning block elements to the center. The rule below centers block elements by setting the top and bottom margins to 0 and the left and right margins to auto, i.e., the browser automatically determines them. The *centering* effect is achieved by setting the width (otherwise, a block element will take up the entire width of the page). Once you have specified the width, setting the left and right margins to auto will make the browser put an equal gap on each side of these elements. As a result, we can use this rule to center any block element on the page.
+
+Create a container class that centers relative to the width of the page the content of the elements inside: 
+
+```css
+.container {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+
+    max-width: 960px;
+}
+```
+
+Add the *container* class to the header and main elements of the page.
+
+When applying the previous rule to center the web page, [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) corresponds to the screen size in which we tailor our page to be rendered. 960px is a value commonly used for web pages designed to be rendered on large screens. We can also use *max-width* in combination with the *width* property to implement a responsive design, but we will discuss this topic later.
+
+The padding and margin properties may take 1 to 4 values as a shorthand to write spacing rules more concisely:
+
+- One value - Specifies uniform thickness around the box. For example, *margin: 20px;* specifies 20px margin thickness around the box.
+- Two values - Specify the top, bottom, right, and left thickness. For example, *margin: 10px 20px;* specifies 10px top and bottom margins and 20px right and left margins.
+- Three values - Specify top, right, left, and bottom thickness. For example, margin: *10px 30px 20px;* specifies 10px top margin, 30px right and left margins, and 20px bottom margin.
+- Four values - Specifies top, right, bottom, and left thickness. For example, *margin: 10px 30px 20px 40px;* specifies 10px top margin, 30px right margin, 20px bottom margin, and 40px left margin.
+
+Thus, we can rewrite the rule above using the following shorthand:
+
+```css
+.container {
+    max-width: 960px;
+    margin: 0 auto 50px auto;
+}
+```
+
+### Task #5: Space
+
+*Space* refers to the background against which page content is seen. 
+
+**padding** and **margin**
+
+We can control space through the following CSS properties:
+
+- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding): specifies the padding thickness. For example, padding: 5px creates a 5-pixel padding around the content.
+- [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin): specifies the margin thickness. For example, if the margin is 10px, it creates a 10-pixel margin.
+
+![The box model](img/box-model.png)
+
+Now, we will adjust the space between elements in the form. Use the padding and margin properties and the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property to transform *inline* elements into *block* elements. The *inline-block* value generates a block element box surrounding the element's content like a single inline box with adjustable margin, padding, width, and height.
+
+```css
+#experience_form input, #experience_form textarea, #experience_form label {
+    display: block;
+    margin-bottom: 10px;
+}
+```
+
+```css
+#experience_form input, #experience_form textarea {
+    padding: 10px;
+}
+```
+
+***Expanding form input elements with with and height***
 
 Images and input elements are inline elements but also support properties characteristic of block elements like width and height. A block element's content spans the width of the enclosing parent element by default. However, the content size can be changed with the width and height CSS properties:
 
@@ -100,156 +252,6 @@ Finally, adjust the size of the textarea element:
 ```
 
 > Note that the rules above use a descendant selector to style the form elements. Descendant selectors are a form of [CSS combinators](https://www.w3schools.com/css/css_combinators.asp) that combine multiple selectors based on the page's hierarchical structure.
-
-## Layout
-
-Layout is the the visual arrangement of all elements on a webpage. In invovles the principles of *contrast*, *alignment*,  *balance*, *proximity*, *space*, *balance*, and *repetition*. 
-
-## Task #3: Contrast
-
-*Contrast* is about adding visual prominence through various properties like size, color, and typography.
-
-### font-size
-
-The [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) can be specified using a predefined size name, a relative size name, or a number with an absolute or relative size unit.
-
-The predefined size names are xx-small, x-small, small, medium, large, x-large, and xx-large, where medium is the default size. The relative size names are smaller and larger, which changes the font size for an element to be smaller or larger than the font size of the parent element.
-
-An absolute size is a size that is fixed and independent of other CSS sizes. Absolute size units include:
-
-- px: pixels (1px = 1/96in)
-- cm: centimeters
-- mm: millimeters
-- in: inches
-- pt: points (1pt = 1/72in)
-- pc: pica (1pc = 12pt)
-
-A relative size is a size that is relative to another size. These include:
-
-- em - Relative to the parent element's font size. For example, 2em = 2 × parent element's font size.
-- rem - Relative to the root element's font size. For example, 1.5rem = 1.5 × <html> element's font size.
-- vw - 1% of the viewport's width. For example, 10vw = 10% of browser's width.
-- vh - 1% of the viewport's height. For example, 5vh = 5% of browser's height.
-- % - Percentage of the element's font size. For example, 120% = 20% larger than the current font size.
-
->Sizes specified with rem have no relationship with the parent element; thus, rem sizes are suitable for achieving a consistent style, as all elements sized with the "rem" unit will be updated automatically to maintain their relative size.
-
-Use the following type selectors to specify the sizes of the headers on the webpage:
-
-```css
-h1 {
-    font-size: 6rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-```
-
-### font-weight
-
-Create a rule with a class named *bold* to display the text used as labels for each activity's features list in bold. Use the [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) property:
-
-```css
-.bold {
-    font-weight: bold;
-}
-```
-
-Add the *bold* class to all elements to be displayed in bold, including the activity's features and the label elements in the contact form. Create *span* elements when necessary.
-
-## Task #4: Alignment
-
-*Alignment* involves arranging elements relative to the page or other elements to create order.
-
-### Text properties
-
-CSS provides several text properties to control how text is displayed. Some common CSS text properties include:
-
-- [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align): changes the horizontal alignment of text for an element. Possible values are left, right, center, and justify.
-- [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration): add or remove text decorations like underlining or a line-through. Possible values are overline, line-through, underline, and none.
-- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform): converts letters to UPPERCASE, lowercase, or Capitalizes Initial Letters. Possible values are uppercase, lowercase, and capitalize.
-- [text-indent](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent): specifies the first line's indentation amount.
-
-Use the [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) property to center text in the main header and footer:
-
-```css
-h1 {
-    font-size: 6em;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-}
-```
-
-> The main heading is a block element, which occupies the whole width of the webpage. The text-align property helps align text that lives inside a block element. We will use other techniques to center block elements on the page.
-
-## Task #5: Space
-
-*Space* refers to the background against which page content is seen. We can control space through the following CSS properties:
-
-- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding): specifies the padding thickness. For example, padding: 5px creates a 5-pixel padding around the content.
-- [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin): specifies the margin thickness. For example, if the margin is 10px, it creates a 10-pixel margin.
-
-![The box model](img/box-model.png)
-
-### Adjusting the space between elements in the form
-
-Use the padding and margin properties and the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property to transform *inline* elements into *block* elements. The *inline-block* value generates a block element box surrounding the element's content like a single inline box with adjustable margin, padding, width, and height.
-
-```css
-#experience_form input, #experience_form textarea, #experience_form label {
-    display: block;
-    margin-bottom: 10px;
-}
-```
-
-```css
-#experience_form input, #experience_form textarea {
-    padding: 10px;
-}
-```
-
-### Centering the webpage's content
-
-An essential aspect of styling a website is the layout. The layout is the arrangement of all visual elements on a webpage.
-
-In this task, we will adjust the layout of the webpage by aligning block elements to the center. The rule below centers block elements by setting the top and bottom margins to 0 and the left and right margins to auto, i.e., the browser automatically determines them. The *centering* effect is achieved by setting the width (otherwise, a block element will take up the entire width of the page). Once you have specified the width, setting the left and right margins to auto will make the browser put an equal gap on each side of these elements. As a result, we can use this rule to center any block element on the page.
-
-Create a container class that centers relative to the width of the page the content of the elements inside: 
-
-```css
-.container {
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-left: auto;
-
-    max-width: 960px;
-}
-```
-
-Add the *container* class to the header and main elements of the page.
-
-When applying the previous rule to center the web page, [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) corresponds to the screen size in which we tailor our page to be rendered. 960px is a value commonly used for web pages designed to be rendered on large screens. We can also use *max-width* in combination with the *width* property to implement a responsive design, but we will discuss this topic later.
-
-The padding and margin properties may take 1 to 4 values as a shorthand to write spacing rules more concisely:
-
-- One value - Specifies uniform thickness around the box. For example, *margin: 20px;* specifies 20px margin thickness around the box.
-- Two values - Specify the top, bottom, right, and left thickness. For example, *margin: 10px 20px;* specifies 10px top and bottom margins and 20px right and left margins.
-- Three values - Specify top, right, left, and bottom thickness. For example, margin: *10px 30px 20px;* specifies 10px top margin, 30px right and left margins, and 20px bottom margin.
-- Four values - Specifies top, right, bottom, and left thickness. For example, *margin: 10px 30px 20px 40px;* specifies 10px top margin, 30px right margin, 20px bottom margin, and 40px left margin.
-
-Thus, we can rewrite the rule above using the following shorthand:
-
-```css
-.container {
-    max-width: 960px;
-    margin: 0 auto 50px auto;
-}
-```
 
 ### Task 6: Balance, Proximity, and Repetition
 
