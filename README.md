@@ -1,6 +1,6 @@
 # Tutorial: Styling the content of your website
 
-CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by implementing basic concepts of graphic design: typography, color, and layout.
+CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by implementing basic concepts of graphic design: typography, layout, and color.
 
 ## Instructions
 
