@@ -23,17 +23,24 @@ footer {
     font-weight: bold;
 }
 
+.experience_input {
+    width: 300px;
+} 
+
+/* Alternatively, we can use a combinator selector consisting of
+ descendant selector (using id) and attribute selectors */
+/*
+#experience_form input[type="text"], #experience_form input[type="email"] {
+    width: 300px;
+} 
+*/
+
 /* Combinator selector: descendant selector using id and type selectors */
 #experience_form textarea {
     height: 100px;
     width: 100%;
     padding: 10px;
 }
-
-/* Combinator selector: descendant selector using id and attribute selectors */
-#experience_form input[type="text"], #experience_form input[type="email"] {
-    width: 300px;
-} 
 
 /* Sizing & spacing of form elements */
 

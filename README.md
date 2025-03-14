@@ -50,9 +50,9 @@ body {
 
 > Serif fonts convey a classic, elegant, or traditional feel. In contrast, the clean lines and sharp edges of sans-serif fonts are more appropriate for direct communication. For this reason, sans-serif fonts are more common in web development as they render content on a screen more clearly, increasing users' legibility across different devices.
 
-## Task 2: Image composition & sizing
+## Task 2: Sizing
 
-Images are inline elements but also support properties characteristic of block elements like width and height. A block element's content spans the width of the enclosing parent element by default. However, the content size can be changed with the width and height CSS properties:
+Images and input elements are inline elements but also support properties characteristic of block elements like width and height. A block element's content spans the width of the enclosing parent element by default. However, the content size can be changed with the width and height CSS properties:
 
 - The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) property specifies the content's width. For example,: *width: 20px;* makes the content 20px wide.
 - The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) property specifies the content's height. For example,: *height: 30px;* makes the content 30px high.
@@ -65,19 +65,7 @@ The units for the [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width
 
 Since sizes of elements like inputs and spacing between elements are relatively independent of other elements, we usually use pixels (an absolute size unit) when specifying the size of elements and adjusting the space between elements.
 
-When including images, it is a good practice to specify the height and width of the image directly on the *img* tag to keep the page rendering stable while the image loads. Specify the following sizes for the images on the page:
-
-```html
-...
-<img src="img/panoramic-laguna-brava-2000.jpeg" width="960" height="236" alt="Panoramic view of Laguna Brava lake" title="Laguna Brava">
-...
-<img src="img/kayaking.jpeg" width="400" height="400" alt="View of the lake with kayak on the horizon">
-...
-<img src="img/boat-ride.jpeg" width="400" height="400" alt="View of rustic boat on the lake's shore">
-...
-```
-
-Now, we will style the elements in the contact form. Specifying a unique ID for the form will help us to create CSS rules specific to the elements in the form.
+We will style the elements in the contact form. Specifying a unique ID for the form will help us to create CSS rules specific to the elements in the form.
 
 ```html
 <form id="experience_form">
@@ -86,13 +74,25 @@ Now, we will style the elements in the contact form. Specifying a unique ID for 
 ```
 ...
 
-Increase the width of the input elements to a fixed size of 300px using [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a particular attribute. Then, style the textarea element so that it occupies all the width of the page. 
+There are three input elements in the form, including the submit button. Since we want to increase the width of only the inputs capturing the name and email, we will create a new rule using a class selector to increase the width of these elements to a fixed size of 300px.
 
 ```css
-#experience_form input[type="text"], input[type="email"] {
+.experience_input {
     width: 300px;
 } 
+```
 
+Alternatively, you can use [attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors). These selectors give you different ways to select elements based on a particular attribute. Then, style the textarea element to occupy the entire page width. 
+
+```css
+#experience_form input[type="text"], #experience_form input[type="email"] {
+    width: 300px;
+} 
+```
+
+Finally, adjust the size of the textarea element:
+
+```css
 #experience_form textarea {
     width: 100%;
     height: 100px;
