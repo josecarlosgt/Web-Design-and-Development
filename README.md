@@ -3,7 +3,6 @@
 This document describes the steps for structuring information in an HTML document using HTML5 semantic tags. The content is based on the narrative for the [Laguna Brava Ecotourism Website](https://docs.google.com/document/d/1km0BxhWLX4hsJDRVkEDGWBFxr76Hyf_FNUubJtaPo5c/edit?usp=sharing) created following [the web design process](https://docs.google.com/presentation/d/17QH5RDWIGE9UkEPn0g89vhl6Iw7_nao2lsCcfX6HS2o/edit?usp=sharing) discussed in class.
 
 ## Skills
-- Optimize Web content by applying on-page SEO techniques
 - Structure content using HTML5 Semantic tags
 
 Each task below provides links that explain the purpose of each HTML tag. These links point to two popular learning resources on web development:
@@ -15,50 +14,12 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 
 ![Web page Preview](page-preview.jpg)
 
-Download the [base.zip](https://github.com/josecarlosgt/Web-Design-and-Development/raw/refs/heads/tutorial-2-designing-and-structuring-content-HTML5/base.zip) and complete the following tasks.
+Complete the tutorial on [Implementing On-page SEO] (https://github.com/josecarlosgt/seo).
 
-## Part I: On-page SEO
-On-page Search Engine Optimization (SEO) techniques involve crafting a list of keywords that describe the most relevant and significant aspects of your web page. 
+Alternatively, download the [base.zip](https://github.com/josecarlosgt/Web-Design-and-Development/raw/refs/heads/tutorial-2-designing-and-structuring-content-HTML5/base.zip) and complete the following tasks.
 
-## Task 1: Optimizing the content for keywords
-For this page, we will use the following two keywords:
-- Laguna Brava
-- Things to do
+# HTML5 Semantic Tags
 
-Ensure the page's title and main heading contain the target keywords above.
-
-```html
-    ...
-    <title>Things to Do in Laguna Brava</title>
-    ...
-    <h1>Things to Do in Laguna Brava</h1>
-    ...
-```
-
-> The target keywords should also appear on the web page text. You may also visit the page [How Search organizes information](https://www.google.com/search/howsearchworks/crawling-indexing/) to get a basic understanding of how Google's Search service works.
-
-## Task 2: Add the meta description tag
-Provide a description using the [meta tag](https://www.w3schools.com/tags/tag_meta.asp). Make sure you also include your keywords in the description.
-
-```html
-<meta name="description" content="Your guide for things to do and activities in  Laguna Brava lake in western Guatemala.">
-```
-
-## Task 3: Add image descriptions
-Search engines rely on you providing accurate descriptions of images in the alt text. This will also help your images show up in the results of image-based searches.
-
-```html
-    ...
-    <img src="img/panoramic-laguna-brava-2.jpg" alt="Panoramic view of lake Laguna Brava" title="Laguna Brava">
-    ...
-    <img src="img/kayak.jpg" alt="Lake challenge kayak" title="Kayak on Laguna Brava">
-    ...
-    <img src="img/boat.jpg" alt="Sit Back & Relax boat" title="Boat trip in Laguna Brava">
-    ...
-...
-```
-
-## Part II: HTML5 Semantic Tags
 The use of HTML5 semantic tags also contributes to [improving SEO](https://resources.bayshoresolutions.com/blog/html5-boosts-seo-strategy/).
 
 [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) is the current specification of HTML. HTML5 introduces standards designed to facilitate the development of modern web applications and websites.
@@ -72,7 +33,7 @@ The benefits of using semantic elements include:
 
 Let's improve the structure of your website by leveraging HTML5 tags.
 
-## Task 4: Make your Web page HTML5
+## Task 1: Make your Web page HTML5
  
 **The HTML5 document type declaration**
 
@@ -86,7 +47,7 @@ The doctype for HTML5 is very short, concise, and case-insensitive. Add the foll
 
 > The doctype declaration is usually the very first thing defined in an HTML document (even before the opening \<html\>tag); however, the doctype declaration itself is not an HTML tag.
 
-## Task 5: Adding the header, main, and footer semantic tags
+## Task 2: Adding the header, main, and footer semantic tags
 In this task, we will be adding some of the most popular semantic tags introduced by HTML5.
 
 [header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header): represents introductory content and navigational aids. It may contain  heading elements, a logo, a search form, an author name, and other elements.
@@ -127,7 +88,7 @@ Notes:
 - It is essential to understand the meaning of each semantic element and how these elements structure your web page's content in a way that is more descriptive.
 - Although the structure of your web document represents the meaning of each piece of content better, it has not changed or improved the appearance of the webpage. To improve the appearance of a webpage to its visitors, you will use another technology different from HTML, namely CSS. CSS is the topic of the next tutorial.
 
-## Task 6: Sectioning content using \<section\>
+## Task 3: Sectioning content using \<section\>
 
 The [section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section): represents a generic sectioning element, and should only be used if there isn't a more specific element to represent it like \<main\>, \<nav\>, or \<aside\>. 
 
@@ -144,7 +105,7 @@ Notes:
 
 Reference: [HTML5 Elements That Can Affect Search Engine Indexing](https://www.webfx.com/blog/web-design/what-potential-impact-can-html5-have-on-seo/)
 
-## Task 7: Adding side content
+## Task 4: Adding side content
 Use the [aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) to enclose the content related to the form:
 
 ```html
@@ -160,7 +121,7 @@ Use the [aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 
 > The \<aside\> HTML element represents tangential information or content indirectly related to the document's central theme, such as sidebars or callout boxes.
 
-## Task 8: Sectioning content using \<article\>
+## Task 5: Sectioning content using \<article\>
 
 The [article element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) represents self-contained content. This means \<article\> content could be removed from the page and put on other pages and still make sense on its own. Thus, content inside an \<article\> element should be intended to be independently distributable or reusable. Content inside \<article\> is also intended to change often (e.g., online publications such as blogs, magazine articles, and event listings). Thus, this tag tells search engines the content it contains changes often and put more weight on the text it contains compared to other site elements.
 
@@ -177,7 +138,7 @@ What content would you consider to structure as articles? The guided visit optio
 </article>
 ```
 
-## Task 9: Emphasizing important text 
+## Task 6: Emphasizing important text 
 In addition to the sectioning tags mentioned above, you can also use other elements to highlight important text, such as:
 
 The [emphasis element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) represent words that have a stressed emphasis compared to surrounding text. It is often limited to a word or a few words.
@@ -198,7 +159,7 @@ Choose sentences in your content that you think should be marked as serious or u
 
 These elements are preferred instead of the once glorious but now less popular [\<b\>](https://www.w3schools.com/tags/tag_b.asp) and [\<i\>](https://www.w3schools.com/tags/tag_i.asp) tags.
 
- ## Task 10: Adding the figure element 
+ ## Task 7: Adding the figure element 
  
 Use the [figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) with a caption to structure the content related to the image in each activity. Use the following statements as captions for each activity's image:
 - The lake challenge activity: *Cross the four kilometers in a kayak.*
@@ -214,7 +175,7 @@ Use the [figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Eleme
 
 > The figure element groups together related content, contributing to the meaning (semantics) of the HTML document when compared to the image tag.
 
-## Task 11: Adding a navigation menu (Optional)
+## Task 8: Adding a navigation menu (Optional)
 
 Create add a navigation menu using the [nav element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav). Note the links in the navigation menu are local to the page, and they require each section to contain an id property with the same value.
 
