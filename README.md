@@ -1,6 +1,6 @@
 # Tutorial: Structuring the content of your website with HTML5 Semantic Tags
 
-This document describes the steps for structuring information in an HTML document using HTML5 semantic tags. The content is based on the narrative for the [Laguna Brava Ecotourism Website](https://docs.google.com/document/d/1km0BxhWLX4hsJDRVkEDGWBFxr76Hyf_FNUubJtaPo5c/edit?usp=sharing) created following [the web design process](https://docs.google.com/presentation/d/17QH5RDWIGE9UkEPn0g89vhl6Iw7_nao2lsCcfX6HS2o/edit?usp=sharing) discussed in class.
+This document describes the steps for structuring information in an HTML document using HTML5 semantic tags. The content is based on the [narrative for the Laguna Brava Ecotourism Website](https://docs.google.com/document/d/1km0BxhWLX4hsJDRVkEDGWBFxr76Hyf_FNUubJtaPo5c/edit?usp=sharing) created following [the web design process](https://docs.google.com/presentation/d/17QH5RDWIGE9UkEPn0g89vhl6Iw7_nao2lsCcfX6HS2o/edit?usp=sharing) discussed in class.
 
 ## Skills
 - Structure content using HTML5 Semantic tags
