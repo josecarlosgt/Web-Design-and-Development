@@ -1,16 +1,16 @@
 # Tutorial: Styling the content of your website
 
-CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation. We will style the content of our page by implementing basic concepts of graphic design: typography, layout, and color.
+CSS (Cascading Style Sheets) is a language that describes how a web page is styled for visual presentation.
 
 ## Instructions
 
-This document explains the steps for styling content in an HTML document using CSS. Each task below provides links that describe the purpose of common CSS properties.
+This tutorial focuses on styling content in an HTML document using CSS. Each task below provides links that describe the purpose of common CSS properties.
 
-[The styling work explained in the tasks implement the design contained in this mockup](https://drive.google.com/file/d/1YG11pKr9H9Hbmrz6orV3PFeOEMPgpqU3/view?usp=sharing).
+[The styling work explained in the tasks implements the design contained in this mockup](https://drive.google.com/file/d/1YG11pKr9H9Hbmrz6orV3PFeOEMPgpqU3/view?usp=sharing).
 
 Before starting, download and unzip the [base zipped folder](https://github.com/josecarlosgt/Web-Design-and-Development/raw/tutorial-4-styling-css/base.zip).
 
-We will use  an internal stylesheet, which our CSS code will live within the index.html file:
+We will use  an internal stylesheet, within which our CSS code will live in the index.html file:
 
 ```html
 <head>
@@ -52,9 +52,9 @@ body {
 
 ## Layout
 
-Layout is the the visual arrangement of all elements on a webpage. In invovles the principles of *contrast*, *alignment*,  *balance*, *proximity*, *space*, and *repetition*. 
+Layout is the visual arrangement of all elements on a webpage. In invovles the principles of *contrast*, *alignment*,  *balance*, *proximity*, *space*, and *repetition*. 
 
-### Task #3: Contrast
+### Task #2: Contrast
 
 *Contrast* is about adding visual prominence through various properties like size, color, and typography.
 
@@ -107,7 +107,7 @@ Create a rule with a class named *bold* to display the text used as labels for e
 
 Add the *bold* class to all elements to be displayed in bold, including the activity's features and the label elements in the contact form. Create *span* elements when necessary.
 
-### Task #4: Alignment
+### Task #3: Alignment
 
 *Alignment* involves arranging elements relative to the page or other elements to create order.
 
@@ -174,7 +174,7 @@ Thus, we can rewrite the rule above using the following shorthand:
 }
 ```
 
-### Task #5: Space
+### Task #4: Space
 
 *Space* refers to the background against which page content is seen. 
 
@@ -253,7 +253,7 @@ Finally, adjust the size of the textarea element:
 
 > Note that the rules above use a descendant selector to style the form elements. Descendant selectors are a form of [CSS combinators](https://www.w3schools.com/css/css_combinators.asp) that combine multiple selectors based on the page's hierarchical structure.
 
-### Task 6: Balance, Proximity, and Repetition
+### Task 5: Balance, Proximity, and Repetition
 
 *Balance* relates to how elements are weighted against each other on different sides of the page to deliver a sense of completion. *Proximity* consists of placing related items close to each other so the viewer can perceive them as related while placing unrelated items apart. *Repetition* creates consistency within a hierarchical system.
 
@@ -322,7 +322,7 @@ The [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radi
 }
 ```
 
-## Task 7: Color
+## Task 6: Color
 
 Add a navigation menu using the [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) element. Note that the links in the navigation menu are local to the page, and each section must contain an ID property with the same value.
 
