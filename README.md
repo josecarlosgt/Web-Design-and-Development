@@ -23,7 +23,7 @@ We will use  an internal stylesheet, within which our CSS code will live in the 
 
 ## Typography
 
-### Task 1: Understanding Font Properties: Exploring Font-Family
+### Task 1: Understanding Font Properties
 
 Many CSS properties allow us to display text in a way that is visually appealing to the reader. CSS font properties include:
 
