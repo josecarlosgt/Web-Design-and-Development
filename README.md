@@ -14,7 +14,7 @@ Each task below provides links that explain the purpose of each HTML tag. These 
 
 ![Web page Preview](page-preview.jpg)
 
-Complete the tutorial on [Implementing On-page SEO] (https://github.com/josecarlosgt/seo).
+Complete the tutorial on [Implementing On-page SEO](https://github.com/josecarlosgt/seo).
 
 Alternatively, download the [base.zip](https://github.com/josecarlosgt/Web-Design-and-Development/raw/refs/heads/tutorial-2-designing-and-structuring-content-HTML5/base.zip) and complete the following tasks.
 
